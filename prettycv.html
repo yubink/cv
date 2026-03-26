@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700' rel='stylesheet' type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>Yubin Kim Resume</title>
+
+  <style>
+    @page {
+      margin: 0;
+    }
+
+    @media print {
+      .page-break {
+        page-break-before: always;
+      }
+
+      .page-break::before {
+        content: "";
+        display: block;
+        height: 7mm;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-size: 0.9em;
+      /* font-family: "Tinos", serif; */
+      font-family: "Roberto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+
+    span.date {
+      vertical-align: top;
+      float: right;
+      font-style: italic;
+    }
+
+
+    .container {
+      display: flex;
+      max-width: 800px;
+      margin: 0px auto;
+      padding-right: 10px;
+      border: 0px solid black;
+    }
+
+    #header {
+      background-color: #eee;
+      padding: 0.5em;
+      min-width: 30em;
+      position: absolute;
+      top: 2.5em;
+      z-index: 1000;
+    }
+
+    #sidebar {
+      width: 25%;
+      min-height: 50em;
+      height: 100%;
+      background-color: #2e6930;
+      float: left;
+      margin-left: 1em;
+      padding: 1em;
+      padding-top: 9em;
+      box-sizing: border-box;
+      color: #fff;
+    }
+    
+    h2 {
+      margin-bottom: 0.5em;
+      font-variant: small-caps;
+      font-size: 1.4em;
+
+    }
+
+    #sidebar h2 {
+      border-bottom: 3px solid #fff;
+      /* Underline color */
+      flex: 1;
+    }
+
+    #main-content {
+      width: 80%;
+      background-color: #fff;
+      /*min-height: 20em; */
+      height: 100%;
+      float: left;
+      padding: 1em;
+      box-sizing: border-box;
+      margin-top: 8em;
+      /* Adjust this value based on your header's height */
+    }
+
+    #main-content h2 {
+      color: #4CAF50;
+      border-bottom: 3px solid #4CAF50;
+      /* Underline color */
+    }
+
+    .name {
+      font-size: 4em;
+      margin: 0;
+      font-family: 'Gentium Book Basic', serif;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .contact {
+      font-size: 1em;
+      margin: 0em;
+      color: #555;
+
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5em;
+      margin-bottom: 0.8em;
+    }
+
+    ul.position {
+      margin-bottom: 0px;
+      list-style-type: square;
+      margin-top: 1em;
+          break-inside: auto; /* Allow page breaks inside the list */
+    page-break-inside: auto; /* For older browsers */
+    }
+
+    ul.position li {
+      margin-top: 1em;
+
+      /* page-break-inside: avoid; */
+    }
+
+    ul.details {
+      margin-top: 0px;
+      list-style-type: circle;
+    }
+
+    ul.details li {
+      margin-top: 0.4em;
+      line-height: 1.1em;
+    }
+
+    ul.tight-details {
+      margin-top: 0.4em;
+      list-style-type: circle;
+    }
+
+    ul.tight-details li {
+      margin-top: 0.0em;
+      line-height: 1.1em;
+    }
+
+    #sidebar ul {
+      list-style-type: square;
+    }
+
+    h3 {
+      font-size: 1em;
+      font-weight: 500;
+      margin-bottom: 0em;
+      margin-top: 0.0em;
+
+
+    }
+
+    a {
+      text-decoration: underline;
+      color: #2e6930;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="header">
+      <!-- Your header content goes here -->
+      <h1 class="name">Yubin Kim</h1>
+      <p class="contact">
+        e: yubink.cs@gmail.com /
+        p: 412-204-7134
+      </p>
+    </div>
+
+    <div id="sidebar">
+      <h2>Highlights</h2>
+      <ul class="details">
+        <li>7+ yr in ML leadership</li>
+        <li>Total 15+ yr in ML</li>
+        <li>Practical applied ML for business impact</li>
+        <li>Strong ML/NLP/IR research background</li>
+        <li>Solves large-scale healthcare and e-commerce problems</li>
+        <li>Prioritizes empathy and collaboration</li>
+      </ul>
+
+      <h2>Skills</h2>
+        <h3>Deep Learning &amp; ML</h3>
+      <ul class="tight-details">
+        <li>Graph Neural Network
+        </li>
+        <li>LLM/Transformers
+          <br />
+          (e.g. BERT, GPT)
+        </li>
+        <li>RNN, LSTM<br />
+        <li>Clustering
+        </li>
+      </ul>
+        <h3> Search/Recommendations</h3>
+      <ul class="tight-details">
+        <li>Evaluation</li>
+        <li>A/B experimentation</li>
+        <li>Efficiency</li>
+        <li>Learning-to-rank</li>
+        <li>Distributed search</li>
+        <li>Knowledge graphs</li>
+      </ul>
+        <h3> Tools and Frameworks</h3>
+      <ul class="tight-details">
+        <li>Python, Java, C++, SQL, Rust</li>
+        <li>Pytorch, Scikit-learn</li>
+        <li>Lucene, Solr, Elasticsearch</li>
+        <li>Kubeflow, Airflow, Beam</li>
+        <li>AWS, GCP</li>
+        <li>Jupyter, vim, git</li>
+      </ul>
+
+      <h2>Personal</h2>
+      <ul class="details">
+        <li>West coast swing dancer &amp; competitor: <em>ask me about my
+            Jack &amp; Jill results</em></li>
+        <li>Enthusiastic gardener: <em>ask me about my volunteer pumpkins</em></li>
+      </ul>
+
+    </div>
+
+    <div id="main-content">
+      <section>
+
+        <p>Applied AI/ML leader with 7+ yrs of leadership experience
+          building collaborative, multi-disciplinary teams to pragmatically
+          solve problems at scale in large e-commerce and healthcare
+          organizations for business impact. Total 15+ yrs in
+          machine learning, natural language processing, information
+          retrieval, recommendations. Strong research background with
+          publications and active leadership roles in top tier academic 
+          conferences and publishing venues.
+        </p>
+
+      </section>
+      <section class="education">
+        <h2>Education</h2>
+
+        <ul>
+          <li>Ph.D. in Computer Science from the Language Technologies
+            Institute <span class="date">(Dec 2018)</span>
+            <br /><b>Carnegie Mellon University</b>, Pittsburgh,
+            Pennsylvania
+          </li>
+
+          <li>Bachelor of Software Engineering <span class="date">(Apr
+              2011)</span><br />
+            <b>University of Waterloo</b>, Waterloo, Ontario
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="experience">
+        <h2>Professional Experience</h2>
+
+        <ul class="position">
+          <li>Chief Science Officer at <b>Vody, Inc.</b>
+            </b> <span class="date">(04/2024&ndash;current)</span>
+            <ul class="details">
+
+              <li>Vody makes generative AI produce real business value for retail. We are a seed stage start-up that
+                builds multimodal LLMs for e-commerce that enrich inventory
+                data with consumer-friendly language. Our enriched product
+                data easily integrates with existing search & discovery
+                applications (e.g. site search, recommendations,
+                personalization, SEO), boosting conversion without costly
+                migrations.
+              </li>
+              <li>Valued at $25M</li>
+
+            </ul>
+
+          <li>Senior Engineering Manager at <b>Etsy, Inc.</b>
+            </b> <span class="date">(04/2022&ndash;10/2023)</span>
+            <ul class="details">
+              <li>Built real time, large scale retrieval systems powering search,
+                recs, and ads
+                at etsy.com, an e-commerce marketplace with 90M+ active buyers and
+                100M items
+              <li>Led product ML team (~5) of Intermediate&ndash;Sr. Staff
+                Applied Science and Eng ICs in the Search Retrieval initiative of
+                the Search org, providing technical
+                mentorship, managing hiring, performance, team processes
+              <li>Directly generated $40M+ in GMS over 1.5 years by testing and deploying innovations in graph ML
+                models and Solr through launching A/B experiments
+              <li>Enabled $30M+ in revenue through collaborations with the Ads org
+              <li>Co-authored the 3-year technical strategy for the Search Retrieval
+                initiative
+              <li>Initiated key collaborations with analytics &amp; product
+                partners and cross-org enablement
+                teams to develop new analytic metrics and tooling for the
+                Retrieval initiative; increased the
+                speed of online experimentation by 2x
+              <li>Developed new metrics and processes for offline evaluation;
+                increased successful online experiments in the
+                Retrieval initiative by 2x within 2 quarters
+            </ul>
+
+          <li>Director of Technology at <b>UPMC Enterprises</b>
+            </b> <span class="date">(07/2019&ndash;03/2022)</span>
+            <ul class="details">
+              <li>Led product team (~12) of Eng/QA ICs,
+                Product/Eng Managers; built an Elasticsearch-based search engine over
+                160M+ clinical documents
+              <li>Led applied ML team (~3) of ML engineers, responsible for
+                creating career paths, hiring, performance management, technical mentorship
+              <li>Collaborated with product and provider/payor stakeholders to solve problems in claims
+                processing, automated coding, risk stratification, retrospective analysis
+              <li>Identified projects worth $Ms in savings, pitched to SVPs/CTO,
+                developed prototypes, and executed pilots with provider/payor groups
+              <div class="page-break"></div>
+              <li>Managed collaborations with ML/NLP healthcare start-ups and academic
+                labs; reviewed proposals, negotiated contracts, and oversaw successful project delivery
+            </ul>
+
+          <li>Senior Data Scientist at <b>UPMC Enterprises</b>
+            </b> <span class="date">(09/2018&ndash;07/2019)</span>
+            <ul class="details">
+              <li>Developed a search engine for social
+                determinants of health indicators in millions of clinical documents to
+                identify high risk patients for intervention
+            </ul>
+
+          <li>
+            Internships at Microsoft Research (2013), Amazon (2009), Google (2008)
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="publications">
+        <h2>Selected Publications</h2>
+        <ul class="position">
+          <li> Jon Eskreis-Winkler, <b>Yubin Kim</b>, Andrew Stanton. 2023.
+            <a href="https://ceur-ws.org/Vol-3589/paper_22.pdf">XWalk: Random Walk Based
+              Candidate Retrieval for Product Search</a>. In
+            <em>Proceedings of eCom'23: ACM SIGIR Workshop on eCommerce</em>.
+          </li>
+          <li>Nithin Haridas, <b>Yubin Kim</b>. 2020.
+            <a href="https://ceur-ws.org/Vol-2551/paper-08.pdf">Clustering Large-scale Diverse
+              Electronic Medical Records to Aid Annotation for Generic Named Entity
+              Recognition</a>. In <em>Health Search and Data Mining Workshop</em>. 43&ndash;50.
+          </li>
+
+          <li>Zhuyun Dai, <b>Yubin Kim</b>, Jamie Callan. 2017.
+            <a href="https://www.cs.cmu.edu/~callan/Papers/sigir17-Zhuyun-Dai.pdf">Learning to Rank Resources</a>.
+            In <em>Proceedings of the 40th Annual ACM SIGIR Conference</em>. 837&ndash;840.
+          </li>
+
+          <li><b>Yubin Kim</b>, Jamie Callan, Shane Culpepper, Alistair Moffat.
+            <a href="https://www.cs.cmu.edu/~callan/Papers/IRJ16-yubink.pdf">Efficient Distributed Selective Search</a>.
+            <em>Information Retrieval Journal</em> 20, 3 (2017), 221&ndash;252.
+          </li>
+
+          <li>Peer-reviewed workshops & panels
+            <ul class="tight-details">
+              <li>Workshop on eCommerce, SIGIR 2023&ndash;2026
+              <li>Workshop on Data Quality-Aware Multimodal Recommendation, RecSys 2025
+              <li>Workshop on Multimodal Search and Recommendations, ICDM 2025
+              <!-- <li>SIRIP Panel on Future and Applications of Dense Retrieval, SIGIR 2022 -->
+              <li>Workshop on Health Search and Data Mining, WSDM 2020
+            </ul>
+          </li>
+
+          <p><em>
+              Full list available on
+              <a href="https://scholar.google.com/citations?hl=en&user=3F_QHHQAAAAJ&view_op=list_works&sortby=pubdate">
+                Google Scholar</a>: search "Yubin Kim" on scholar.google.com
+            </em></p>
+
+        </ul>
+      </section>
+
+      <section class="service">
+        <h2>Academic Service</h2>
+        <ul class="position">
+
+          <li>Notable recent academic conference leadership
+            <ul class="tight-details">
+              <li>SIGIR 2026 Sponsorship Co-chair
+              <li>SIGIR 2025 Demonstration Track Co-chair
+              <li>SIGIR 2024 Social Media Co-chair
+              <li>ICTIR 2024 PC Area Chair
+              <li>CIKM 2022 Doctoral Symposium Co-chair
+            </ul>
+          </li>
+
+
+          <li>Selected invited talks and panels
+            <ul class="details">
+              <li>Keynote talk titled "LLMs are magic … or are they? Stories from the trenches of building a startup on
+                GenAI"
+                presented at <em>CIKM 2024 Workshop on Multimodal Search and Recommendations</em> (2024)
+              <li>Panelist for SIGIR Symposium on IR in Practice (2023)
+              <li>Panelist for "Data for Artificial Intelligence" hosted by <em>Value
+                  for Health CoLAB</em> (2021)
+              </li>
+              <li>Panelist for "Top of Mind Exchange: AI" hosted by the <em>Center for
+                  Connected Medicine</em> (2020)</li>
+              <li>Invited talk titled "40,000 Note Types: EMRs in the Real World"<br />
+                presented at the <em>Artificial Intelligence for Data Discovery
+                  and Reuse Symposium </em> (2020), presented at Brown
+                University (2019)
+            </ul>
+          </li>
+
+          <li>Peer review service
+            <ul class="tight-details">
+              <li>Editorial board of Foundations and Trends in Information Retrieval (FnTIR)
+              <li>Senior program committee of SIGIR, CIKM, WSDM, TheWebConf
+            </ul>
+          </li>
+
+        </ul>
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>
