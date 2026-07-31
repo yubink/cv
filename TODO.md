@@ -3,7 +3,7 @@
 Point-in-time information. Nothing here is a durable rule — durable rules live in
 `CONTEXT.md` and the skills. Delete items as they resolve.
 
-**Last updated:** 2026-07-30
+**Last updated:** 2026-07-31
 
 ---
 
@@ -18,13 +18,26 @@ Point-in-time information. Nothing here is a durable rule — durable rules live
    `academic-record.yaml`). Two `work_origin` values flagged `# VERIFY` in the file
    (`ctr26-rumination`, `sigir22-dense-retrieval`) — user to confirm.
 2. ~~Create `bullet-library.yaml`~~ — **seeded 2026-07-30**: 26 bullets (12 marked
-   `evidence_strength: weak` with bracketed placeholders keyed to the §3 questions), plus a
-   generated `skills_evidence_matrix`. Regenerate the matrix after editing any `skills[]`
-   field: `python3 scripts/gen_matrix.py` from the resume-system root. Remaining work: fill
-   placeholders as §3 answers arrive; decompose `vody-serving-stack` (the legacy tool-dump
-   remnant).
-3. **Build the three base variants** via the build-variant skill. Suggested order: B (largest
-   structural change from the current CV), then A, then C.
+   `evidence_strength: weak` with bracketed placeholders keyed to the §3 questions). Bullets
+   are grouped under top-level role keys (no per-bullet `role:`). The skills-evidence matrix
+   is generated into `skills-evidence-matrix.yaml`; regenerate it after editing any `skills[]`
+   field with `python3 gen_matrix.py` from the repo root. Remaining work: fill placeholders as
+   §3 answers arrive; decompose `vody-serving-stack` (the legacy tool-dump remnant).
+3. ~~Build the three base variants~~ — **done 2026-07-31**: `variants/variant-B.md`,
+   `variant-A.md`, `variant-C.md`, built in order B → A → C. All pass `score-resume` (no JD)
+   with no blockers. Applied only one library edit during the build: `upmc-product-team`
+   retagged `[A] → [A, B]`. Declined edits (user, 2026-07-31): did **not** add a B tag/variant
+   to `vody-team`/`etsy-team` (B/A/C satisfy the mandatory remote-leadership evidence via
+   compressed context lines instead), and did **not** strip the `[…needed]` placeholders from
+   the weak library bullets (variants render placeholder-free; the library keeps the brackets
+   as open-question reminders). Next steps:
+   - Fill the §3 evidence gaps and re-render affected bullets — most valuable: a real,
+     outcome-bearing **RAG / agentic tool-use** bullet (currently unevidenced, so RAG/CLIP/
+     BERT/ANN appear in no variant's Skills; `vody-serving-stack` stays excluded until
+     decomposed).
+   - Run `score-resume` per variant **with a real JD** (items 1 and 11 were N/A at build time).
+   - Stand up the designed-PDF rendering pipeline (§5) now that the first variants exist.
+   - Tailor to specific postings via `tailor-to-jd` as they arrive.
 4. Retire the legacy CV as a source document once the libraries capture everything in it.
 
 ---

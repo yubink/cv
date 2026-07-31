@@ -7,6 +7,8 @@ this file, this file wins.
 
 **System architecture:**
 - `bullet-library.yaml` — master bullet library, complete inventory (schema in §5)
+- `skills-evidence-matrix.yaml` — GENERATED from the libraries (`python3 gen_matrix.py`); do
+  not hand-edit
 - `publication-library.yaml` — publication library, complete record (schema in §5)
 - `academic-record.yaml` — co-organized workshops, academic service, invited talks and
   panels (schema in §5)
@@ -281,21 +283,26 @@ step that silently breaks traceability — every skill procedure includes it exp
 
 The two YAML libraries are the complete inventories. Resumes show selected subsets.
 
-### `bullet-library.yaml` — one entry per bullet
+### `bullet-library.yaml` — bullets grouped by role
+
+Top-level keys are roles — `vody`, `etsy`, `upmc-director`, `upmc-sds`, `cross-role` — each
+mapping to a list of bullets. Role is the grouping key, not a per-bullet field (there is no
+`bullets:` wrapper). One entry per bullet:
 
 | Field | Purpose |
 |---|---|
 | `id` | Short unique key |
 | `bullet` | Full text, mechanism and outcome included |
-| `role` | vody / etsy / upmc-director / upmc-sds / academic |
 | `skills[]` | Every skill and tool this bullet evidences |
 | `archetypes[]` | A, B, C, or any subset |
 | `domain` | e-commerce / healthcare / domain-general — for reordering when a JD is domain-specific |
 | `evidence_strength` | strong (has numbers) / weak (needs an open question answered — see TODO.md) |
 
-Alongside the bullets, the library holds a **skills-evidence matrix**: one row per skill,
-columns for the bullet and publication IDs that evidence it. Any skill with zero IDs is
-either cut from every variant or becomes an open evidence question in TODO.md.
+The **skills-evidence matrix** is generated into `skills-evidence-matrix.yaml` — one row per
+skill, listing the bullet and publication IDs that evidence it. Regenerate it with
+`python3 gen_matrix.py` (from the repo root) after editing any `skills[]` field; do not
+hand-edit it. Any skill with zero IDs is either cut from every variant or becomes an open
+evidence question in TODO.md.
 
 ### `publication-library.yaml` — one entry per publication
 

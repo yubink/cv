@@ -29,7 +29,7 @@ publications:
   - id: ctr26-rumination
     citation: "Mary V. Strege, Rebecca A. Krawczak, **Yubin Kim**, Julia Semerod, Lisa Brush, Greg J. Siegle. 2026. Ruminative Thought Content Changes by Year: A Computational Linguistic Analysis. Cognitive Therapy and Research 50(1), 241–253."
     venue_tier: journal
-    work_origin: vody # VERIFY — inferred from Pittsburgh clinical coauthors; publication postdates UPMC tenure
+    work_origin: vody 
     skills: [nlp, computational-linguistics, healthcare, mental-health]
     relevance_note: "Clinical NLP collaboration; useful for healthcare-domain applications, otherwise skip."
     url: ""
@@ -46,7 +46,7 @@ publications:
     citation: "Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. XWalk: Random Walk Based Candidate Retrieval for Product Search. In Proceedings of eCom'23: ACM SIGIR Workshop on eCommerce."
     venue_tier: workshop
     work_origin: etsy
-    skills: [graph-ml, candidate-retrieval, product-search, recommendations]
+    skills: [graph-ml, retrieval, product-search, recommendations]
     relevance_note: "Double-duty for Etsy: the graph-ML retrieval work behind the GMS impact. Must read as a workshop paper."
     url: "https://ceur-ws.org/Vol-3589/paper_22.pdf"
 

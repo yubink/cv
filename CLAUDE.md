@@ -12,12 +12,13 @@ Read in this order; when they conflict, the earlier one wins:
 
 1. **`CONTEXT.md`** — durable facts and rules: candidate identity, career spine, the three archetypes (§2), global resume rules (§3), skills↔evidence traceability (§4), and library schemas (§5). This is the authority. Skills contain *procedures*; `CONTEXT.md` contains *facts*.
 2. **The libraries** (complete inventories; resumes show selected subsets):
-   - `bullet-library.yaml` — every experience bullet, tagged with `role`, `skills[]`, `archetypes[]`, `domain`, `evidence_strength`. Bullets marked `evidence_strength: weak` contain bracketed placeholders (e.g. `[X]%`) keyed to open questions in `TODO.md §3` — treat placeholders as gaps to fill from the candidate, never invent the number.
+   - `bullet-library.yaml` — every experience bullet, grouped under top-level role keys (`vody`, `etsy`, `upmc-director`, `upmc-sds`, `cross-role`); each bullet carries `skills[]`, `archetypes[]`, `domain`, `evidence_strength` (role is the grouping key, not a per-bullet field). Bullets marked `evidence_strength: weak` contain bracketed placeholders (e.g. `[X]%`) keyed to open questions in `TODO.md §3` — treat placeholders as gaps to fill from the candidate, never invent the number.
    - `publication-library.yaml` — full publication record. `venue_tier` is authoritative; never inflate a workshop paper into a conference paper.
    - `academic-record.yaml` — co-organized `workshops:` (these are **service, never publications**), `service:`, and `talks:`.
+   - `skills-evidence-matrix.yaml` — **generated** (do not hand-edit): one row per skill listing the bullet and publication IDs that evidence it. Regenerate with `python3 gen_matrix.py`.
 3. **`TODO.md`** — point-in-time state: build order, open evidence questions, migration notes. Not a source of durable rules. Delete items as they resolve.
 
-Outputs (`variants/variant-{A,B,C}.md` and `tailored/{slug}.md`) do not exist yet — the base variants have not been built. See `TODO.md §1` for build order (B, then A, then C).
+The three base variants exist (`variants/variant-{A,B,C}.md`); `tailored/{slug}.md` copies are produced per job posting by `tailor-to-jd`. See `TODO.md §1` for current state and next steps.
 
 ## The three archetypes (A/B/C)
 
@@ -43,7 +44,7 @@ The `.zip` files alongside each skill directory are packaged copies for distribu
   ```
   python3 gen_matrix.py
   ```
-  Run from the repo root. It rewrites the `# ---- GENERATED: skills_evidence_matrix` block at the bottom of `bullet-library.yaml` (do not hand-edit that block) and prints publication-only skills. (Note: `TODO.md` refers to `scripts/gen_matrix.py` from a "resume-system root" — that path is stale; the script lives at the repo root.)
+  Run from the repo root. It reads `bullet-library.yaml` + `publication-library.yaml`, writes the generated `skills-evidence-matrix.yaml`, and prints the skill/bullet/pub counts and the publication-only skills.
 - **Traceability rule (`CONTEXT.md §4`), enforced in both directions on every variant:** no orphan skills (every Skills entry traces to a surviving bullet, publication, or named project) and no unlisted tools (every tool named in a bullet appears in Skills). The "pruning corollary": when tailoring cuts the last bullet evidencing a skill, that skill must also leave the Skills section. Foundational tier (Python, Java, C++, SQL, git, Jupyter) is exempt.
 - **Bullet formula:** action → mechanism → measured outcome, with a budget of 1–3 named technologies per bullet.
 - **ATS constraint:** variant files are the plain, single-column, ATS-safe versions (no multi-column layouts, floated sidebars, or tables-for-layout). A designed PDF for humans is a separate downstream rendering step.
