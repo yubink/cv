@@ -1,0 +1,561 @@
+# bullet-library.yaml — master bullet library (single source of truth for experience bullets)
+# Schema: CONTEXT.md §5. Selection rules: build-variant / tailor-to-jd skills.
+#
+# Seeded 2026-07-30 from the legacy CV plus facts confirmed in conversation.
+# NO INVENTED CONTENT: bracketed placeholders like [X]% mark missing numbers; the bullet is
+# `evidence_strength: weak` until the corresponding TODO.md §3 question is answered.
+# Rewrites preserve the original claims exactly; only structure/wording changed.
+#
+# The legacy tool-dump bullet ("Utilized fine-tuned multimodal LLMs, RAG, CLIP, BERT, graph
+# models served with vLLM, ANN, Kubernetes on AWS and GCP") is decomposed below into
+# vody-attribute-tagging, vody-inference, vody-serving-stack; the last holds the tools whose
+# outcomes are still unknown and stays weak until decomposed further.
+#
+# skills_evidence_matrix at the bottom is GENERATED — do not hand-edit; regenerate after
+# changing skills[] fields (script inline in TODO.md §1 note).
+
+bullets:
+  # ---------------- Vody (CSO, 04/2024–present) ----------------
+  - id: vody-arr
+    bullet: "Grew revenue 0 → $2M ARR as the AI/product function of a seed-stage startup, converting Grubhub and Academy Sports & Outdoors as customers."
+    role: vody
+    skills: [gtm, enterprise-sales, product-strategy]
+    archetypes: [C]
+    domain: e-commerce
+    evidence_strength: strong
+
+  - id: vody-team
+    bullet: "Hired ~9 and led a fully remote team of ~11 across engineering, product, and ops, reporting to the CEO."
+    role: vody
+    skills: [hiring, team-building, remote-leadership, cross-functional-leadership]
+    archetypes: [A, C]
+    domain: domain-general
+    evidence_strength: strong
+
+  - id: vody-fundraising
+    bullet: "Wrote and presented pitches to VCs and customers, raising $1M in funding."
+    role: vody
+    skills: [fundraising, storytelling, executive-communication]
+    archetypes: [C]
+    domain: domain-general
+    evidence_strength: strong
+
+  - id: vody-feeds
+    bullet: "Optimized e-commerce product data feeds (e.g. Google Merchant Center) for conversational agents and product search, improving customer product-discovery performance [metric needed]."
+    role: vody
+    skills: [product-search, conversational-agents, data-optimization, e-commerce]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 Vody: customer-facing outcome metric
+
+  - id: vody-attribute-tagging
+    bullet: "Personally built v1 of the production attribute-tagging models by fine-tuning Qwen VLMs [method, data size, and lift vs. baseline needed]."
+    role: vody
+    skills: [llm-fine-tuning, vlm, qwen, multimodal, hands-on-ml]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 Vody: fine-tuning specifics
+
+  - id: vody-inference
+    bullet: "Ran large-scale production LLM inference on vLLM and Kubernetes across AWS and GCP [cost/throughput numbers needed]; lessons published at the SIGIR eCommerce workshop (eCom'25)."
+    role: vody
+    skills: [llm-inference, vllm, kubernetes, aws, gcp, production-ml, serving]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 Vody: eCom'25 numbers (GPU cost, tokens/sec, quantization, batching)
+
+  - id: vody-serving-stack
+    bullet: "Deployed fine-tuned multimodal LLMs, RAG, CLIP, BERT, and graph models with ANN retrieval in production [decompose: which model did what, with what outcome]."
+    role: vody
+    skills: [rag, clip, bert, graph-ml, ann, multimodal]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: weak  # legacy tool-dump remnant; violates tool budget until decomposed
+
+  - id: vody-evaluation
+    bullet: "Evaluated models with human-in-the-loop review, LLM-based evaluation, and A/B testing [state whether the eval harness was a durable asset]."
+    role: vody
+    skills: [llm-evaluation, human-in-the-loop, ab-testing, evaluation]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 cross-cutting: eval harness as durable asset?
+
+  - id: vody-demo
+    bullet: "Personally built the customer-facing demo of the data-optimization pipeline — product import from URL through copy generation, attribute tagging, and query enrichment to final results."
+    role: vody
+    skills: [hands-on-ml, prototyping, query-enrichment, copy-generation, demo-engineering]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: strong
+
+  - id: vody-error-analysis
+    bullet: "Drove opportunity and error analysis hands-on over production logs and customer query logs using DuckDB and Jupyter, feeding the model and product roadmap."
+    role: vody
+    skills: [error-analysis, duckdb, data-analysis, hands-on-ml, query-logs]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: strong
+
+  - id: vody-roadmap
+    bullet: "Owned the technical and product roadmap and served as primary technical contact for enterprise customers [needs an outcome or merge into vody-arr]."
+    role: vody
+    skills: [product-strategy, roadmap, customer-facing]
+    archetypes: [C]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §4.3: ownership verb without result
+
+  - id: vody-academic-collabs
+    bullet: "Initiated and led academic collaborations on generative engine optimization and user simulation, yielding peer-reviewed publications (ICLR 2026; CIKM under review)."
+    role: vody
+    skills: [research-collaboration, generative-engine-optimization, user-simulation, cross-org-influence]
+    archetypes: [B, C]
+    domain: e-commerce
+    evidence_strength: strong
+
+  # ---------------- Etsy (Senior EM, 04/2022–10/2023) ----------------
+  - id: etsy-retrieval-systems
+    bullet: "Built real-time, large-scale retrieval systems powering search, recommendations, and ads at etsy.com — a marketplace of 90M+ active buyers and 100M items [QPS/latency/index-size numbers needed]."
+    role: etsy
+    skills: [retrieval, search, recommendations, ads, real-time-systems, solr]
+    archetypes: [A, B]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 Etsy: system scale numbers
+
+  - id: etsy-team
+    bullet: "Led a fully remote product-ML team of ~5 Intermediate–Sr. Staff applied science and engineering ICs in the Search Retrieval initiative — technical mentorship, hiring (2), performance management, and team processes."
+    role: etsy
+    skills: [team-leadership, mentorship, hiring, performance-management, remote-leadership, applied-science-management]
+    archetypes: [A]
+    domain: e-commerce
+    evidence_strength: strong  # confirm highest IC level managed (TODO §3 Etsy)
+
+  - id: etsy-gms
+    bullet: "Directly generated $40M+ in GMS over 1.5 years by deploying conversion-lifting graph-ML and Solr retrieval innovations, proven with A/B experiments [attribution method + sole/shared needed for interview defense]."
+    role: etsy
+    skills: [graph-ml, solr, ab-testing, business-impact, retrieval, conversion-optimization]
+    archetypes: [A, B]
+    domain: e-commerce
+    evidence_strength: strong  # number exists; TODO §3 Etsy attribution question is interview prep
+
+  - id: etsy-ads-revenue
+    bullet: "Enabled $30M+ in ad revenue through cross-org collaborations with the Ads organization."
+    role: etsy
+    skills: [cross-org-influence, ads, business-impact, collaboration]
+    archetypes: [A, B]
+    domain: e-commerce
+    evidence_strength: strong
+
+  - id: etsy-strategy
+    bullet: "Co-authored the 3-year technical strategy for the Search Retrieval initiative."
+    role: etsy
+    skills: [technical-strategy, roadmap, long-term-vision]
+    archetypes: [A, B]
+    domain: e-commerce
+    evidence_strength: strong
+
+  - id: etsy-experiment-velocity
+    bullet: "Doubled the speed of online experimentation by initiating collaborations with analytics, product, and enablement teams to build new tooling [mechanism detail needed]."
+    role: etsy
+    skills: [ab-testing, experimentation-velocity, cross-org-influence, tooling]
+    archetypes: [A, B]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 Etsy: mechanism
+
+  - id: etsy-experiment-success
+    bullet: "Doubled the rate of successful online experiments within 2 quarters by developing robust offline-evaluation metrics and processes [mechanism detail needed]."
+    role: etsy
+    skills: [evaluation, offline-evaluation, ab-testing, experimentation-velocity]
+    archetypes: [A, B]
+    domain: e-commerce
+    evidence_strength: weak  # TODO §3 Etsy: mechanism
+
+  # ---------------- UPMC Enterprises (Director, 07/2019–03/2022) ----------------
+  - id: upmc-product-team
+    bullet: "Led a product team of ~12 engineering/QA ICs and product/engineering managers, building an Elasticsearch-based search engine over 160M+ clinical documents."
+    role: upmc-director
+    skills: [team-leadership, elasticsearch, search, healthcare, clinical-nlp]
+    archetypes: [A]
+    domain: healthcare
+    evidence_strength: strong
+
+  - id: upmc-ml-team
+    bullet: "Led an applied-ML team of ~3 ML engineers — created career paths, hiring, performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer."
+    role: upmc-director
+    skills: [team-leadership, mentorship, hiring, performance-management, career-development]
+    archetypes: [A]
+    domain: healthcare
+    evidence_strength: strong
+
+  - id: upmc-ml-applications
+    bullet: "Partnered with product and provider/payor stakeholders to apply ML to claims processing, automated coding, risk stratification, and retrospective analysis — time-series models, LSTMs, CNNs, and decision trees [outcomes per application needed]."
+    role: upmc-director
+    skills: [healthcare, claims-processing, risk-stratification, time-series, stakeholder-management]
+    archetypes: [A]
+    domain: healthcare
+    evidence_strength: weak  # TODO §4.3: techniques without outcomes; TODO §3 UPMC: realized savings
+
+  - id: upmc-pitching
+    bullet: "Identified ML projects worth $Ms in savings, pitched them to SVPs and the CTO, developed prototypes, and executed pilots with provider/payor groups [realized vs. pipeline needed]."
+    role: upmc-director
+    skills: [executive-communication, opportunity-analysis, prototyping, business-impact]
+    archetypes: [A, C]
+    domain: healthcare
+    evidence_strength: weak  # TODO §3 UPMC: realized vs. pipeline
+
+  - id: upmc-vendor-management
+    bullet: "Managed collaborations with ML/NLP healthcare startups and academic labs — reviewed proposals, negotiated contracts, and oversaw project delivery [contract dollar scale needed]."
+    role: upmc-director
+    skills: [vendor-management, contract-negotiation, research-collaboration, partnership-management]
+    archetypes: [A, C]
+    domain: healthcare
+    evidence_strength: weak  # TODO §3 UPMC: dollar scale
+
+  # ---------------- UPMC Enterprises (Senior Data Scientist, 09/2018–07/2019) ----------------
+  - id: upmc-sds-sdoh
+    bullet: "Developed a search engine for social-determinants-of-health indicators across millions of clinical documents to identify high-risk patients for intervention."
+    role: upmc-sds
+    skills: [search, clinical-nlp, healthcare, information-extraction, risk-stratification]
+    archetypes: [A, B]
+    domain: healthcare
+    evidence_strength: strong
+
+  # ---------------- Cross-role (confirmed facts, CONTEXT §1) ----------------
+  - id: xrole-promos-calibration
+    bullet: "Delivered 3 IC promotions (2 at Etsy, 1 at UPMC) and participated in leveling calibration at both companies; performance-managed out 1 low performer at each of UPMC, Etsy, and Vody."
+    role: cross-role  # render inside the relevant role's block or a leadership summary, never as a standalone role
+    skills: [performance-management, career-development, calibration, mentorship]
+    archetypes: [A]
+    domain: domain-general
+    evidence_strength: strong
+
+# ---- GENERATED: skills_evidence_matrix (regenerate via TODO.md §1 script; do not hand-edit) ----
+# Skills with only publication evidence are still valid (publications count regardless of age),
+# but check whether an experience bullet would strengthen them.
+skills_evidence_matrix:
+  ab-testing:
+    bullets: ['vody-evaluation', 'etsy-gms', 'etsy-experiment-velocity', 'etsy-experiment-success']
+    publications: []
+  ads:
+    bullets: ['etsy-retrieval-systems', 'etsy-ads-revenue']
+    publications: []
+  agents:
+    bullets: []
+    publications: ['ecsm-cikm26']
+  ann:
+    bullets: ['vody-serving-stack']
+    publications: []
+  applied-science-management:
+    bullets: ['etsy-team']
+    publications: []
+  aws:
+    bullets: ['vody-inference']
+    publications: []
+  bert:
+    bullets: ['vody-serving-stack']
+    publications: []
+  business-impact:
+    bullets: ['etsy-gms', 'etsy-ads-revenue', 'upmc-pitching']
+    publications: []
+  calibration:
+    bullets: ['xrole-promos-calibration']
+    publications: []
+  candidate-retrieval:
+    bullets: []
+    publications: ['ecom23-xwalk']
+  career-development:
+    bullets: ['upmc-ml-team', 'xrole-promos-calibration']
+    publications: []
+  claims-processing:
+    bullets: ['upmc-ml-applications']
+    publications: []
+  clinical-nlp:
+    bullets: ['upmc-product-team', 'upmc-sds-sdoh']
+    publications: []
+  clip:
+    bullets: ['vody-serving-stack']
+    publications: []
+  clustering:
+    bullets: []
+    publications: ['hsdm20-clustering']
+  collaboration:
+    bullets: ['etsy-ads-revenue']
+    publications: []
+  computational-linguistics:
+    bullets: []
+    publications: ['ctr26-rumination']
+  content-optimization:
+    bullets: []
+    publications: ['iclr26-geo']
+  contract-negotiation:
+    bullets: ['upmc-vendor-management']
+    publications: []
+  conversational-agents:
+    bullets: ['vody-feeds']
+    publications: []
+  conversion-optimization:
+    bullets: ['etsy-gms']
+    publications: []
+  copy-generation:
+    bullets: ['vody-demo']
+    publications: []
+  cross-functional-leadership:
+    bullets: ['vody-team']
+    publications: []
+  cross-org-influence:
+    bullets: ['vody-academic-collabs', 'etsy-ads-revenue', 'etsy-experiment-velocity']
+    publications: []
+  crowdsourcing:
+    bullets: []
+    publications: ['tist16-crowd']
+  customer-facing:
+    bullets: ['vody-roadmap']
+    publications: []
+  data-analysis:
+    bullets: ['vody-error-analysis']
+    publications: []
+  data-optimization:
+    bullets: ['vody-feeds']
+    publications: []
+  demo-engineering:
+    bullets: ['vody-demo']
+    publications: []
+  dense-retrieval:
+    bullets: []
+    publications: ['sigir22-dense-retrieval']
+  distributed-search:
+    bullets: []
+    publications: ['thesis19', 'irj17-selective-search', 'sigir16-load-balancing']
+  duckdb:
+    bullets: ['vody-error-analysis']
+    publications: []
+  e-commerce:
+    bullets: ['vody-feeds']
+    publications: ['ecsm-cikm26']
+  efficiency:
+    bullets: []
+    publications: ['irj17-selective-search', 'sigir16-load-balancing', 'ecir16-wand']
+  elasticsearch:
+    bullets: ['upmc-product-team']
+    publications: []
+  emr:
+    bullets: []
+    publications: ['hsdm20-clustering']
+  enterprise-sales:
+    bullets: ['vody-arr']
+    publications: []
+  error-analysis:
+    bullets: ['vody-error-analysis']
+    publications: []
+  evaluation:
+    bullets: ['vody-evaluation', 'etsy-experiment-success']
+    publications: ['ecsm-cikm26', 'tois19-shards', 'ictir18-shard-eval']
+  executive-communication:
+    bullets: ['vody-fundraising', 'upmc-pitching']
+    publications: []
+  experimental-methodology:
+    bullets: []
+    publications: ['tois19-shards']
+  experimentation-velocity:
+    bullets: ['etsy-experiment-velocity', 'etsy-experiment-success']
+    publications: []
+  federated-search:
+    bullets: []
+    publications: ['sigir17-ltr-resources']
+  fundraising:
+    bullets: ['vody-fundraising']
+    publications: []
+  gcp:
+    bullets: ['vody-inference']
+    publications: []
+  generative-engine-optimization:
+    bullets: ['vody-academic-collabs']
+    publications: ['iclr26-geo']
+  gpu-optimization:
+    bullets: []
+    publications: ['ecom25-inference']
+  graph-ml:
+    bullets: ['vody-serving-stack', 'etsy-gms']
+    publications: ['ecom23-xwalk']
+  gtm:
+    bullets: ['vody-arr']
+    publications: []
+  hands-on-ml:
+    bullets: ['vody-attribute-tagging', 'vody-demo', 'vody-error-analysis']
+    publications: []
+  healthcare:
+    bullets: ['upmc-product-team', 'upmc-ml-applications', 'upmc-sds-sdoh']
+    publications: ['ctr26-rumination', 'hsdm20-clustering']
+  hiring:
+    bullets: ['vody-team', 'etsy-team', 'upmc-ml-team']
+    publications: []
+  human-in-the-loop:
+    bullets: ['vody-evaluation']
+    publications: ['tist16-crowd']
+  industry-ml:
+    bullets: []
+    publications: ['sigir22-dense-retrieval']
+  information-extraction:
+    bullets: ['upmc-sds-sdoh']
+    publications: []
+  information-retrieval:
+    bullets: []
+    publications: ['tois19-shards', 'thesis19', 'ictir18-shard-eval', 'sigir17-ltr-resources', 'irj17-selective-search']
+  kubernetes:
+    bullets: ['vody-inference']
+    publications: []
+  learning-to-rank:
+    bullets: []
+    publications: ['sigir17-ltr-resources']
+  llm:
+    bullets: []
+    publications: ['ecsm-cikm26', 'iclr26-geo']
+  llm-evaluation:
+    bullets: ['vody-evaluation']
+    publications: []
+  llm-fine-tuning:
+    bullets: ['vody-attribute-tagging']
+    publications: []
+  llm-inference:
+    bullets: ['vody-inference']
+    publications: ['ecom25-inference']
+  load-balancing:
+    bullets: []
+    publications: ['sigir16-load-balancing']
+  long-term-vision:
+    bullets: ['etsy-strategy']
+    publications: []
+  mental-health:
+    bullets: []
+    publications: ['ctr26-rumination']
+  mentorship:
+    bullets: ['etsy-team', 'upmc-ml-team', 'xrole-promos-calibration']
+    publications: []
+  multimodal:
+    bullets: ['vody-attribute-tagging', 'vody-serving-stack']
+    publications: []
+  ner:
+    bullets: []
+    publications: ['hsdm20-clustering']
+  nlp:
+    bullets: []
+    publications: ['ctr26-rumination', 'hsdm20-clustering']
+  offline-evaluation:
+    bullets: ['etsy-experiment-success']
+    publications: []
+  opportunity-analysis:
+    bullets: ['upmc-pitching']
+    publications: []
+  partnership-management:
+    bullets: ['upmc-vendor-management']
+    publications: []
+  performance-management:
+    bullets: ['etsy-team', 'upmc-ml-team', 'xrole-promos-calibration']
+    publications: []
+  product-search:
+    bullets: ['vody-feeds']
+    publications: ['ecom23-xwalk']
+  product-strategy:
+    bullets: ['vody-arr', 'vody-roadmap']
+    publications: []
+  production-ml:
+    bullets: ['vody-inference']
+    publications: ['ecom25-inference']
+  prototyping:
+    bullets: ['vody-demo', 'upmc-pitching']
+    publications: []
+  query-enrichment:
+    bullets: ['vody-demo']
+    publications: []
+  query-logs:
+    bullets: ['vody-error-analysis']
+    publications: []
+  query-processing:
+    bullets: []
+    publications: ['ecir16-wand']
+  qwen:
+    bullets: ['vody-attribute-tagging']
+    publications: []
+  rag:
+    bullets: ['vody-serving-stack']
+    publications: []
+  ranking:
+    bullets: []
+    publications: ['tist16-crowd']
+  real-time-systems:
+    bullets: ['etsy-retrieval-systems']
+    publications: []
+  recommendations:
+    bullets: ['etsy-retrieval-systems']
+    publications: ['ecom23-xwalk']
+  remote-leadership:
+    bullets: ['vody-team', 'etsy-team']
+    publications: []
+  research-collaboration:
+    bullets: ['vody-academic-collabs', 'upmc-vendor-management']
+    publications: []
+  retrieval:
+    bullets: ['etsy-retrieval-systems', 'etsy-gms']
+    publications: []
+  risk-stratification:
+    bullets: ['upmc-ml-applications', 'upmc-sds-sdoh']
+    publications: []
+  roadmap:
+    bullets: ['vody-roadmap', 'etsy-strategy']
+    publications: []
+  search:
+    bullets: ['etsy-retrieval-systems', 'upmc-product-team', 'upmc-sds-sdoh']
+    publications: ['iclr26-geo', 'sigir22-dense-retrieval', 'tist16-crowd']
+  selective-search:
+    bullets: []
+    publications: ['thesis19', 'ictir18-shard-eval', 'irj17-selective-search', 'sigir16-load-balancing', 'ecir16-wand']
+  semantic-search:
+    bullets: []
+    publications: ['sigir22-dense-retrieval']
+  serving:
+    bullets: ['vody-inference']
+    publications: ['ecom25-inference']
+  solr:
+    bullets: ['etsy-retrieval-systems', 'etsy-gms']
+    publications: []
+  stakeholder-management:
+    bullets: ['upmc-ml-applications']
+    publications: []
+  statistics:
+    bullets: []
+    publications: ['tois19-shards']
+  storytelling:
+    bullets: ['vody-fundraising']
+    publications: []
+  team-building:
+    bullets: ['vody-team']
+    publications: []
+  team-leadership:
+    bullets: ['etsy-team', 'upmc-product-team', 'upmc-ml-team']
+    publications: []
+  technical-strategy:
+    bullets: ['etsy-strategy']
+    publications: []
+  time-series:
+    bullets: ['upmc-ml-applications']
+    publications: []
+  tooling:
+    bullets: ['etsy-experiment-velocity']
+    publications: []
+  unsupervised-methods:
+    bullets: []
+    publications: ['ictir18-shard-eval']
+  user-simulation:
+    bullets: ['vody-academic-collabs']
+    publications: ['ecsm-cikm26']
+  vendor-management:
+    bullets: ['upmc-vendor-management']
+    publications: []
+  vllm:
+    bullets: ['vody-inference']
+    publications: ['ecom25-inference']
+  vlm:
+    bullets: ['vody-attribute-tagging']
+    publications: []
+  wand:
+    bullets: []
+    publications: ['ecir16-wand']

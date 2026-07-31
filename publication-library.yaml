@@ -1,0 +1,131 @@
+# publication-library.yaml — complete publication record
+# Schema: CONTEXT.md §5. Selection & rendering rules: CONTEXT.md §3 + build-variant skill.
+# Resumes show selected subsets; this file is the full inventory.
+#
+# EXCLUDED by design: workshop-overview papers for workshops Yubin co-organized
+# (ECOM23/24/25/26, DaQuaMRec 2025, HSDM 2020 overview). Those are service, recorded in
+# academic-record.yaml, and must never render as publications.
+#
+# Year, venue name, and author position are read from `citation`.
+# Entries marked "# VERIFY" have a work_origin inferred from dates/coauthors — confirm.
+
+publications:
+  - id: ecsm-cikm26
+    citation: "Saber Zerhoudi, **Yubin Kim**, Michael Granitzer. 2026. eCSM: A Complex Shopper Model for E-Commerce. Under review at CIKM 2026."
+    venue_tier: under-review
+    work_origin: vody
+    skills: [user-simulation, e-commerce, llm, agents, evaluation]
+    relevance_note: "Active research collaboration on LLM-based shopper simulation; archetype B only, labeled under review."
+    url: ""
+
+  - id: iclr26-geo
+    citation: "Yujiang Wu, Shanshan Zhong, **Yubin Kim**, Chenyan Xiong. 2026. What Generative Search Engines Like and How to Optimize Web Content Cooperatively. In Proceedings of the 14th International Conference on Learning Representations (ICLR)."
+    venue_tier: top-tier-conference
+    work_origin: vody
+    skills: [generative-engine-optimization, llm, search, content-optimization]
+    relevance_note: "Anchor slot in all archetypes: current-year top-tier paper, directly on LLM-era search; evidences Vody's academic collaborations."
+    url: "https://arxiv.org/abs/2510.11438"
+
+  - id: ctr26-rumination
+    citation: "Mary V. Strege, Rebecca A. Krawczak, **Yubin Kim**, Julia Semerod, Lisa Brush, Greg J. Siegle. 2026. Ruminative Thought Content Changes by Year: A Computational Linguistic Analysis. Cognitive Therapy and Research 50(1), 241–253."
+    venue_tier: journal
+    work_origin: vody # VERIFY — inferred from Pittsburgh clinical coauthors; publication postdates UPMC tenure
+    skills: [nlp, computational-linguistics, healthcare, mental-health]
+    relevance_note: "Clinical NLP collaboration; useful for healthcare-domain applications, otherwise skip."
+    url: ""
+
+  - id: ecom25-inference
+    citation: "**Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. Lessons from the bleeding edge: large-scale production inference of LLMs. In Proceedings of eCom'25: ACM SIGIR Workshop on eCommerce."
+    venue_tier: workshop
+    work_origin: vody
+    skills: [llm-inference, vllm, production-ml, serving, gpu-optimization]
+    relevance_note: "Double-duty for Vody: first-author proof of hands-on production LLM serving depth. Must read as a workshop paper."
+    url: "https://ceur-ws.org/Vol-4123/paper_31.pdf"
+
+  - id: ecom23-xwalk
+    citation: "Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. XWalk: Random Walk Based Candidate Retrieval for Product Search. In Proceedings of eCom'23: ACM SIGIR Workshop on eCommerce."
+    venue_tier: workshop
+    work_origin: etsy
+    skills: [graph-ml, candidate-retrieval, product-search, recommendations]
+    relevance_note: "Double-duty for Etsy: the graph-ML retrieval work behind the GMS impact. Must read as a workshop paper."
+    url: "https://ceur-ws.org/Vol-3589/paper_22.pdf"
+
+  - id: sigir22-dense-retrieval
+    citation: "**Yubin Kim**. 2022. Applications and Future of Dense Retrieval in Industry. In Proceedings of the 45th International ACM SIGIR Conference (SIRIP)."
+    venue_tier: top-tier-conference
+    work_origin: etsy  # VERIFY — SIGIR 2022 was July, shortly after joining Etsy; may reflect UPMC-era invitation
+    skills: [dense-retrieval, semantic-search, industry-ml, search]
+    relevance_note: "Sole-author industry-track perspective piece; pairs with the SIRIP panel in academic-record.yaml. Signals recognized industry voice on dense retrieval."
+    url: ""
+
+  - id: hsdm20-clustering
+    citation: "Nithin Haridas, **Yubin Kim**. 2020. Clustering Large-scale Diverse Electronic Medical Records to Aid Annotation for Generic Named Entity Recognition. In Health Search and Data Mining Workshop (HSDM @ WSDM), 43–50."
+    venue_tier: workshop
+    work_origin: upmc
+    skills: [clustering, nlp, ner, healthcare, emr]
+    relevance_note: "Double-duty for UPMC: clinical NLP at 160M+ document scale. Healthcare-domain applications; last-author supervising — mentorship evidence."
+    url: "https://ceur-ws.org/Vol-2551/paper-08.pdf"
+
+  - id: tois19-shards
+    citation: "Nicola Ferro, **Yubin Kim**, Mark Sanderson. 2019. Using Collection Shards to Study Retrieval Performance Effect Sizes. ACM Transactions on Information Systems (TOIS) 37(3), 1–40."
+    venue_tier: journal
+    work_origin: cmu
+    skills: [evaluation, information-retrieval, experimental-methodology, statistics]
+    relevance_note: "Rigorous IR evaluation methodology in the field's top journal; evidences evaluation depth."
+    url: ""
+
+  - id: thesis19
+    citation: "**Yubin Kim**. 2019. Robust Selective Search. Ph.D. thesis, Carnegie Mellon University."
+    venue_tier: thesis
+    work_origin: cmu
+    skills: [selective-search, distributed-search, information-retrieval]
+    relevance_note: "Rarely listed (Education section covers the PhD); in the library for completeness."
+    url: ""
+
+  - id: ictir18-shard-eval
+    citation: "**Yubin Kim**, Jamie Callan. 2018. Measuring the Effectiveness of Selective Search Index Partitions without Supervision. In Proceedings of the 2018 ACM SIGIR International Conference on the Theory of Information Retrieval (ICTIR)."
+    venue_tier: conference
+    work_origin: cmu
+    skills: [selective-search, evaluation, unsupervised-methods, information-retrieval]
+    relevance_note: "Unsupervised evaluation of index partitions; depth evidence for search infrastructure roles."
+    url: ""
+
+  - id: sigir17-ltr-resources
+    citation: "Zhuyun Dai, **Yubin Kim**, Jamie Callan. 2017. Learning to Rank Resources. In Proceedings of the 40th International ACM SIGIR Conference, 837–840."
+    venue_tier: top-tier-conference
+    work_origin: cmu
+    skills: [learning-to-rank, information-retrieval, federated-search]
+    relevance_note: "Evidence for the learning-to-rank skill; SIGIR short paper."
+    url: "https://www.cs.cmu.edu/~callan/Papers/sigir17-Zhuyun-Dai.pdf"
+
+  - id: irj17-selective-search
+    citation: "**Yubin Kim**, Jamie Callan, J. Shane Culpepper, Alistair Moffat. 2017. Efficient Distributed Selective Search. Information Retrieval Journal 20(3), 221–252."
+    venue_tier: journal
+    work_origin: cmu
+    skills: [distributed-search, selective-search, efficiency, information-retrieval]
+    relevance_note: "Journal version of the selective-search line; historical IR depth for roles valuing field evolution."
+    url: "https://www.cs.cmu.edu/~callan/Papers/IRJ16-yubink.pdf"
+
+  - id: tist16-crowd
+    citation: "**Yubin Kim**, Kevyn Collins-Thompson, Jaime Teevan. 2016. Using the Crowd to Improve Search Result Ranking and the Search Experience. ACM Transactions on Intelligent Systems and Technology (TIST) 7(4), 1–24."
+    venue_tier: journal
+    work_origin: cmu  # Microsoft Research collaboration (2013 internship line)
+    skills: [crowdsourcing, ranking, human-in-the-loop, search]
+    relevance_note: "Human-in-the-loop ranking — connects to Vody's human-in-the-loop evaluation claim; MSR collaboration."
+    url: ""
+
+  - id: sigir16-load-balancing
+    citation: "**Yubin Kim**, Jamie Callan, J. Shane Culpepper, Alistair Moffat. 2016. Load-Balancing in Distributed Selective Search. In Proceedings of the 39th International ACM SIGIR Conference."
+    venue_tier: top-tier-conference
+    work_origin: cmu
+    skills: [distributed-search, load-balancing, selective-search, efficiency]
+    relevance_note: "SIGIR main-conference systems work; historical IR depth."
+    url: ""
+
+  - id: ecir16-wand
+    citation: "**Yubin Kim**, Jamie Callan, J. Shane Culpepper, Alistair Moffat. 2016. Does Selective Search Benefit from WAND Optimization? In Proceedings of the European Conference on Information Retrieval (ECIR), 145–158."
+    venue_tier: conference
+    work_origin: cmu
+    skills: [query-processing, wand, efficiency, selective-search]
+    relevance_note: "Query-processing efficiency; historical IR depth."
+    url: ""

@@ -1,0 +1,78 @@
+# academic-record.yaml — co-organized workshops, academic service, invited talks & panels
+# Schema: CONTEXT.md §5. Rendering & selection rules: CONTEXT.md §3.
+# This is the COMPLETE record; resumes show selected subsets.
+# Hand-edit freely. Keep talk titles verbatim.
+
+workshops:  # peer-reviewed workshops CO-ORGANIZED (service, never rendered as publications)
+  - name: "Workshop on eCommerce"
+    host: "SIGIR"
+    years: "2023–2026"
+  - name: "Workshop on Data Quality-Aware Multimodal Recommendation"
+    host: "RecSys"
+    years: "2025–2026"
+  - name: "Workshop on Multimodal Search and Recommendations"
+    host: "ICDM"
+    years: "2025"
+  - name: "Workshop on Health Search and Data Mining"
+    host: "WSDM"
+    years: "2020"
+
+service:
+  - role: "Sponsorship Co-chair"
+    venue: "SIGIR"
+    year: 2026
+  - role: "PC Area Chair"
+    venue: "ICTIR"
+    year: 2026
+  - role: "AnalytiCup Chair"
+    venue: "CIKM"
+    year: 2026
+  - role: "WSDM Cup Chair"
+    venue: "WSDM"
+    year: 2026
+  - role: "Demonstration Track Co-chair"
+    venue: "SIGIR"
+    year: 2025
+  - role: "Editorial board"
+    venue: "Foundations and Trends in Information Retrieval"
+    year: ongoing
+  - role: "Senior PC"
+    venue: "SIGIR, CIKM, WSDM, TheWebConf"
+    year: ongoing
+
+talks:
+  - title: "LLMs are magic … or are they? Stories from the trenches of building a startup on GenAI"
+    kind: keynote
+    venue: "CIKM Workshop on Multimodal Search and Recommendations"
+    year: 2024
+    topic_tags: [genai, llm, startup, e-commerce]
+  - title: "40,000 Note Types: EMRs in the Real World"
+    kind: invited-talk
+    venue: "Artificial Intelligence for Data Discovery and Reuse Symposium (2020); Brown University (2019)"
+    year: 2020
+    topic_tags: [healthcare, nlp, emr, data]
+  - title: ""
+    kind: panel
+    venue: "SIGIR Symposium on IR in Practice (SIRIP)"
+    year: 2023
+    topic_tags: [information-retrieval, industry, search]
+  - title: "Future and Applications of Dense Retrieval"
+    kind: panel
+    venue: "SIRIP Panel, SIGIR"
+    year: 2022
+    topic_tags: [dense-retrieval, search, information-retrieval]
+  - title: "Data for Artificial Intelligence"
+    kind: panel
+    venue: "Value for Health CoLAB"
+    year: 2021
+    topic_tags: [healthcare, ai, data]
+  - title: "Top of Mind Exchange: AI"
+    kind: panel
+    venue: "Center for Connected Medicine"
+    year: 2020
+    topic_tags: [healthcare, ai]
+  - title: ""
+    kind: judge
+    venue: "Carnegie Mellon University, MS in AI and Innovation capstone competition"
+    year: 2026
+    topic_tags: [education, ai, mentorship]
