@@ -99,16 +99,16 @@ defensible in a live interview.
 - **Hard requirement:** direct IC reports, not managers-of-managers. Product ML with revenue
   or customer-facing KPIs, not platform/infra.
 - **Team-size floor:** ~5 at a strong brand. Willing to build from zero.
-- **Thesis:** *"I build and lead ML teams that ship models moving business metrics, and I'm
-  technical enough to mentor Staff-level ICs."*
+- **Thesis:** *"I build and lead ML teams that ship models moving business metrics. I'm highly technical;
+  I technically mentor junior -- staff+ ICs and have an active publication record."*
 - **Foreground:** Etsy (metric wins, experiment velocity, cross-org partnerships); the §1
   people-management evidence; remote team leadership; UPMC Director scope.
 - **Compress:** publications to the budget below. Academic service to one line. Do not
-  delete — it signals technical depth — but do not let it occupy page-one real estate.
+  delete — it signals technical depth. For non-healthcare JDs, compress bullets about healthcare-specific problems.
 - **Section order:** Summary → Experience → Skills → Selected Publications (brief) → Education.
 - **Keyword emphasis:** hiring, performance management, mentorship, roadmap, A/B
   experimentation, ranking, retrieval, recommendations, cross-functional, distributed team.
-- **Publication budget:** 2–3 entries, or a single line plus Scholar link.
+- **Publication budget:** ~4 entries.
 - **Academic record budget:** co-organized workshops 1–2 compact lines — include these; they
   evidence leadership and collaboration-building, which is the archetype's core claim.
   Service: one line, 2–3 most senior roles (may merge with the workshop lines into a single
@@ -129,7 +129,7 @@ defensible in a live interview.
   research labs; (b) companies with a single engineering ladder where the Principal role
   covers ML direction.
 - **Thesis:** *"I set multi-year technical direction for search and recommendation systems,
-  drive adoption across orgs, and stay close enough to the code to be credible."*
+  drive adoption across orgs, and can be hands-on"*
 - **Positioning:** applied, not academic. Applying existing research to direct customer
   impact. Scope is cross-org influence, not a single team. Reports optional; mentorship
   expected.
@@ -192,8 +192,6 @@ the Applied Scientist posting.
 **Do**
 - Bullet formula: **action → mechanism → measured outcome.** Mechanism earns technical
   credibility; outcome earns the interview.
-- Quantify with denominators (team of 5 within a 40-person org; $40M GMS at a marketplace
-  with 90M buyers).
 - Pair business metrics with model/system metrics.
 - Mirror the JD's exact vocabulary. If the JD says "recommender systems," don't write "recs."
 - Front-load the most JD-relevant role; compress the rest.
@@ -223,8 +221,6 @@ the Applied Scientist posting.
   containing "SIGIR Workshop" is not a SIGIR main-conference paper, and a
   program-committee-level reader will catch the difference immediately. `venue_tier` in the
   publication library is authoritative.
-- **Under-review entries: archetype B only**, labeled explicitly as under review. Never in A
-  or C, where it reads as padding. Remove immediately if rejected.
 - **A publication is valid evidence regardless of its age.** Some target roles explicitly
   value historical depth in the IR field.
 - **Prefer experience as primary evidence.** Where a skill is evidenced by both a bullet and
