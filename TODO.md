@@ -22,7 +22,9 @@ Point-in-time information. Nothing here is a durable rule — durable rules live
    usually alongside a bracketed placeholder in the text. Schema simplified 2026-08-05: fields
    are `id`, `bullet`, `skills[]`, `archetypes[]` only — `evidence_strength` and `domain` were
    removed (domain is now a `skills[]` tag: `e-commerce` / `healthcare`). Bullets
-   are grouped under top-level role keys (no per-bullet `role:`). The skills-evidence matrix
+   are nested under `roles:` (spine folded in from CONTEXT.md §1 on 2026-08-05: `tenure`,
+   per-role `title`/`org`/`dates`/`context`/`team`/`management`, `internships`), so all
+   career-experience facts are hand-editable in one file. The skills-evidence matrix
    is generated into `skills-evidence-matrix.yaml`; regenerate it after editing any `skills[]`
    field with `python3 gen_matrix.py` from the repo root. Remaining work: fill placeholders as
    §3 answers arrive; decompose `vody-serving-stack` (the legacy tool-dump remnant).
@@ -34,12 +36,15 @@ Point-in-time information. Nothing here is a durable rule — durable rules live
    compressed context lines instead), and did **not** strip the `[…needed]` placeholders from
    the weak library bullets (variants render placeholder-free; the library keeps the brackets
    as open-question reminders). Next steps:
-   - Fill the §3 evidence gaps and re-render affected bullets — most valuable: a real,
-     outcome-bearing **RAG / agentic tool-use** bullet (currently unevidenced, so RAG/CLIP/
-     BERT/ANN appear in no variant's Skills; `vody-serving-stack` stays excluded until
-     decomposed).
+   - ~~Decompose the Vody tool-dump remnant~~ — **done 2026-08-05** (user): `vody-inference`
+     now carries RAG + fine-tuned LLMs on vLLM/K8s over a 150k+ catalog, and
+     `vody-serving-stack` is distilled BERT classifiers on AWS over a 50M item catalog. RAG,
+     BERT, and distillation now have bullet evidence; CLIP and ANN are gone from the library
+     entirely, so neither may appear in any variant's Skills.
+   - Still missing: an outcome-bearing **agentic tool-use** bullet (highest-value gap; see §3).
+     The rewritten Vody bullets also state mechanism without a measured outcome — add lift,
+     cost, or throughput numbers when available.
    - Run `score-resume` per variant **with a real JD** (items 1 and 11 were N/A at build time).
-   - Stand up the designed-PDF rendering pipeline (§5) now that the first variants exist.
    - Tailor to specific postings via `tailor-to-jd` as they arrive.
 4. Retire the legacy CV as a source document once the libraries capture everything in it.
 
@@ -146,8 +151,11 @@ for the same mislabeling during the sync pass (§5).
 
 ## 5. Deferred decisions
 
-- Designed-PDF rendering pipeline for the human-facing artifact (the variants themselves are
-  the ATS-safe plain versions). Decide tooling when the first variant is done.
+- ~~Designed-PDF rendering pipeline for the human-facing artifact~~ — resolved 2026-08-05:
+  `render/render.py` (Python + `markdown` → self-contained printable HTML → PDF via headless
+  Chrome), styled after the legacy `prettycv.html` but single-column. The variants remain the
+  ATS-safe plain versions. Outputs land in `build/` (git-ignored); `--fit` closes a short
+  overflow by tightening type density rather than cutting content.
 - ~~Whether to add a talks/speaking library~~ — resolved 2026-07-30: `academic-record.yaml`
   holds talks, service, and co-organized workshops.
 - LinkedIn synchronization pass once variant A or B is final (CONTEXT.md §3: no

@@ -1,0 +1,25 @@
+The Personalization team makes deciding what to play next easier and more enjoyable for every listener. From Blend to Discover Weekly, we’re behind some of Spotify’s most-loved features. We built them by understanding the world of music and podcasts better than anyone else. Join us and you’ll keep millions of users listening by making great recommendations to each and every one of them.
+You'll join the Saturn squad within Sessions, part of Spotify's Personalization Mission. The team is focused on training and improving the machine learning models that rank and personalize some of Spotify's most-loved listening experiences, including Radio and Daily Mix. As part of Personalization's broader strategy, the team is also helping shape the future of generative recommendations by developing and adopting new approaches that leverage large language models, including fine-tuning models to improve the quality, relevance, and personalization of our playlists. As the Engineering Manager, you'll lead a talented team of machine learning, backend and data engineers while providing both technical direction and people leadership, helping the team deliver innovative ML capabilities that reach millions of listeners every day.
+What You'll Do
+
+Lead, coach, and develop a team of machine learning engineers, creating an inclusive, high-performing engineering culture.
+Set the technical direction for the team while partnering with Product, Data Science, and Engineering leaders to deliver impactful machine learning capabilities.
+Guide the design, development, deployment, and operation of production machine learning systems at scale.
+Support engineers through technical mentorship, career development, performance management, and regular feedback.
+Drive execution by helping the team prioritize work, remove obstacles, and continuously improve delivery.
+Foster engineering excellence through modern software engineering practices, experimentation, and operational excellence.
+Partner across squads and missions to influence technical strategy and ensure alignment across the Personalization organization.
+Champion thoughtful adoption of emerging machine learning technologies, including large language models, where they create meaningful user value.
+Who You Are
+
+You have experience leading and developing high-performing engineering teams.
+You have built trust through coaching, mentoring, and supporting engineers in their career growth.
+You have deep expertise building and operating production machine learning systems at scale.
+You understand the end-to-end machine learning lifecycle, from experimentation through deployment and monitoring.
+You are experienced working with modern machine learning techniques, including large language models and generative AI applications.
+You communicate effectively across engineering, product, and data science partners.
+You care about building inclusive teams where collaboration, curiosity, and continuous learning thrive.
+You balance technical excellence with pragmatic decision-making and delivering meaningful business outcomes.
+Where You'll Be
+
+We offer you the flexibility to work where you work best! For this role, you can be within the Eastern Standard time zone.

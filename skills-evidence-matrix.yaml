@@ -4,22 +4,19 @@
 # but check whether an experience bullet would strengthen them.
 skills_evidence_matrix:
   ab-testing:
-    bullets: ['vody-evaluation', 'etsy-gms', 'etsy-experiment-velocity', 'etsy-experiment-success']
+    bullets: ['etsy-gms', 'etsy-experiment-velocity', 'etsy-experiment-success']
     publications: []
   ads:
-    bullets: ['etsy-retrieval-systems', 'etsy-ads-revenue']
+    bullets: ['etsy-ads-revenue']
     publications: []
   agents:
     bullets: []
     publications: ['ecsm-cikm26']
-  ann:
-    bullets: ['vody-serving-stack']
-    publications: []
   applied-science-management:
     bullets: ['vody-team', 'etsy-team']
     publications: []
   aws:
-    bullets: ['vody-inference']
+    bullets: ['vody-serving-stack']
     publications: []
   bert:
     bullets: ['vody-serving-stack']
@@ -39,14 +36,14 @@ skills_evidence_matrix:
   clinical-nlp:
     bullets: ['upmc-product-team', 'upmc-sds-sdoh']
     publications: []
-  clip:
-    bullets: ['vody-serving-stack']
-    publications: []
   clustering:
     bullets: []
     publications: ['hsdm20-clustering']
   collaboration:
     bullets: ['etsy-ads-revenue']
+    publications: []
+  communication:
+    bullets: ['cmu-teach']
     publications: []
   computational-linguistics:
     bullets: []
@@ -59,12 +56,6 @@ skills_evidence_matrix:
     publications: []
   conversational-agents:
     bullets: ['vody-feeds']
-    publications: []
-  conversion-optimization:
-    bullets: ['etsy-gms']
-    publications: []
-  copy-generation:
-    bullets: ['vody-demo']
     publications: []
   cross-functional-leadership:
     bullets: ['vody-team']
@@ -81,15 +72,12 @@ skills_evidence_matrix:
   data-analysis:
     bullets: ['vody-error-analysis']
     publications: []
-  data-optimization:
-    bullets: ['vody-feeds']
-    publications: []
-  demo-engineering:
-    bullets: ['vody-demo']
-    publications: []
   dense-retrieval:
     bullets: []
     publications: ['sigir22-dense-retrieval']
+  distillation:
+    bullets: ['vody-serving-stack']
+    publications: []
   distributed-search:
     bullets: []
     publications: ['thesis19', 'irj17-selective-search', 'sigir16-load-balancing']
@@ -97,7 +85,7 @@ skills_evidence_matrix:
     bullets: ['vody-error-analysis']
     publications: []
   e-commerce:
-    bullets: ['vody-arr', 'vody-feeds', 'vody-attribute-tagging', 'vody-inference', 'vody-serving-stack', 'vody-evaluation', 'vody-demo', 'vody-error-analysis', 'vody-academic-collabs', 'etsy-retrieval-systems', 'etsy-team', 'etsy-gms', 'etsy-ads-revenue', 'etsy-strategy', 'etsy-experiment-velocity', 'etsy-experiment-success']
+    bullets: ['vody-arr', 'vody-feeds', 'vody-attribute-tagging', 'vody-inference', 'vody-serving-stack', 'vody-evaluation', 'vody-demo', 'vody-error-analysis', 'vody-academic-collabs', 'etsy-team', 'etsy-gms', 'etsy-ads-revenue', 'etsy-strategy', 'etsy-experiment-velocity', 'etsy-experiment-success']
     publications: ['ecsm-cikm26']
   efficiency:
     bullets: []
@@ -142,7 +130,7 @@ skills_evidence_matrix:
     bullets: []
     publications: ['ecom25-inference']
   graph-ml:
-    bullets: ['vody-serving-stack', 'etsy-gms']
+    bullets: ['etsy-gms']
     publications: ['ecom23-xwalk']
   gtm:
     bullets: ['vody-arr']
@@ -175,7 +163,7 @@ skills_evidence_matrix:
     bullets: []
     publications: ['sigir17-ltr-resources']
   llm:
-    bullets: []
+    bullets: ['cmu-teach']
     publications: ['ecsm-cikm26', 'iclr26-geo']
   llm-evaluation:
     bullets: ['vody-evaluation']
@@ -199,7 +187,7 @@ skills_evidence_matrix:
     bullets: ['etsy-team', 'upmc-ml-team', 'xrole-promos-calibration']
     publications: []
   multimodal:
-    bullets: ['vody-attribute-tagging', 'vody-serving-stack']
+    bullets: ['vody-attribute-tagging']
     publications: []
   ner:
     bullets: []
@@ -220,7 +208,7 @@ skills_evidence_matrix:
     bullets: ['etsy-team', 'upmc-ml-team', 'xrole-promos-calibration']
     publications: []
   product-search:
-    bullets: ['vody-feeds']
+    bullets: []
     publications: ['ecom23-xwalk']
   product-strategy:
     bullets: ['vody-arr']
@@ -230,9 +218,6 @@ skills_evidence_matrix:
     publications: ['ecom25-inference']
   prototyping:
     bullets: ['vody-demo', 'upmc-pitching']
-    publications: []
-  query-enrichment:
-    bullets: ['vody-demo']
     publications: []
   query-logs:
     bullets: ['vody-error-analysis']
@@ -244,16 +229,13 @@ skills_evidence_matrix:
     bullets: ['vody-attribute-tagging']
     publications: []
   rag:
-    bullets: ['vody-serving-stack']
+    bullets: ['vody-inference']
     publications: []
   ranking:
     bullets: []
     publications: ['tist16-crowd']
-  real-time-systems:
-    bullets: ['etsy-retrieval-systems']
-    publications: []
   recommendations:
-    bullets: ['etsy-retrieval-systems']
+    bullets: ['etsy-gms']
     publications: ['ecom23-xwalk']
   remote-leadership:
     bullets: ['vody-team', 'etsy-team']
@@ -262,7 +244,7 @@ skills_evidence_matrix:
     bullets: ['vody-academic-collabs', 'upmc-vendor-management']
     publications: []
   retrieval:
-    bullets: ['etsy-retrieval-systems', 'etsy-gms']
+    bullets: ['etsy-gms']
     publications: ['ecom23-xwalk']
   risk-stratification:
     bullets: ['upmc-ml-applications', 'upmc-sds-sdoh']
@@ -271,7 +253,7 @@ skills_evidence_matrix:
     bullets: ['vody-arr', 'etsy-strategy']
     publications: []
   search:
-    bullets: ['etsy-retrieval-systems', 'upmc-product-team', 'upmc-sds-sdoh']
+    bullets: ['vody-feeds', 'upmc-product-team', 'upmc-sds-sdoh']
     publications: ['iclr26-geo', 'sigir22-dense-retrieval', 'tist16-crowd']
   selective-search:
     bullets: []
@@ -283,7 +265,7 @@ skills_evidence_matrix:
     bullets: ['vody-inference']
     publications: ['ecom25-inference']
   solr:
-    bullets: ['etsy-retrieval-systems', 'etsy-gms']
+    bullets: ['etsy-gms']
     publications: []
   stakeholder-management:
     bullets: ['upmc-ml-applications']
@@ -293,6 +275,9 @@ skills_evidence_matrix:
     publications: ['tois19-shards']
   storytelling:
     bullets: ['vody-fundraising']
+    publications: []
+  teaching:
+    bullets: ['cmu-teach']
     publications: []
   team-building:
     bullets: ['vody-team']

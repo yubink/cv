@@ -1,0 +1,26 @@
+Software Engineering Manager, Commerce Shopping Quality Journey Orchestration
+corporate_fare
+Google
+place
+Pittsburgh, PA, USA
+Minimum qualifications:
+Bachelor's degree or equivalent practical experience.
+8 years of experience in software development.
+5 years of experience leading ML design and optimizing ML infrastructure (e.g., model deployment, model evaluation, data processing, debugging, fine tuning).
+3 years of experience in a technical leadership role.
+2 years of experience with state of the art GenAI techniques (e.g., LLMs, Multi-Modal, Large Vision Models) or with GenAI-related concepts (language modeling, computer vision).
+2 years of experience in a people management or team leadership role.
+
+Preferred qualifications:
+Master’s degree or PhD in Engineering, Computer Science, or a related technical field.
+3 years of experience working in a complex, matrixed organization.
+About the job
+Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.
+
+With your extensive technical expertise you take initiative to independently design and implement new systems, designing, implementing, and testing multiple features with little or no direction from tech lead or manager. You collaborate with key stakeholders to determine future direction of work.
+
+As a Software Engineering Manager within the Journey Orchestration and Autorater (JOAA) team, you will architect the Shopping Quality Flywheel. You will focus on understanding AI quality, detecting root causes of regressions and driving improvements through advanced response orchestration. You will leverage LLM-based autoraters to define success, providing high-velocity, low-cost proxies for critical user metrics.
+
+Your core responsibilities encompass direct technical leadership for complex LLM workflows, defining a strategic outlook for a sub-team within JOAA and driving cross-functional alignment.People shop on Google more than a billion times a day - and the Commerce team is responsible for building the experiences that serve these users. The mission for Google Commerce is to be an essential part of the shopping journey for consumers - from inspiration to to a simple and secure checkout experience - and the best place for retailers/merchants to connect with consumers. We support and partner with the commerce ecosystem, from large retailers to small local merchants, to give them the tools, technology and scale to thrive in today’s digital world.Individual pay is determined by factors including job-related skills, experience, and relevant education or training.
+
+US: $207000 - $301000 (USD) + 20% bonus target + equity + benefits

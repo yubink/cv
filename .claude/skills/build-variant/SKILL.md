@@ -33,7 +33,15 @@ description: Create or edit one of the three base resume variants (A: applied-sc
   not copied verbatim.
 
 ### 2. Select bullets
-- Filter `bullet-library.yaml` to entries whose `archetypes[]` includes the target.
+- Walk `roles:` in `bullet-library.yaml` (reverse-chronological) plus `cross-role:`, filtering
+  to bullets whose `archetypes[]` includes the target.
+- **Take each role's heading straight from its role fields** — `title`, `org`, `dates`, and
+  `context` (the italic scope line). `team` and `management` supply the scope and
+  people-management facts; render them per the rules in CONTEXT.md §1, not verbatim. Never
+  retype a title, date, or team size from memory or from an older variant.
+- **A role with no bullets tagged for this archetype still appears** — render `title`, `org`, and
+  `dates`, then stop: no bullets, no scope line (CONTEXT.md §1). Never drop a role from the
+  timeline; the tags decide what a role says, not whether it appears.
 - Within each role, order by the archetype's foreground guidance, preferring bullets with no
   `# TODO` comment. A bullet carrying a TODO has an open evidence gap (usually a bracketed
   placeholder in its text) and is not resume-ready: select it only if the archetype needs the
@@ -91,9 +99,11 @@ the academic record rules (CONTEXT.md §3):
 ### 6. Assemble
 - Section order per the archetype spec.
 - Header: name, email, phone, location + remote posture, Scholar link where the archetype
-  warrants it.
+  warrants it (identity facts from CONTEXT.md §1; role headings from the library's role fields).
 - Single-column, ATS-safe structure (CONTEXT.md §3). The designed-PDF rendering is a separate
   downstream step; the variant file itself is the plain, parseable version.
+- **Target two pages** (CONTEXT.md §3) — don't trim a strong bullet to chase one page, and don't
+  pad to fill. Keep the summary, foregrounded role, and headline metrics on page one.
 - Include the remote-leadership evidence — required in every variant (CONTEXT.md §1).
 
 ### 7. Score before presenting

@@ -1,0 +1,34 @@
+About the job
+Our mission at Duolingo is to develop the best education in the world and make it universally available. It’s a big mission, and that’s where you come in!
+
+At Duolingo, you’ll join a team that cares about finding innovative solutions to complex technical problems, running countless experiments (300+ at a time!) with our massive user base to make data-driven decisions, and educating our users and employees alike. You’ll have limitless learning opportunities, mentorship and collaboration with world-class minds, and a variety of projects with large scopes — while doing work that’s both fun and meaningful.
+
+Join our life-changing mission to develop education for our half a billion (and growing!) learners around the world.
+
+About The Role...
+
+We are looking for an experienced AI Research Engineering Manager to join our Duolingo Language Learning team. The ideal candidate will have a proven track record leading multidisciplinary teams, including AI research engineers. They will have extensive experience across various machine learning techniques, including large language models, personalization, recommender systems, and experimentation. They will be comfortable working at all levels of the ML stack, including feature engineering, developing training data, fine-tuning, reinforcement learning, quality evaluations, deployment, and monitoring. On the Language Learning team, we’re building the AI systems that support the core learning features of Duolingo, improving the learning experience and helping our learners build healthy, productive habits. Given the broad set of AI domains, broad experience in AI/ML is highly desirable.
+
+🧠 You will...
+
+Manage a full-stack team of frontend, backend, and other AI Research engineers, fostering a collaborative and innovative work environment.
+Contribute to the development and training of a variety of machine learning models, including large-scale neural networks.
+Collaborate with cross-functional teams to understand their needs, to align the models’ outputs with company objectives.
+Participate in and help drive strategic product and business decision-making as a member of the Language Learning leadership group. 
+Attract, grow, and retain diverse engineering talent; provide clear expectations, coaching, and career development, and build a healthy, inclusive team culture.
+Stay up-to-date with the latest developments in machine learning and apply this knowledge to drive advancements in our projects.
+Mentor team members, providing guidance and support in their professional development.
+Ensure the delivery of high-quality, scalable, and efficient machine learning solutions.
+
+✅ You have...
+
+Experience leading, managing, and building a team of software engineers, with demonstrated ability to hire, develop, and retain talent.
+Proven experience as an AI research engineer, for example, in LLMs, bandits, computer vision, or related fields.
+Strong background in training and fine-tuning large models in an applied setting.
+Advanced degree in Computer Science, Engineering, or a related field with a focus on machine learning or artificial intelligence, or equivalent experience.
+Excellent communication and stakeholder management skills across engineering, product, design, and data; clear written specs and status updates.
+Technical depth sufficient to guide architecture and implementation trade‑offs, evolve quality standards, and mentor engineers on best practices.
+Deep understanding of machine learning concepts, frameworks, and best practices.
+
+The offered salary is dependent upon several factors, including work experience, skills, and internal peer comparisons. The posted range is subject to change in the future. For this role, base salary is supplemented by equity compensation. We encourage you to talk with your recruiter for more information related to compensation for this role!
+

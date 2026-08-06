@@ -3,14 +3,18 @@
 Run from the repo root after editing any skills[] field."""
 import yaml
 
-bl = yaml.safe_load(open('bullet-library.yaml'))   # role -> [bullets]
+bl = yaml.safe_load(open('bullet-library.yaml'))   # roles -> {meta..., bullets: [...]}, cross-role -> [bullets]
 pl = yaml.safe_load(open('publication-library.yaml'))
 
+all_bullets = [b for r in bl.get('roles', {}).values() for b in (r.get('bullets') or [])]
+all_bullets += bl.get('cross-role') or []
+
 matrix = {}
-for role_bullets in bl.values():
-    for b in role_bullets:
-        for s in b['skills']:
-            matrix.setdefault(s, {'bullets': [], 'publications': []})['bullets'].append(b['id'])
+for b in all_bullets:
+    if not b.get('skills'):
+        print(f"WARNING: bullet {b['id']} has no skills[] — it evidences nothing and cannot be traced")
+    for s in b.get('skills') or []:
+        matrix.setdefault(s, {'bullets': [], 'publications': []})['bullets'].append(b['id'])
 for p in pl['publications']:
     for s in p['skills']:
         matrix.setdefault(s, {'bullets': [], 'publications': []})['publications'].append(p['id'])
@@ -27,7 +31,6 @@ for s in sorted(matrix):
     lines.append(f"    publications: {e['publications']}")
 open('skills-evidence-matrix.yaml', 'w').write("\n".join(lines) + "\n")
 
-n_bullets = sum(len(v) for v in bl.values())
 pub_only = [s for s, e in sorted(matrix.items()) if not e['bullets']]
-print(f"skills: {len(matrix)} | bullets: {n_bullets} | pubs: {len(pl['publications'])}")
+print(f"roles: {len(bl.get('roles', {}))} | bullets: {len(all_bullets)} | pubs: {len(pl['publications'])} | skills: {len(matrix)}")
 print("publication-only skills:", pub_only)

@@ -1,44 +1,45 @@
 # Yubin Kim
 
-yubink.cs@gmail.com · 412-204-7134 · Pittsburgh, PA (remote-friendly) · [Google Scholar](https://scholar.google.com/citations?user=3F_QHHQAAAAJ)
+yubink.cs@gmail.com · 412-204-7134 · Pittsburgh, PA · [Google Scholar](https://scholar.google.com/citations?user=3F_QHHQAAAAJ)
 
 ## Summary
 
-Technical leader with 15+ years in machine learning and 7+ building and leading applied-science teams that ship production ML systems driving measurable business impact: $70M+ at Etsy, 0 → $2.5M at Vody. I technically mentor PhD- and Staff-level ICs and keep an active publication record in search and recommender systems. Track record across a 90M-buyer marketplace, a healthcare data platform, and a seed-stage startup, leading fully remote teams throughout.
+Technical leader with 15+ years in machine learning and 7+ building and leading multidisciplinary teams of scientists and engineers that ship production ML systems driving measurable business impact: $70M+ at Etsy, 0 → $2M at Vody. I work across the full ML stack — training data, fine-tuning, quality evaluation, and deployment — technically mentor PhD- and Staff-level ICs, and keep an active publication record in LLMs, search, and recommender systems. Track record across a 90M-buyer marketplace, a healthcare data platform, and a seed-stage startup.
 
-**Team leadership track record:** built Vody's team from zero (~9 hires); managed PhD scientists at both Vody and Etsy; delivered 3 IC promotions (2 at Etsy, 1 at UPMC), 2 of them to Staff level; participated in leveling calibration at Etsy and UPMC; performance-managed out 3 low performers across UPMC, Etsy, and Vody.
+**Team building, coaching, and career development:** built Vody's team from zero (~9 hires); managed PhD scientists at both Vody and Etsy; delivered 3 IC promotions (2 at Etsy, 1 at UPMC), 2 of them to Staff level; participated in leveling calibration at Etsy and UPMC; performance-managed out 3 low performers across UPMC, Etsy, and Vody.
 
 ## Experience
 
 ### Chief Science Officer — Vody — 01/2024–present
-*Seed-stage e-commerce startup, built from 0 → $2.5M revenue; owned the technical and product roadmap; reported to the CEO.*
+*Seed-stage e-commerce startup, built from 0 → $2M revenue; owned the technical and product roadmap; reported to the CEO.*
 
-- Hired ~9 and led a fully remote team of ~11 across science, engineering, product, and ops, including PhD scientists.
-- Grew revenue 0 → $2.5M ARR by converting Grubhub and Academy Sports & Outdoors as customers, and serving as primary technical contact.
-- Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+.
+- Hired ~9 and led a fully remote, full-stack & multidisciplinary team of ~11 across science, engineering, product, and ops, including PhD scientists.
 - Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog; lessons published at the SIGIR eCom'25.
-- Trained and scaled efficient, distilled BERT-based classifiers for Grubhub's 50M item catalog; built datasets for training/evaluation from scratch.
-- Productionized continuous model evaluation with human-in-the-loop review, LLM-based evaluation.
+- Trained and scaled efficient, distilled BERT-based classifiers for Grubhub's 50M item catalog; built training and evaluation data from scratch.
+- Productionized continuous model quality evaluation with LLM-based evaluation and human-in-the-loop review with a user-facing front-end.
+- Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+.
+- Grew revenue 0 → $2M ARR by converting Grubhub and Academy Sports & Outdoors as customers, and serving as primary technical contact.
 - Initiated academic collaborations on generative engine optimization (using LLMs fine-tuned with GRPO) and e-commerce user simulation, yielding peer-reviewed publications (ICLR 2026; CIKM under review).
 
 ### Adjunct Instructor — Carnegie Mellon University — 08/2025–12/2025
 
-- Taught Large Language Models: Methods and Applications, a graduate level course for 100+ students.
+- Taught Large Language Models: Methods and Applications, a graduate-level course for 100+ students.
 
 ### Senior Engineering Manager, Search Retrieval — Etsy — 04/2022–10/2023
 *Built real-time, large-scale retrieval systems powering search, recommendations, and ads at etsy.com, a marketplace of 90M+ active buyers and 100M items.*
 
 - Led a fully remote product ML team of ~5 science and engineering ICs up to Sr. Staff level, including PhD scientists; technical mentorship, hiring (2), performance management, and team processes.
 - Generated $40M+ in GMS over 1.5 years validated by A/B experiments: graph ML and Solr improvements, pioneered GNN embeddings.
-- Enabled $30M+ in ad revenue through cross-org collaborations with the Ads organization.
 - Doubled the success rate of online experiments within 2 quarters by developing robust offline evaluation metrics and processes.
 - Doubled online experiment velocity through initiating collaborations with analytics, product, and enablement teams to build new tooling, e.g. interleaving tests, end-to-end model testing.
+- Enabled $30M+ in ad revenue through cross-org collaborations with the Ads organization.
 - Co-authored the 3-year technical strategy for the Search Retrieval initiative.
 
 ### Director of Technology — UPMC Enterprises — 07/2019–03/2022
 
 - Led an applied ML team of ~3 ML engineers; created career paths, hiring, performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer.
 - Led a product team of ~12 engineering/QA ICs and product/engineering managers, building an Elasticsearch-based search engine over 160M+ clinical documents.
+- Partnered with product and provider/payor stakeholders to apply ML to claims processing, automated coding, risk stratification, and retrospective analysis using time-series models, LSTMs, and CNNs.
 - Identified ML projects worth $Ms in savings, pitched to SVPs and the CTO, developed prototypes, and executed pilots with provider/payor groups.
 
 ### Senior Data Scientist — UPMC Enterprises — 09/2018–07/2019
@@ -56,12 +57,12 @@ Full list on [Google Scholar](https://scholar.google.com/citations?user=3F_QHHQA
 
 ## Skills
 
-- **Leadership & management:** team building & hiring, managing applied scientists and engineers, performance management, leveling calibration, technical mentorship (to Sr. Staff), career development, cross-functional and distributed/remote team leadership, technical & product strategy, cross-org influence, executive communication
-- **Product ML & search:** search, retrieval, recommendations, ads retrieval, graph ML, graph neural networks, semantic search, conversational agents
-- **Experimentation & evaluation:** A/B experimentation, interleaving tests, experiment velocity, offline evaluation, LLM-based evaluation, human-in-the-loop evaluation, training & evaluation dataset construction
-- **Applied ML & production:** LLMs & GenAI for search, LLM fine-tuning (SFT, GRPO), RAG, LLM inference & serving, model distillation, BERT, GPU-efficient inference, generative engine optimization, user simulation
+- **Leadership & management:** managing multidisciplinary AI/ML teams, team building & hiring, coaching & career development, performance management, leveling calibration, technical mentorship (to Sr. Staff), cross-functional and distributed/remote team leadership, stakeholder management, technical & product strategy, roadmap ownership, cross-org influence, executive communication 
+- **LLMs & applied ML:** large language models, LLM fine-tuning, reinforcement learning post-training (GRPO), RAG, LLM inference & serving, model distillation, BERT, time-series models, LSTMs, CNNs, production ML & deployment, GPU-efficient inference, generative engine optimization, user simulation
+- **Recommender systems & search:** search, recommender systems, ranking, retrieval, graph ML, graph neural networks, ads retrieval, conversational agents 
+- **Experimentation & evaluation:** A/B experimentation, online experiment velocity, interleaving tests, offline evaluation, continuous model evaluation, human-in-the-loop, LLM-based evaluation, training & evaluation dataset construction
 - **Tools & platforms:** Python, SQL, Solr, Elasticsearch, vLLM, Kubernetes, AWS, GCP, Jupyter
-- **Domains:** e-commerce marketplace search, healthcare / clinical NLP
+- **Domains:** e-commerce marketplace search & recommendations, healthcare / clinical NLP
 
 ## Education
 

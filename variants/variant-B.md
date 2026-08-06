@@ -39,20 +39,20 @@ Principal-level applied scientist and technical leader with 15+ years in machine
 
 Name in **bold**. Venue tiers stated accurately; workshop papers labeled as such.
 
-- Yujiang Wu, Shanshan Zhong, **Yubin Kim**, Chenyan Xiong. 2026. What Generative Search Engines Like and How to Optimize Web Content Cooperatively. In *Proceedings of the 14th International Conference on Learning Representations (ICLR)*.
-- **Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. Lessons from the bleeding edge: large-scale production inference of LLMs. In *Proceedings of eCom'25: ACM SIGIR Workshop on eCommerce*.
+- Yujiang Wu, Shanshan Zhong, **Yubin Kim**, Chenyan Xiong. 2026. [What Generative Search Engines Like and How to Optimize Web Content Cooperatively](https://arxiv.org/abs/2510.11438). In *Proceedings of the 14th International Conference on Learning Representations (ICLR)*.
+- **Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. [Lessons from the bleeding edge: large-scale production inference of LLMs](https://ceur-ws.org/Vol-4123/paper_31.pdf). In *Proceedings of eCom'25: ACM SIGIR Workshop on eCommerce*.
 - Saber Zerhoudi, **Yubin Kim**, Michael Granitzer. 2026. eCSM: A Complex Shopper Model for E-Commerce. *Under review at CIKM 2026*.
-- Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. XWalk: Random Walk Based Candidate Retrieval for Product Search. In *Proceedings of eCom'23: ACM SIGIR Workshop on eCommerce*.
+- Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. [XWalk: Random Walk Based Candidate Retrieval for Product Search](https://ceur-ws.org/Vol-3589/paper_22.pdf). In *Proceedings of eCom'23: ACM SIGIR Workshop on eCommerce*.
 - **Yubin Kim**. 2022. Applications and Future of Dense Retrieval in Industry. In *Proceedings of the 45th International ACM SIGIR Conference (SIRIP)*.
 - Nicola Ferro, **Yubin Kim**, Mark Sanderson. 2019. Using Collection Shards to Study Retrieval Performance Effect Sizes. *ACM Transactions on Information Systems (TOIS)* 37(3), 1–40.
-- Zhuyun Dai, **Yubin Kim**, Jamie Callan. 2017. Learning to Rank Resources. In *Proceedings of the 40th International ACM SIGIR Conference*, 837–840.
-- **Yubin Kim**, Jamie Callan, J. Shane Culpepper, Alistair Moffat. 2017. Efficient Distributed Selective Search. *Information Retrieval Journal* 20(3), 221–252.
+- Zhuyun Dai, **Yubin Kim**, Jamie Callan. 2017. [Learning to Rank Resources](https://www.cs.cmu.edu/~callan/Papers/sigir17-Zhuyun-Dai.pdf). In *Proceedings of the 40th International ACM SIGIR Conference*, 837–840.
+- **Yubin Kim**, Jamie Callan, J. Shane Culpepper, Alistair Moffat. 2017. [Efficient Distributed Selective Search](https://www.cs.cmu.edu/~callan/Papers/IRJ16-yubink.pdf). *Information Retrieval Journal* 20(3), 221–252.
 
 Full list on [Google Scholar](https://scholar.google.com/citations?user=3F_QHHQAAAAJ).
 
 ## Academic Service & Leadership
 
-**Conference organization & chairing:** Sponsorship Co-chair, SIGIR (2026) · PC Area Chair, ICTIR (2026) · AnalytiCup Chair, CIKM (2026) · WSDM Cup Chair, WSDM (2026) · Demonstration Track Co-chair, SIGIR (2025).
+**Conference organization & chairing:** Sponsorship Chair, SIGIR (2026) · PC Area Chair, ICTIR (2026) · AnalytiCup Chair, CIKM (2026) · WSDM Cup Chair, WSDM (2026) · Demonstration Track Chair, SIGIR (2025).
 
 **Editorial & program committees:** Editorial board, *Foundations and Trends in Information Retrieval* (ongoing) · Senior PC, SIGIR / CIKM / WSDM / TheWebConf (ongoing).
 

@@ -29,40 +29,41 @@ defensible in a live interview.
 - Yubin Kim — yubink.cs@gmail.com — 412-204-7134
 - Based in Pittsburgh, PA. Targets: remote-friendly, or Pittsburgh-based. State
   location/remote posture explicitly in the resume header.
+- U.S. Citizen
 - Google Scholar: user 3F_QHHQAAAAJ
 
 ### Education
 - Ph.D. Computer Science, Language Technologies Institute, Carnegie Mellon University (Dec 2018)
 - B.S. Software Engineering, University of Waterloo (Apr 2011)
 
-### Career spine
-| Role | Org | Dates | Team |
-|---|---|---|---|
-| Chief Science Officer | Vody, Inc. | 04/2024–present | ~11 eng/science/product/ops, hired ~9, reported to CEO |
-| Senior Engineering Manager | Etsy, Inc. | 04/2022–10/2023 | ~5 ICs (Intermediate–Sr. Staff), Search Retrieval |
-| Director of Technology | UPMC Enterprises | 07/2019–03/2022 | ~12 product ICs/managers + ~3 applied ML |
-| Senior Data Scientist | UPMC Enterprises | 09/2018–07/2019 | IC |
-| Internships | Microsoft Research (2013), Amazon (2009), Google (2008) | | |
+### Career spine — lives in `bullet-library.yaml`
+**The spine is not duplicated here.** Titles, orgs, dates, team size and composition, hires,
+promotions, calibration, managed-out counts, internships, and the aggregate tenure claims all
+live in `bullet-library.yaml` under `tenure:`, `roles:` (`title` / `org` / `dates` / `context` /
+`team` / `management`), and `internships:` — one hand-editable file for every career-experience
+fact. Read it alongside this file; when a role fact is needed, take it from there.
 
-- ~15+ years in ML; ~7+ years in ML leadership.
+This section holds only the **rules** for using those facts:
 
-### People-management evidence
-- **Built from zero:** Vody (hired ~9). **Inherited + grew:** Etsy (hired 2), UPMC.
-- **Report composition — has managed scientists, not only engineers:** 3 PhD scientists at
-  Vody; 2 PhD scientists at Etsy (team was Intermediate–Sr. Staff applied science and
-  engineering); ~3 applied-ML engineers at UPMC. Applied-science manager postings screen for
-  this literally.
+- **Report composition — has managed scientists, not only engineers.** The per-role counts are
+  in the library's `team` fields; applied-science manager postings screen for this literally.
   - **Rendering rule:** on the resume, be explicit *that* scientists were managed; do not
     enumerate scientist headcount. "Led a team of ~5 applied scientists and engineers,
-    including PhD scientists" — not "led 2 PhD scientists." The counts above are for interview
-    answers, not for the page.
-- **Promotions delivered:** 1 at UPMC, 2 at Etsy.
-- **Performance-managed out:** 1 each at UPMC, Etsy, Vody.
-- **Leveling calibration:** participated at UPMC and Etsy.
-
-### Remote leadership
-- **Both Etsy and Vody teams were fully remote.** Continuous distributed-team leadership
-  since 2022. Must appear in every variant; remote-first employers screen for it explicitly.
+    including PhD scientists" — not "led 2 PhD scientists." The library's counts are for
+    interview answers, not for the page.
+- **Built-from-zero vs. inherited-and-grew is a scope signal** — the library's `team` fields
+  record which each role was; say which when the archetype rewards team-building.
+- **Remote leadership must appear in every variant.** Both the Etsy and Vody teams were fully
+  remote (recorded in their `team` fields) — continuous distributed-team leadership since 2022.
+  Remote-first employers screen for it explicitly.
+- **Promotions, calibration, and performance-managed-out counts** (library `management` fields)
+  are archetype-A evidence; they compress to a supporting role in B and C.
+- **Every role in the spine appears in every variant — the timeline is never broken.** When a
+  role has no bullets tagged for the target archetype, it still renders: `title`, `org`, and
+  `dates`, with no bullets and no scope line. Dropping the role instead silently rewrites the
+  employment history — it shortens a tenure, hides an internal promotion, or opens a gap the
+  reader has to ask about. Bullet tags decide what a role *says*, never whether it *appears*.
+  This holds for tailored copies too: subtraction can empty a role, never remove it.
 
 ### Academic footprint
 - Complete record lives in two libraries: `publication-library.yaml` (papers) and
@@ -110,9 +111,8 @@ defensible in a live interview.
 - **Hard requirement:** direct IC reports, not managers-of-managers. Product ML with revenue
   or customer-facing KPIs, not platform/infra.
 - **Team-size floor:** ~5 at a strong brand. Willing to build from zero.
-- **Thesis:** *"I build and lead applied-science teams that ship models moving business
-  metrics. I technically mentor PhD-level and Staff+ ICs, and I keep an active publication
-  record in search and recommender systems."*
+- **Thesis:** *"Technical leader with a track record of building and leading applied science teams 
+  that ship production ML systems driving measureable business impact."*
 - **Foreground:**
   - Etsy — metric wins, experiment velocity, offline-evaluation rigor, cross-org partnerships.
   - **Report composition, stated explicitly at every role** (§1): PhD scientists at Vody,
@@ -232,6 +232,14 @@ the Applied Scientist posting.
 - Pair business metrics with model/system metrics.
 - Mirror the JD's exact vocabulary. If the JD says "recommender systems," don't write "recs."
 - Front-load the most JD-relevant role; compress the rest.
+- **Two pages is the default length for every variant and every tailored copy.** 15+ years with
+  four roles, a publication record, and academic service does not fit on one page, and forcing
+  it there cuts exactly the scope and metric evidence these archetypes are screened on. Never
+  compress to one page unless a specific posting demands it. Two pages is a target, not a quota:
+  don't pad to fill it — if a variant runs short, the fix is stronger evidence, not filler.
+- **Page one carries the decision.** Page two is skimmed, so the summary, the foregrounded role,
+  and the headline metrics belong above the fold; supporting roles, older evidence, and the
+  Skills keyword payload can run onto page two.
 - Tailor by **subtraction and reordering only.** Never by invention.
 - Ship two artifacts per variant: a designed PDF for humans/direct email, and a plain
   single-column ATS-safe version for portals.
@@ -266,6 +274,12 @@ the Applied Scientist posting.
   collaboration-building. Don't obscure the position.
 - **Omit citation counts.** Scholar is linked for anyone who wants to check.
 - **Bold the candidate's name** in every listed entry.
+- **Link the title when the library has a URL.** If an entry's `url` in
+  `publication-library.yaml` is non-empty, render the paper title as a Markdown link to it —
+  `[Title](url)` — so a reader can pull the PDF in one click. The link goes on the title only,
+  so the citation text itself is unchanged, and it costs no line length. Leave the title as
+  plain text when `url` is empty. **Never invent, guess, or reconstruct a URL** (no DOI
+  assembly, no arXiv search): an empty `url` is an evidence gap to fill in the library first.
 - **Pre-2019 papers** are included only when uniquely relevant to the JD, or to fill out an
   otherwise thin list in B.
 - **Stay a subset of Scholar.** Nothing on the resume that isn't verifiable there, except
@@ -316,11 +330,32 @@ step that silently breaks traceability — every skill procedure includes it exp
 
 The two YAML libraries are the complete inventories. Resumes show selected subsets.
 
-### `bullet-library.yaml` — bullets grouped by role
+### `bullet-library.yaml` — the career spine plus every bullet
 
-Top-level keys are roles — `vody`, `etsy`, `upmc-director`, `upmc-sds`, `cross-role` — each
-mapping to a list of bullets. Role is the grouping key, not a per-bullet field (there is no
-`bullets:` wrapper). One entry per bullet:
+This is the whole career-experience record: the spine (§1 points here) and the bullets, in one
+hand-editable file. Four top-level keys:
+
+| Key | Contents |
+|---|---|
+| `tenure` | `ml` and `leadership` — the aggregate years-in-field claims used in resume summaries |
+| `roles` | One entry per role, reverse-chronological, keyed `vody` / `etsy` / `upmc-director` / `upmc-sds`; each holds its own `bullets:` list |
+| `cross-role` | Bullets spanning several roles — render inside a role block or a leadership summary line, never as a standalone role |
+| `internships` | Plain strings; listed on a resume only when a JD makes them relevant |
+
+Per-role fields (the resume's role heading and scope line come from these — never retype them
+into a variant from memory):
+
+| Field | Purpose |
+|---|---|
+| `title` | Exact title as it should appear |
+| `org` | Employer |
+| `dates` | `MM/YYYY–MM/YYYY`, or `–present` |
+| `context` | Optional one-line scope framing, rendered as the italic subtitle under the role heading |
+| `team` | Size, composition, PhD-scientist presence, hires, built-from-zero vs. inherited, remote posture |
+| `management` | Promotions, leveling calibration, performance-managed-out counts |
+| `bullets[]` | The role's bullets |
+
+Per-bullet fields — these four and nothing else:
 
 | Field | Purpose |
 |---|---|
@@ -328,6 +363,9 @@ mapping to a list of bullets. Role is the grouping key, not a per-bullet field (
 | `bullet` | Full text, mechanism and outcome included |
 | `skills[]` | Every skill and tool this bullet evidences, **including domain** — `e-commerce` / `healthcare`. Domain-general bullets simply carry neither. |
 | `archetypes[]` | A, B, C, or any subset |
+
+`team` and `management` are prose fields holding durable facts; §1 holds the rules for
+rendering them (notably: name scientist *presence*, never scientist headcount).
 
 **Open evidence questions are `# TODO` comments**, written as the last line of the bullet
 entry they belong to and keyed to `TODO.md §3` where applicable. A bullet carrying a TODO is

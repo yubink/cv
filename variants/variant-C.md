@@ -49,11 +49,11 @@ AI leader who has built an AI function from zero inside a real business — incl
 
 Name in **bold**; workshop papers labeled as such.
 
-- Yujiang Wu, Shanshan Zhong, **Yubin Kim**, Chenyan Xiong. 2026. What Generative Search Engines Like and How to Optimize Web Content Cooperatively. *ICLR 2026*.
-- **Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. Lessons from the bleeding edge: large-scale production inference of LLMs. *eCom'25: ACM SIGIR Workshop on eCommerce*.
-- Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. XWalk: Random Walk Based Candidate Retrieval for Product Search. *eCom'23: ACM SIGIR Workshop on eCommerce*.
+- Yujiang Wu, Shanshan Zhong, **Yubin Kim**, Chenyan Xiong. 2026. [What Generative Search Engines Like and How to Optimize Web Content Cooperatively](https://arxiv.org/abs/2510.11438). *ICLR 2026*.
+- **Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. [Lessons from the bleeding edge: large-scale production inference of LLMs](https://ceur-ws.org/Vol-4123/paper_31.pdf). *eCom'25: ACM SIGIR Workshop on eCommerce*.
+- Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. [XWalk: Random Walk Based Candidate Retrieval for Product Search](https://ceur-ws.org/Vol-3589/paper_22.pdf). *eCom'23: ACM SIGIR Workshop on eCommerce*.
 
-Full list on [Google Scholar](https://scholar.google.com/citations?user=3F_QHHQAAAAJ). **Academic service:** Co-organizer, SIGIR Workshop on eCommerce (2023–2026); Sponsorship Co-chair, SIGIR (2026); Senior PC across SIGIR / CIKM / WSDM.
+Full list on [Google Scholar](https://scholar.google.com/citations?user=3F_QHHQAAAAJ). **Academic service:** Co-organizer, SIGIR Workshop on eCommerce (2023–2026); Sponsorship Chair, SIGIR (2026); Senior PC across SIGIR / CIKM / WSDM.
 
 ## Education
 

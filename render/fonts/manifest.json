@@ -1,0 +1,42 @@
+[
+  {
+    "family": "Gentium Book Plus",
+    "style": "italic",
+    "weight": "400",
+    "file": "gentium-book-plus-400-italic.ttf",
+    "format": "truetype",
+    "mime": "font/ttf"
+  },
+  {
+    "family": "Roboto",
+    "style": "italic",
+    "weight": "400",
+    "file": "roboto-400-italic.ttf",
+    "format": "truetype",
+    "mime": "font/ttf"
+  },
+  {
+    "family": "Roboto",
+    "style": "normal",
+    "weight": "400",
+    "file": "roboto-400-normal.ttf",
+    "format": "truetype",
+    "mime": "font/ttf"
+  },
+  {
+    "family": "Roboto",
+    "style": "normal",
+    "weight": "500",
+    "file": "roboto-500-normal.ttf",
+    "format": "truetype",
+    "mime": "font/ttf"
+  },
+  {
+    "family": "Roboto",
+    "style": "normal",
+    "weight": "700",
+    "file": "roboto-700-normal.ttf",
+    "format": "truetype",
+    "mime": "font/ttf"
+  }
+]

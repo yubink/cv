@@ -1,0 +1,44 @@
+Machine Learning Manager - Localization Algorithms 
+
+About the job
+At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+The Localization Data Science and Engineering team is at the forefront of removing language barriers and providing a stellar member experience to all our members regardless of their language preferences. We are responsible for the translation and cultural adaptation of all aspects of member interaction, including beautiful localized user interfaces, subtitles, and dubbing of award-winning Netflix originals.
+
+We are seeking an experienced Machine Learning leader to lead a team of Research Scientists and Machine Learning Engineers working on multimodal LLM and audio algorithms. You will support a highly talented team in developing cutting‑edge algorithms and systems, and collaborate closely with cross‑functional partners to enhance localization experiences for Netflix members around the world.
+
+Responsibilities
+
+Lead a broad portfolio of end-to-end initiatives in multimodal LLM and audio algorithms to achieve Netflix’s ambitious localization goals.
+Mentor, support, and inspire a team of Research Scientists and Machine Learning Engineers, amplifying their impact and fostering their career growth.
+Partner with technical leads on defining area strategy, planning and executing projects, and developing talent.
+Set and operationalize a high bar for both execution speed and quality, while nurturing a culture of exceptional technical excellence.
+Bring cutting-edge technical expertise and build deep domain knowledge to uncover new opportunities and make strategic bets.
+Build strong relationships with cross-functional, cross-domain partners to shape long-term collaborations and shared visions.
+Act as a functional leader and domain expert, representing the team’s work and strengthening the team’s internal and external brand.
+Contribute to the growth and upskilling of the broader Machine Learning community at Netflix.
+
+About You
+
+Proven track record of successfully leading highly technical ML research and engineering teams in multimodal LLMs, speech recognition and understanding, and generative speech.
+Highly proficient in multimodal LLM and speech algorithm research, and deeply committed to staying current with the latest technical developments; have led teams to launch and continuously improve production ML services.
+Passionate about leading teams through ambiguous and complex technical and business challenges; focused on bringing clarity, structure, and effective execution.
+Strong track record in mentoring and developing talent, with proven success recruiting researchers and engineers at multiple levels.
+Master’s or PhD in Machine Learning, Computer Science, or a closely related field.
+6+ years of hands-on ML experience (or 4+ years with a relevant PhD).
+2+ years of experience leading ML teams.
+Exceptional verbal and written communication skills.
+Deeply committed to delivering end-to-end business impact.
+Netflix culture resonates with you.
+
+Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $523,000.00 - $920,000.00. This compensation range will vary based on location.
+
+Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
+
+Netflix is a unique culture and environment. Learn more here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.
+
+Job is open for no less than 7 days and will be removed when the position is filled.

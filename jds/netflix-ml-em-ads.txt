@@ -1,0 +1,96 @@
+Engineering Manager, Ads Signals & Targeting
+New York, New York, United States of America • Los Gatos, California, United States of America
+
+Job Posting Date
+04-28-2026
+Job Requisition ID
+JR40266
+Teams
+Engineering
+Work Type
+Onsite
+At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+Since launching our ad-supported tier in 2022, the momentum has been unstoppable—we reach over 94 million global monthly active users! As we enter our fourth year, our ambition is massive, and we are just getting started.
+
+Our Team
+
+The Ads Engineering team at Netflix is dedicated to creating a world-class advertising ecosystem that drives our advertising business. This team's mission is to develop advanced technology that ensures exceptional experiences for both our members and advertisers. Our responsibilities encompass a broad spectrum of products, ranging from sales and media planning to optimizing advertiser outcomes and execution. This includes inventory and order management, campaign execution, ad serving, audience and identity management, measurement, reporting, and finance.
+
+We use several Netflix investments and innovations - a unique mix of client and server-side ad insertions, state-of-the-art content delivery systems, ad encoding recipes, content understanding, and metadata, etc. We deliver ads in a manner that’s thoughtful of our member’s viewing experience and drive great outcomes for advertisers. We also ensure that advertiser brand safety is ensured during serving so that members only see the most appropriate ads for them.
+
+Our team is faced with the enormous ambitions of building highly performant advertising systems and delivering high impact to our business by monetizing our incredible slate of content. As one of the newest entrants in the Connected TV advertising space that’s rapidly growing, we seek to build unique value propositions that help us differentiate us and become a market leader in record time. Our roles come with expectations of delivering in a rapid clip,  comfort with  lofty goals and big ambitions,   the visibility that comes with strategic initiatives, and  responsibility and an appetite to operate like a startup within an established company.
+
+We are looking for a highly motivated engineering leader to drive the evolution of our core targeting and signals platforms for Netflix Ads. This team builds and scales the foundational systems behind audience and contextual targeting, enabling more relevant, privacy-forward ad experiences for our members and better performance for our advertisers. By connecting the right message to the right moment, Ads Core Targeting helps create an experience that feels personalized, valuable, and consistent with the quality members expect from Netflix.
+
+As an Engineering Manager you will:
+
+Own the core signals and targeting systems that power relevant ads for Netflix members.
+
+Start from a solid foundation, with significant room to evolve the platform.
+
+Partner closely with ML teams to build advanced interest, lookalike, and expansion models.
+
+Work on high-scale, low-latency services that enrich every ad request in real time.
+
+Shape how Netflix activates first‑party and partner signals for targeting, optimization, and measurement.
+
+Drive success in a fast paced, flat organization with minimal process and a heavy emphasis on ownership.
+
+Support your team by contextualizing the larger vision, enabling prioritization and fostering high focus and executional excellence.
+
+Operate as an ambassador of the Netflix Culture
+
+Create a dream team by hiring, retaining, and growing high performing talent.
+
+Skills & experience we’re seeking:
+
+Proven experience leading teams that build and operate high-throughput, low-latency distributed systems in  ads targeting, or similarly demanding domains
+
+Hands-on background with signal services for ad request enrichment, including real‑time and batch data integration
+
+Strong familiarity with contextual and profile-based signals and how they are used for audience and contextual targeting
+
+Experience designing and managing signals registration, governance, and curation frameworks
+
+Expertise with targeting and audience definition metadata (e.g., taxonomies, hierarchies, schemas, configuration management)
+
+Experience leading ML engineers building and operating modeled profile audiences and lookalike models, including taking these models from development through integration into production systems.
+
+Track record of building and leading high-performing engineering teams, setting technical direction, and delivering complex platform initiatives
+
+Ability to navigate ambiguity and define clear strategies in a fast-evolving ads landscape
+
+Excellent communication skills; you can explain complex systems to both technical and non-technical partners
+
+10+ years of total experience with 3+ years of management experience in building and leading diverse software engineering teams. 
+
+A strong product mindset along with experience in delivering large complex projects collaborating with a variety of cross-functional stakeholders that are technology, operations or business focused.
+
+General understanding of the advertising marketplace and landscape. 
+
+Strong analytical and strategic thinking with demonstrated product sense and leadership in the working environment
+
+Nice to haves:
+
+Familiarity with legal compliance and changing landscape of ads regulations around the world.
+
+Familiarity with ML and advertising systems that leverage data to drive optimal outcomes for the users and the business.
+
+Experience working in the CTV space and knowledge of its unique constraints
+
+ 
+
+Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $436,000.00 - $791,000.00.
+Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here.
+
+Netflix is a unique culture and environment. Learn more here.
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that
+diversity builds stronger teams. We approach diversity and inclusion seriously
+and thoughtfully. We do not discriminate on the basis of race, religion,
+color, ancestry, national origin, caste, sex, sexual orientation, gender,
+gender identity or expression, age, disability, medical condition, pregnancy,
+genetic makeup, marital status, or military service.

@@ -1,0 +1,38 @@
+Senior Engineering Manager, ML Infrastructure for Ads Safety
+corporate_fare
+Google
+place
+Pittsburgh, PA, USA
+Minimum qualifications:
+Bachelor's degree in Computer Science, a related technical field, or equivalent practical experience.
+8 years of technical leadership and people management experience, including in leading managers.
+8 years of experience with software development.
+5 years of experience leading ML design and optimizing ML infrastructure (e.g., model deployment, model evaluation, data processing, debugging, fine tuning).
+5 years of experience building and developing large-scale infrastructure or distributed systems.
+
+Preferred qualifications:
+Master’s degree or PhD in Engineering, Computer Science, or a related technical field.
+8 years of experience in software engineering with a focus on infrastructure systems or machine learning platforms.
+5 years of experience in technical leadership, including managing engineering managers and overseeing an organization of 15+ people.
+5 years of experience working in a complex organization.
+Experience building and scaling ML infrastructure, specifically platforms for model inference, training, or data pipelining.
+About the job
+Like Google's own ambitions, the work of a Software Engineer goes beyond just Search. Software Engineering Managers have not only the technical expertise to take on and provide technical leadership to major projects, but also manage a team of Engineers. You not only optimize your own code but make sure Engineers are able to optimize theirs. As a Software Engineering Manager you manage your project goals, contribute to product strategy and help develop your team. Teams work all across the company, in areas such as information retrieval, artificial intelligence, natural language processing, distributed computing, large-scale system design, networking, security, data compression, user interface design; the list goes on and is growing every day. Operating with scale and speed, our exceptional software engineers are just getting started -- and as a manager, you guide the way.
+
+With technical and leadership expertise, you manage engineers across multiple teams and locations, a large product budget and oversee the deployment of large-scale projects across multiple sites internationally.
+
+As a Senior Engineering Manager for Machine Learning Infrastructure within our Ads Privacy and Safety organization, you will lead the technical strategy and organizational growth for the platforms that power Ads Safety. You will be responsible for a team of engineers and managers, focusing on building and scaling the infrastructure used for high-stakes content and actor detection. In this role, you will bridge the gap between cutting-edge machine learning research and robust, production-grade engineering. You will drive the evolution of the Ads Safety ML infrastructure, ensuring our systems can handle increasingly complex models while maintaining operational excellence.
+
+Google Ads is helping power the open internet with the best technology that connects and creates value for people, publishers, advertisers, and Google. We’re made up of multiple teams, building Google’s Advertising products including search, display, shopping, travel and video advertising, as well as analytics. Our teams create trusted experiences between people and businesses with useful ads. We help grow businesses of all sizes from small businesses, to large brands, to YouTube creators, with effective advertiser tools that deliver measurable results. We also enable Google to engage with customers at scale.
+
+Individual pay is determined by factors including job-related skills, experience, and relevant education or training.
+
+US: $262000 - $364000 (USD) + 25% bonus target + equity + benefits
+
+Learn more about benefits at Google.
+Responsibilities
+Lead and grow an organization of multiple engineers and managers, providing technical direction and career mentorship to scale the team’s impact.
+Oversee the strategy and execution of ML infrastructure, ensuring the platforms used for content and actor detection are robust, scalable, and efficient.
+Collaborate with cross-functional partners to align infrastructure capabilities with the evolving needs of machine learning models and safety enforcement.
+Drive the technical roadmap for the platform, balancing long-term architectural improvements with the immediate operational needs of the Ads Safety organization.
+Manage organizational health and operational excellence, establishing high standards for engineering practices and fostering a high-performing team culture.

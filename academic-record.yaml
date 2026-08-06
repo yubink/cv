@@ -13,12 +13,15 @@ workshops:  # peer-reviewed workshops CO-ORGANIZED (service, never rendered as p
   - name: "Workshop on Multimodal Search and Recommendations"
     host: "ICDM"
     years: "2025"
+  - name: "Panel on Applications and Future of Dense Retrieval in Industry"
+    host: "SIGIR"
+    years: "2022"
   - name: "Workshop on Health Search and Data Mining"
     host: "WSDM"
     years: "2020"
 
 service:
-  - role: "Sponsorship Co-chair"
+  - role: "Sponsorship Chair"
     venue: "SIGIR"
     year: 2026
   - role: "PC Area Chair"
@@ -30,7 +33,7 @@ service:
   - role: "WSDM Cup Chair"
     venue: "WSDM"
     year: 2026
-  - role: "Demonstration Track Co-chair"
+  - role: "Demonstration Track Chair"
     venue: "SIGIR"
     year: 2025
   - role: "Editorial board"
@@ -51,16 +54,6 @@ talks:
     venue: "Artificial Intelligence for Data Discovery and Reuse Symposium (2020); Brown University (2019)"
     year: 2020
     topic_tags: [healthcare, nlp, emr, data]
-  - title: ""
-    kind: panel
-    venue: "SIGIR Symposium on IR in Practice (SIRIP)"
-    year: 2023
-    topic_tags: [information-retrieval, industry, search]
-  - title: "Future and Applications of Dense Retrieval"
-    kind: panel
-    venue: "SIRIP Panel, SIGIR"
-    year: 2022
-    topic_tags: [dense-retrieval, search, information-retrieval]
   - title: "Data for Artificial Intelligence"
     kind: panel
     venue: "Value for Health CoLAB"

@@ -50,14 +50,6 @@ publications:
     relevance_note: "Double-duty for Etsy: the graph-ML retrieval work behind the GMS impact. Must read as a workshop paper."
     url: "https://ceur-ws.org/Vol-3589/paper_22.pdf"
 
-  - id: sigir22-dense-retrieval
-    citation: "**Yubin Kim**. 2022. Applications and Future of Dense Retrieval in Industry. In Proceedings of the 45th International ACM SIGIR Conference (SIRIP)."
-    venue_tier: top-tier-conference
-    work_origin: etsy  # VERIFY — SIGIR 2022 was July, shortly after joining Etsy; may reflect UPMC-era invitation
-    skills: [dense-retrieval, semantic-search, industry-ml, search]
-    relevance_note: "Sole-author industry-track perspective piece; pairs with the SIRIP panel in academic-record.yaml. Signals recognized industry voice on dense retrieval."
-    url: ""
-
   - id: hsdm20-clustering
     citation: "Nithin Haridas, **Yubin Kim**. 2020. Clustering Large-scale Diverse Electronic Medical Records to Aid Annotation for Generic Named Entity Recognition. In Health Search and Data Mining Workshop (HSDM @ WSDM), 43–50."
     venue_tier: workshop

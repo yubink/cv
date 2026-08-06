@@ -1,0 +1,46 @@
+Machine Learning Manager, Feed Relevance (Retrieval)  
+
+About the job
+Reddit is a community of communities. It's built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet's largest sources of information. For more information, visit www.redditinc.com.
+
+Reddit is looking for an experienced Engineering Manager to lead our Feed Retrieval team. In this role, you'll lead a high-impact team of Machine Learning Engineers building the systems that identify, retrieve, and shape the candidate inventory powering Reddit's personalized feeds. Your team will work at the foundation of Feed Relevance: expanding the set of high-quality content Reddit can recommend, improving personalization and discovery for users across different levels of signal, and building scalable ML systems that directly shape the experiences of over 120M+ daily users.
+
+If applying ML / AI in production to improve Reddit Relevance excites you, then you've found the right place.
+
+Responsibilities:
+
+Define Technical Vision & Strategy: Define the technical vision and long-term roadmap for Feed Retrieval, aligning large-scale recommender-system investments with Reddit's product, ecosystem, and business objectives.
+Roadmap & Prioritization: Translate broad Feed Relevance goals into a focused team roadmap, making clear prioritization tradeoffs across model quality, inventory expansion, experimentation velocity, infrastructure cost, and operational reliability.
+Team Leadership & Development: Coach and support the development of your team, constantly seeking opportunities to grow their skills and impact. 
+Technical Execution & Delivery: Oversee the design, development, and optimization of retrieval systems that source relevant, diverse, fresh, and high-quality candidates for personalized feed experiences.
+Measurement & Learning: Establish strong measurement, experimentation, and debugging practices so the team can understand retrieval quality, candidate coverage, source incrementality, and downstream impact.
+Platform & Infrastructure Collaboration: Collaborate with ML platform, infrastructure, ranking, safety, and product teams to build scalable, low-latency retrieval systems that can support the next generation of AI-powered recommendations.
+Operational Excellence: Maintain high standards for system performance, reliability, latency, cost efficiency, and responsible recommendation practices.
+Cross-Functional Partnership: Work with cross-functional partners from across the company to identify key areas of opportunity, set expectations, and communicate your team's work.
+Recruiting & Growth: Partner with our incredible recruiting team to attract, interview, and hire diverse and talented machine learning engineers, growing a world-class team.
+
+Qualifications:
+
+Experience Leading ML Teams: 2+ years of experience building and managing high-performing ML or recommender-systems teams.
+Deep ML Expertise: Hands-on experience with large-scale production ML systems, ideally including recommender systems, retrieval models, embedding-based systems, sequence models, transformer-based architectures, or LLM-powered recommendation applications.
+Technical Domain Knowledge: Strong understanding of recommender systems, especially candidate retrieval, embedding/indexing systems, ranking handoffs, feed personalization, exploration, content quality, and measurement strategies. 
+Strategic Thinking: Ability to develop and communicate a clear technical strategy across ambiguous problem spaces, balancing user relevance, ecosystem health, system scalability, and business impact.
+Impact-Driven Mindset: Passion for developing scalable, well-designed, and responsible AI solutions that drive business value.
+Exceptional Communication & Collaboration: Strong interpersonal skills and a collaborative mindset, with the ability to effectively communicate complex technical topics to diverse audiences and build strong relationships with cross-functional partners.
+
+Benefits:
+
+Comprehensive Healthcare Benefits and Income Replacement Programs
+401k with Employer Match
+Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support
+Family Planning Support
+Gender-Affirming Care
+Mental Health & Coaching Benefits
+Flexible Vacation & Paid Volunteer Time Off
+Generous Paid Parental Leave 
+
+,
+
+Pay Transparency:
+
+This job posting may span more than one career level.

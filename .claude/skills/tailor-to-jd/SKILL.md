@@ -1,6 +1,6 @@
 ---
 name: tailor-to-jd
-description: Take a job description, classify it to archetype A, B, or C, then produce a tailored copy of that archetype's base variant aligned to the JD — reordered bullets, JD-matched wording, pruned skills. Use when the user provides a specific job posting. Do NOT use to build or restructure a base variant — that is `build-variant`.
+description: Take a job description and produce a tailored copy of a base variant aligned to the JD — reordered bullets, JD-matched wording, pruned skills. The user may name the variant to tailor (archetype letter A/B/C or a variant file path); if they don't, classify the JD to an archetype first. Use when the user provides a specific job posting. Do NOT use to build or restructure a base variant — that is `build-variant`.
 ---
 
 ## Required inputs
@@ -9,7 +9,8 @@ description: Take a job description, classify it to archetype A, B, or C, then p
 |---|---|---|
 | `CONTEXT.md` | ${CLAUDE_PROJECT_DIR} | Stop. Ask the user for it. |
 | The JD | User | Ask for the full text, not a link summary. |
-| Base variant for the matched archetype | `variants/variant-{X}.md` | **Stop. Report: "The base variant for archetype {X} does not exist yet — run build-variant first." Do not improvise a variant from the libraries.** |
+| **Variant selection (optional)** | User — skill argument or prompt | Absent means the skill picks the variant by triaging the JD (step 1). |
+| Base variant to tailor | `variants/variant-{X}.md`, or the user-supplied path | **Stop. Report: "The base variant {path} does not exist yet — run build-variant first." Do not improvise a variant from the libraries.** |
 | `bullet-library.yaml` | ${CLAUDE_PROJECT_DIR} | Optional but recommended — enables bullet *swaps*. Without it, tailoring is limited to reordering, rewording, and subtraction of what's already in the variant. Note the limitation in the output. |
 | `academic-record.yaml` | ${CLAUDE_PROJECT_DIR} | Optional — enables talk swaps by `topic_tags` and workshop/service adjustments. Without it, the base variant's academic content is kept as-is. |
 
@@ -22,9 +23,27 @@ description: Take a job description, classify it to archetype A, B, or C, then p
 
 ## Procedure
 
-### 1. Triage the JD to an archetype
+### 1. Establish which variant to tailor
 
-Classify by signal, in priority order:
+**If the user specified one** — as a skill argument (`/tailor-to-jd B`, `/tailor-to-jd
+variants/variant-C.md`), or anywhere in their request — that choice governs. Accept either form:
+
+- A bare archetype letter `A`, `B`, or `C` → `variants/variant-{X}.md`.
+- A path to a Markdown resume file → use that file as the base. It may be a `tailored/` copy or
+  any other variant; treat it exactly as a base variant (read-only source, tailor a copy).
+  Infer its archetype from its content and CONTEXT.md §2 for the budget rules in steps 3.6–3.7;
+  if the archetype is unclear, ask rather than guessing which budgets apply.
+
+With a specified variant, **skip triage as a decision** but still run the signal read below as a
+**check**, and report it:
+
+- If the JD's signals point to a different archetype, say so in one line — classification,
+  signals, and the fact that you are proceeding with the user's choice anyway. Do not stop, and
+  do not re-tailor toward the triaged archetype.
+- If the JD matches a **skip signal**, report it as a caution and proceed. An explicit variant
+  choice is an explicit decision to apply; the skip signals inform it, they do not veto it.
+
+**If the user did not specify one**, triage the JD and classify by signal, in priority order:
 
 - JD says **"direct reports," "manage a team of N," "hiring," "performance"** and names a
   product surface → **A**.
@@ -35,7 +54,8 @@ Classify by signal, in priority order:
 - JD is at a **Series B–D company** and says **"first," "build the team," "0→1," "define the
   AI strategy," "Head of AI"** → **C**.
 
-**Skip signals** — recommend not applying, with the reason, and stop:
+**Skip signals** — when no variant was specified, recommend not applying, with the reason, and
+stop (when one was specified, these become cautions per the rule above):
 - "Director" managing managers, not ICs.
 - Platform/infra ML with no product KPI, regardless of level.
 - Principal/Distinguished Engineer whose scope is core systems or infra rather than ML
@@ -51,8 +71,10 @@ Classify by signal, in priority order:
 - Both a PAS and a PE posting open at the same company for overlapping scope → recommend the
   PAS posting.
 - Genuinely ambiguous between two archetypes → present both readings and ask; do not guess.
+  (A user-specified variant resolves this — never ask when the user has already chosen.)
 
-State the classification and the signals that drove it before proceeding.
+State the base variant being tailored, how it was chosen (user-specified or triaged), and the
+signals that drove the classification, before proceeding.
 
 ### 2. Extract the JD's demand profile
 - Required skills, preferred skills, and responsibilities — **in the JD's own vocabulary**.
@@ -64,17 +86,23 @@ State the classification and the signals that drove it before proceeding.
   in the output — never onto the resume.
 
 ### 3. Tailor the base variant
-Working on a **copy** of `variants/variant-{X}.md` — never modify the base:
+Working on a **copy** of the variant established in step 1 — never modify the source file, even
+when it is itself a `tailored/` copy:
 
 1. **Reorder** bullets so those evidencing the JD's highest-priority skills lead each role.
    If the JD is domain-specific, promote bullets carrying the matching domain skill tag.
 2. **Reword** for keyword alignment: swap synonyms to the JD's exact terms in bullets, the
    summary, and Skills. Facts, numbers, and claims stay identical.
 3. **Swap** (only if `bullet-library.yaml` is available): replace a weakly matching bullet
-   with a stronger library bullet for the same role and archetype, respecting the tool
-   budget (1–3 named technologies per bullet).
-4. **Subtract** bullets irrelevant to this JD if space is tight — foregrounded role stays
-   dominant, compressed roles can shrink to a single line.
+   with a stronger bullet from the same role's `bullets:` list under `roles:`, tagged for this
+   archetype, respecting the tool budget (1–3 named technologies per bullet). Role headings,
+   dates, and scope lines are never edited during tailoring — they are facts from the role
+   fields.
+4. **Subtract** bullets irrelevant to this JD — foregrounded role stays dominant, compressed
+   roles can shrink to a single line. Subtract for *relevance*, not for length: two pages is the
+   default (CONTEXT.md §3), so never drop a strong, relevant bullet to save space. Subtraction
+   can empty a role but never removes one: when a role's last bullet goes, its heading stays —
+   `title`, `org`, `dates` (CONTEXT.md §1).
 5. **Retune the summary** — one or two sentences of the archetype thesis rephrased toward
    this JD's language. No new claims.
 6. **Adjust publications within the archetype's budget** (CONTEXT.md §2): swap entries so the
@@ -97,16 +125,22 @@ showing the user.
 
 ## Output
 
-- The tailored resume as a new file: `tailored/{company-or-role-slug}.md`. The base variant
-  is untouched.
-- A change log: classification and reasoning; reorderings; rewordings (old term → JD term);
-  swaps, subtractions, and publication changes with one-line rationale.
+- The tailored resume as a new file: `tailored/{company-or-role-slug}.md`. The source variant
+  is untouched — if the slug would collide with the source file, pick a distinct slug rather
+  than overwriting it.
+- A change log: the base variant used and whether the user specified it or triage chose it;
+  classification and reasoning, including any user-choice/triage disagreement or skip-signal
+  caution; reorderings; rewordings (old term → JD term); swaps, subtractions, and publication
+  changes with one-line rationale.
 - The interview-prep list: JD demands with no resume evidence.
 - The scorecard result.
 
 ## Exit conditions
 
-- Base variant missing → report and stop (see inputs table). Do not build one ad hoc.
-- JD matches a skip signal → report the reason and stop.
-- Classification ambiguous → ask.
+- Base variant missing → report and stop (see inputs table). Do not build one ad hoc. This
+  applies to a user-specified path too: a bad path is reported, not silently swapped for a
+  triaged variant.
+- JD matches a skip signal **and no variant was specified** → report the reason and stop. With a
+  specified variant, report the caution and continue.
+- Classification ambiguous **and no variant was specified** → ask.
 - JD text not provided or too fragmentary to extract a demand profile → ask for the full text.

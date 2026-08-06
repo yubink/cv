@@ -1,0 +1,6 @@
+# Generated rendering output — regenerate with `python3 render/render.py --all --fit`
+build/
+
+# Python
+__pycache__/
+*.pyc

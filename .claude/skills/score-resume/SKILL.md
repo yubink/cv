@@ -22,29 +22,37 @@ averaged in.
 | 1 | Would an ATS keyword filter pass this against the JD? | Yes |
 | 2 | Can a recruiter identify the target level in under 30 seconds? | No |
 | 3 | Does the top third of page 1 answer "why this person for this job"? (Without a JD: "why this person for this *archetype*") | No |
-| 4 | Does every bullet have a mechanism *and* an outcome? | No |
+| 4 | Does each role block carry mechanism *and* measured outcome across its bullets — at least one measured outcome per role, every outcome attributable, and no pure-activity bullets? | No |
 | 5 | Is scope legible — team size, org context, system scale, dollars? | No |
 | 6 | Is technical currency obvious from the last two years? | No |
-| 7 | Does the scope story read as progression rather than a title zigzag? | No |
-| 8 | Is it parseable as plain text — single column, standard headings, no layout tables? | No |
-| 9 | Does every Skills entry trace to a surviving bullet, publication, or named project, and does every tool named in a bullet appear in Skills? (CONTEXT.md §4, both directions; foundational tier exempt) | No |
-| 10 | Are the publication list and academic record within the archetype's budgets (CONTEXT.md §2), accurately labeled (venue tiers correct; co-organized workshops rendered as service with the organizing role explicit, never as publications), and closed with a Scholar link if the publication list is truncated? | No |
-| 11 | Does the resume mirror the JD's exact vocabulary for its required skills? | Yes |
-| 12 | Are the archetype's section order and foreground/compress rules followed? | No |
+| 7 | Does the resume mirror the JD's exact vocabulary for its required skills? | Yes |
 
 Notes on specific items:
 - **Item 1:** extract the JD's required/preferred skills and check literal presence
   (accounting for the JD's own term variants). List every required skill that is missing.
-- **Item 4:** quote each failing bullet and name what's missing (mechanism, outcome, or both).
+- **Item 4:** the unit of judgment is the **role block, not the individual bullet.** CONTEXT.md
+  §3's formula (action → mechanism → measured outcome) describes what a role's bullets must
+  deliver *between them*, not a quota every line has to hit on its own. A bullet legitimately
+  carries no outcome when:
+  - the outcome for that work is stated in a sibling bullet in the same role — a mechanism
+    bullet sitting next to the bullet that carries the number (feed optimization alongside
+    "+10% GMV") is one claim split across two lines, not a defect;
+  - it is a team or scope bullet whose scope *is* the outcome (headcount, composition, level);
+  - its value is the mechanism itself — mechanism earns technical credibility (CONTEXT.md §2A),
+    and on a manager's resume some bullets exist to prove depth, not impact.
+
+  Score down only for:
+  - a role block with **no measured outcome anywhere** — the whole block reads as a job
+    description;
+  - a bullet with **neither mechanism nor outcome** — an ownership or activity verb with nothing
+    behind it ("Owned the technical and product roadmap"), which CONTEXT.md §3 bans outright;
+  - an **unattributable outcome** — a number no bullet in the block explains the source of.
+
+  Beyond those three, thin per-bullet outcome density is a **non-blocking improvement**, not a
+  blocker. Quote what fails and name which of the three it is.
 - **Item 6:** satisfied by recent experience bullets and recent publications together. Older
   publications are legitimate depth evidence and do not *lower* this score; the check is
   whether recent evidence exists, not whether old evidence is present.
-- **Item 9:** produce the orphan list explicitly — skill → evidence found or none.
-- **Item 10:** venue-tier accuracy means workshop papers read as workshop papers; verify
-  against `publication-library.yaml` `venue_tier` if the library is available. Any entry from
-  `academic-record.yaml` `workshops:` appearing under a Publications heading, or without its
-  organizing role stated, is an automatic blocker on this item — it mislabels service as
-  publication output.
 
 ## Output
 
