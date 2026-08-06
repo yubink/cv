@@ -3,16 +3,21 @@
 #
 # Structure: top-level keys are roles (vody / etsy / upmc-director / upmc-sds / cross-role);
 # each maps to a list of bullets. Role is the grouping key, not a per-bullet field.
+# Fields: id, bullet, skills[], archetypes[]. Nothing else.
+#
+# Domain lives in skills[] as `e-commerce` / `healthcare` — there is no separate domain field.
+# Use it to promote matching bullets when a JD is domain-specific.
 #
 # Seeded 2026-07-30 from the legacy CV plus facts confirmed in conversation.
-# NO INVENTED CONTENT: bracketed placeholders like [X]% mark missing numbers; the bullet is
-# `evidence_strength: weak` until the corresponding TODO.md §3 question is answered.
+# NO INVENTED CONTENT: bracketed placeholders like [X]% mark missing numbers. A bullet needing
+# a fact from the candidate carries a `# TODO` comment as its last line, keyed to TODO.md §3
+# where applicable; those bullets are not resume-ready until the question is answered.
 # Rewrites preserve the original claims exactly; only structure/wording changed.
 #
 # The legacy tool-dump bullet ("Utilized fine-tuned multimodal LLMs, RAG, CLIP, BERT, graph
 # models served with vLLM, ANN, Kubernetes on AWS and GCP") is decomposed below into
 # vody-attribute-tagging, vody-inference, vody-serving-stack; the last holds the tools whose
-# outcomes are still unknown and stays weak until decomposed further.
+# outcomes are still unknown and carries a TODO until decomposed further.
 #
 # The skills-evidence matrix is GENERATED into skills-evidence-matrix.yaml — do not hand-edit
 # it; regenerate after changing any skills[] field: python3 gen_matrix.py (from the repo root).
@@ -21,132 +26,95 @@
 vody:
   - id: vody-arr
     bullet: "Grew revenue 0 → $2M ARR as owner of the technical/product roadmap of a seed-stage startup, by converting Grubhub and Academy Sports & Outdoors as customers, and serving as primary technical contact."
-    skills: [gtm, enterprise-sales, product-strategy, roadmap, customer-facing]
+    skills: [gtm, enterprise-sales, product-strategy, roadmap, customer-facing, e-commerce]
     archetypes: [C]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: vody-team
-    bullet: "Hired ~9 and led a fully remote team of ~11 across engineering, product, and ops, reporting to the CEO."
-    skills: [hiring, team-building, remote-leadership, cross-functional-leadership]
+    bullet: "Hired ~9 and led a fully remote team of ~11 across science, engineering, product, and ops reporting to the CEO."
+    skills: [hiring, team-building, remote-leadership, cross-functional-leadership, applied-science-management]
     archetypes: [A, C]
-    domain: domain-general
-    evidence_strength: strong
 
   - id: vody-fundraising
     bullet: "Raised $1M+ in funding by writing/presenting pitches to VCs."
     skills: [fundraising, storytelling, executive-communication]
     archetypes: [C]
-    domain: domain-general
-    evidence_strength: strong
 
   - id: vody-feeds
     bullet: "Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+."
     skills: [product-search, conversational-agents, data-optimization, e-commerce]
-    archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: strong
+    archetypes: [A, B, C]
 
   - id: vody-attribute-tagging
-    bullet: "Personally built v1 of the production attribute-tagging models by fine-tuning Qwen VLMs [method, data size, and lift vs. baseline needed]."
-    skills: [llm-fine-tuning, vlm, qwen, multimodal, hands-on-ml]
+    bullet: "Personally built v1 of the production attribute-tagging models by fine-tuning Qwen VLMs with SFT + LoRA."
+    skills: [llm-fine-tuning, vlm, qwen, multimodal, hands-on-ml, e-commerce]
     archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: weak  # TODO §3 Vody: fine-tuning specifics
 
   - id: vody-inference
-    bullet: "Ran large-scale production LLM inference on vLLM and Kubernetes across AWS and GCP [cost/throughput numbers needed]; lessons published at the SIGIR eCommerce workshop (eCom'25)."
-    skills: [llm-inference, vllm, kubernetes, aws, gcp, production-ml, serving]
+    bullet: "Productionized RAG + fine-tuned LLMs on vLLM and Kubernetes for a 150k+ product catalog on GCP; lessons published at the SIGIR eCom'25."
+    skills: [llm-inference, rag, vllm, kubernetes, gcp, production-ml, serving, e-commerce]
     archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: weak  # TODO §3 Vody: eCom'25 numbers (GPU cost, tokens/sec, quantization, batching)
 
   - id: vody-serving-stack
-    bullet: "Deployed fine-tuned multimodal LLMs, RAG, CLIP, BERT, and graph models with ANN retrieval in production [decompose: which model did what, with what outcome]."
-    skills: [rag, clip, bert, graph-ml, ann, multimodal]
+    bullet: "Scaled production distilled BERT-based classifiers on AWS for 50M item catalog."
+    skills: [bert, distillation, aws, e-commerce]
     archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: weak  # legacy tool-dump remnant; violates tool budget until decomposed
 
   - id: vody-evaluation
-    bullet: "Evaluated models with human-in-the-loop review, LLM-based evaluation, and A/B testing [state whether the eval harness was a durable asset]."
-    skills: [llm-evaluation, human-in-the-loop, ab-testing, evaluation]
+    bullet: "Productionized continuous model evaluation with human-in-the-loop review, LLM-based evaluation."
+    skills: [llm-evaluation, human-in-the-loop, evaluation, e-commerce]
     archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: weak  # TODO §3 cross-cutting: eval harness as durable asset?
 
   - id: vody-demo
     bullet: "Personally built the customer-facing demo of the data-optimization pipeline — product import from URL through copy generation, attribute tagging, and query enrichment to final results."
-    skills: [hands-on-ml, prototyping, query-enrichment, copy-generation, demo-engineering]
+    skills: [hands-on-ml, prototyping, query-enrichment, copy-generation, demo-engineering, e-commerce]
     archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: vody-error-analysis
     bullet: "Drove opportunity and error analysis hands-on over production logs and customer query logs using DuckDB and Jupyter, feeding the model and product roadmap."
-    skills: [error-analysis, duckdb, data-analysis, hands-on-ml, query-logs]
+    skills: [error-analysis, duckdb, data-analysis, hands-on-ml, query-logs, e-commerce]
     archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: strong
-
 
   - id: vody-academic-collabs
     bullet: "Initiated and led academic collaborations on generative engine optimization and user simulation, yielding peer-reviewed publications (ICLR 2026; CIKM under review)."
-    skills: [research-collaboration, generative-engine-optimization, user-simulation, cross-org-influence]
-    archetypes: [B, C]
-    domain: e-commerce
-    evidence_strength: strong
+    skills: [research-collaboration, generative-engine-optimization, user-simulation, cross-org-influence, e-commerce]
+    archetypes: [A, B, C]
 
 # ---------------- Etsy (Senior EM, 04/2022–10/2023) ----------------
 etsy:
   - id: etsy-retrieval-systems
     bullet: "Built real-time, large-scale retrieval systems powering search, recommendations, and ads at etsy.com, a marketplace of 90M+ active buyers and 100M items."
-    skills: [retrieval, search, recommendations, ads, real-time-systems, solr]
+    skills: [retrieval, search, recommendations, ads, real-time-systems, solr, e-commerce]
     archetypes: [A, B]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: etsy-team
-    bullet: "Led a fully remote product ML team of ~5 ICs up to Sr. Staff level; technical mentorship, hiring (2), performance management, and team processes."
-    skills: [team-leadership, mentorship, hiring, performance-management, remote-leadership, applied-science-management]
+    bullet: "Led a fully remote product ML team of ~5 science and engineering ICs up to Sr. Staff level; technical mentorship, hiring (2), performance management, and team processes."
+    skills: [team-leadership, mentorship, hiring, performance-management, remote-leadership, applied-science-management, e-commerce]
     archetypes: [A, C]
-    domain: e-commerce
-    evidence_strength: strong  
 
   - id: etsy-gms
     bullet: "Generated $40M+ in GMS over 1.5 years through graph ML (GNN) and Solr retrieval innovations, validated with A/B experiments."
-    skills: [graph-ml, solr, ab-testing, business-impact, retrieval, conversion-optimization]
+    skills: [graph-ml, solr, ab-testing, business-impact, retrieval, conversion-optimization, e-commerce]
     archetypes: [A, B]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: etsy-ads-revenue
     bullet: "Enabled $30M+ in ad revenue through cross-org collaborations with the Ads organization."
-    skills: [cross-org-influence, ads, business-impact, collaboration]
+    skills: [cross-org-influence, ads, business-impact, collaboration, e-commerce]
     archetypes: [A, B]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: etsy-strategy
     bullet: "Co-authored the 3-year technical strategy for the Search Retrieval initiative."
-    skills: [technical-strategy, roadmap, long-term-vision]
+    skills: [technical-strategy, roadmap, long-term-vision, e-commerce]
     archetypes: [A, B]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: etsy-experiment-velocity
     bullet: "Doubled online experiment velocity through initiating collaborations with analytics, product, and enablement teams to build new tooling, e.g. interleaving tests, end-to-end model testing."
-    skills: [ab-testing, experimentation-velocity, cross-org-influence, tooling]
+    skills: [ab-testing, experimentation-velocity, cross-org-influence, tooling, e-commerce]
     archetypes: [A, B]
-    domain: e-commerce
-    evidence_strength: strong
 
   - id: etsy-experiment-success
     bullet: "Doubled the success rate of online experiments within 2 quarters by developing robust offline evaluation metrics and processes."
-    skills: [evaluation, offline-evaluation, ab-testing, experimentation-velocity]
+    skills: [evaluation, offline-evaluation, ab-testing, experimentation-velocity, e-commerce]
     archetypes: [A, B]
-    domain: e-commerce
-    evidence_strength: strong
 
 # ---------------- UPMC Enterprises (Director, 07/2019–03/2022) ----------------
 upmc-director:
@@ -154,36 +122,26 @@ upmc-director:
     bullet: "Led a product team of ~12 engineering/QA ICs and product/engineering managers, building an Elasticsearch-based search engine over 160M+ clinical documents."
     skills: [team-leadership, elasticsearch, search, healthcare, clinical-nlp]
     archetypes: [A, B]
-    domain: healthcare
-    evidence_strength: strong
 
   - id: upmc-ml-team
     bullet: "Led an applied-ML team of ~3 ML engineers; created career paths, hiring, performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer."
-    skills: [team-leadership, mentorship, hiring, performance-management, career-development]
+    skills: [team-leadership, mentorship, hiring, performance-management, career-development, healthcare]
     archetypes: [A]
-    domain: healthcare
-    evidence_strength: strong
 
   - id: upmc-ml-applications
     bullet: "Partnered with product and provider/payor stakeholders to apply ML to claims processing, automated coding, risk stratification, and retrospective analysis using time-series models, LSTMs, CNNs, and decision trees."
     skills: [healthcare, claims-processing, risk-stratification, time-series, stakeholder-management]
     archetypes: [A]
-    domain: healthcare
-    evidence_strength: weak  # TODO §4.3: techniques without outcomes; TODO §3 UPMC: realized savings
 
   - id: upmc-pitching
     bullet: "Identified ML projects worth $Ms in savings, pitched to SVPs and the CTO, developed prototypes, and executed pilots with provider/payor groups."
-    skills: [executive-communication, opportunity-analysis, prototyping, business-impact]
+    skills: [executive-communication, opportunity-analysis, prototyping, business-impact, healthcare]
     archetypes: [A, C]
-    domain: healthcare
-    evidence_strength: weak  # TODO §3 UPMC: realized vs. pipeline
 
   - id: upmc-vendor-management
     bullet: "Managed collaborations with ML/NLP healthcare startups and academic labs; reviewed proposals, negotiated contracts, and oversaw project delivery of $Ms contracts."
-    skills: [vendor-management, contract-negotiation, research-collaboration, partnership-management]
+    skills: [vendor-management, contract-negotiation, research-collaboration, partnership-management, healthcare]
     archetypes: [A, C]
-    domain: healthcare
-    evidence_strength: weak 
 
 # ---------------- UPMC Enterprises (Senior Data Scientist, 09/2018–07/2019) ----------------
 upmc-sds:
@@ -191,8 +149,6 @@ upmc-sds:
     bullet: "Developed a search engine for social-determinants-of-health indicators across millions of clinical documents to identify high-risk patients for intervention."
     skills: [search, clinical-nlp, healthcare, information-extraction, risk-stratification]
     archetypes: [A, B]
-    domain: healthcare
-    evidence_strength: strong
 
 # ---------------- Cross-role (confirmed facts, CONTEXT §1) ----------------
 # Render inside the relevant role's block or a leadership summary, never as a standalone role.
@@ -201,5 +157,3 @@ cross-role:
     bullet: "Delivered 3 IC promotions (2 at Etsy, 1 at UPMC) and participated in leveling calibration at both companies; performance-managed out 3 low performers across UPMC, Etsy, and Vody."
     skills: [performance-management, career-development, calibration, mentorship]
     archetypes: [A]
-    domain: domain-general
-    evidence_strength: strong

@@ -38,7 +38,7 @@ defensible in a live interview.
 ### Career spine
 | Role | Org | Dates | Team |
 |---|---|---|---|
-| Chief Science Officer | Vody, Inc. | 04/2024–present | ~11 eng/product/ops, hired ~9, reported to CEO |
+| Chief Science Officer | Vody, Inc. | 04/2024–present | ~11 eng/science/product/ops, hired ~9, reported to CEO |
 | Senior Engineering Manager | Etsy, Inc. | 04/2022–10/2023 | ~5 ICs (Intermediate–Sr. Staff), Search Retrieval |
 | Director of Technology | UPMC Enterprises | 07/2019–03/2022 | ~12 product ICs/managers + ~3 applied ML |
 | Senior Data Scientist | UPMC Enterprises | 09/2018–07/2019 | IC |
@@ -48,6 +48,14 @@ defensible in a live interview.
 
 ### People-management evidence
 - **Built from zero:** Vody (hired ~9). **Inherited + grew:** Etsy (hired 2), UPMC.
+- **Report composition — has managed scientists, not only engineers:** 3 PhD scientists at
+  Vody; 2 PhD scientists at Etsy (team was Intermediate–Sr. Staff applied science and
+  engineering); ~3 applied-ML engineers at UPMC. Applied-science manager postings screen for
+  this literally.
+  - **Rendering rule:** on the resume, be explicit *that* scientists were managed; do not
+    enumerate scientist headcount. "Led a team of ~5 applied scientists and engineers,
+    including PhD scientists" — not "led 2 PhD scientists." The counts above are for interview
+    answers, not for the page.
 - **Promotions delivered:** 1 at UPMC, 2 at Etsy.
 - **Performance-managed out:** 1 each at UPMC, Etsy, Vody.
 - **Leveling calibration:** participated at UPMC and Etsy.
@@ -55,13 +63,6 @@ defensible in a live interview.
 ### Remote leadership
 - **Both Etsy and Vody teams were fully remote.** Continuous distributed-team leadership
   since 2022. Must appear in every variant; remote-first employers screen for it explicitly.
-
-### Recent hands-on work (personally executed)
-- Built v1 of Vody's attribute-tagging models via fine-tuned Qwen.
-- Built the customer-facing demo of the Vody data-optimization pipeline: product import from
-  URL → copy generation, attribute tagging, query enrichment → results.
-- Ongoing hands-on error analysis and opportunity analysis over production logs, customer
-  data, and query logs using DuckDB and Jupyter.
 
 ### Academic footprint
 - Complete record lives in two libraries: `publication-library.yaml` (papers) and
@@ -89,25 +90,56 @@ defensible in a live interview.
 
 ## 2. The three archetypes
 
-### A — Player-coach product-ML manager
+### A — Applied-science / product-ML manager with direct reports
 
-- **Target titles:** Senior Engineering Manager, Engineering Manager (senior scope), Manager
-  of Applied Science, Director of ML/AI at a 100–500 person company **with direct reports**.
+- **Target titles:** Manager or Senior Manager of Applied Science, Senior Engineering Manager,
+  Engineering Manager (senior scope), Manager of Machine Learning, Director of ML/AI at a
+  100–500 person company **with direct reports**.
+- **Neither the title nor the ladder is the filter — direct reports plus delivery
+  accountability are.** Applied-science and engineering ladders both route this role, and
+  which one a company uses says little. A posting qualifies when it has (a) direct IC reports
+  and (b) accountability for shipped model outcomes against customer or revenue KPIs. A
+  "Manager, Applied Science" whose team only advises other teams is out; a "Sr. EM" whose team
+  owns ranking quality is in.
 - **Target orgs:** big tech and scaled tech with product ML surfaces (search, recommendations,
   ads, personalization, marketplace). Small-org Director only if it is a direct line-manager
-  role.
+  role. **Soft filter, used as a tie-break:** prefer orgs with visible academic tolerance —
+  conference travel, teams that publish, external collaborations. The publication record is
+  load-bearing evidence in this archetype, and an org hostile to it wastes the differentiator
+  (§1 academic-footprint preference).
 - **Hard requirement:** direct IC reports, not managers-of-managers. Product ML with revenue
   or customer-facing KPIs, not platform/infra.
 - **Team-size floor:** ~5 at a strong brand. Willing to build from zero.
-- **Thesis:** *"I build and lead ML teams that ship models moving business metrics. I'm highly technical;
-  I technically mentor junior -- staff+ ICs and have an active publication record."*
-- **Foreground:** Etsy (metric wins, experiment velocity, cross-org partnerships); the §1
-  people-management evidence; remote team leadership; UPMC Director scope.
-- **Compress:** publications to the budget below. Academic service to one line. Do not
-  delete — it signals technical depth. For non-healthcare JDs, compress bullets about healthcare-specific problems.
-- **Section order:** Summary → Experience → Skills → Selected Publications (brief) → Education.
-- **Keyword emphasis:** hiring, performance management, mentorship, roadmap, A/B
-  experimentation, ranking, retrieval, recommendations, cross-functional, distributed team.
+- **Thesis:** *"I build and lead applied-science teams that ship models moving business
+  metrics. I technically mentor PhD-level and Staff+ ICs, and I keep an active publication
+  record in search and recommender systems."*
+- **Foreground:**
+  - Etsy — metric wins, experiment velocity, offline-evaluation rigor, cross-org partnerships.
+  - **Report composition, stated explicitly at every role** (§1): PhD scientists at Vody,
+    Intermediate–Sr. Staff applied-science and engineering ICs including PhD scientists at
+    Etsy, ~3 applied-ML engineers at UPMC. "Has managed scientists" is a literal screen on
+    applied-science manager postings, and "led an ML team" does not clear it. Follow the §1
+    rendering rule: name the composition, not the scientist headcount.
+  - The rest of the §1 people-management evidence; remote team leadership; UPMC Director scope.
+- **Technical credibility comes from mechanism and publications, not from a hands-on bullet.**
+  Every leadership bullet names the technique it rests on (graph ML, Solr candidate retrieval,
+  offline-eval design), so depth travels inside the leadership claims; the publication record
+  carries the rest. Personal hands-on work from §1 stays supporting — a clause at most, never
+  a headline. This archetype does not argue "I'm still an IC"; it argues "I'm a scientist who
+  manages."
+- **Compress:** publications to the budget below — but never bury or delete them; here they
+  are primary depth evidence, not decoration. For non-healthcare JDs, compress bullets about
+  healthcare-specific problems.
+- **Section order:** Summary → Experience → Selected Publications & Academic Leadership →
+  Skills → Education. Publications sit above Skills: they are evidence, and Skills is a
+  keyword surface.
+- **Summary opens on the applied-science-manager identity** — manager + years in ML + active
+  publication record — then the headline business metric. Not on process management.
+- **Keyword emphasis:** constant across JDs — hiring, performance management, technical
+  mentorship, roadmap, A/B experimentation, offline evaluation, cross-functional, distributed
+  team. **The technical center of gravity defaults to search** (retrieval, ranking,
+  recommendations) **and is swapped to match the JD** — LLM/GenAI product, personalization,
+  ads — when the posting leads elsewhere. Swap by reordering and rewording only (§3).
 - **Publication budget:** ~4 entries.
 - **Academic record budget:** co-organized workshops 1–2 compact lines — include these; they
   evidence leadership and collaboration-building, which is the archetype's core claim.
@@ -133,6 +165,11 @@ defensible in a live interview.
 - **Positioning:** applied, not academic. Applying existing research to direct customer
   impact. Scope is cross-org influence, not a single team. Reports optional; mentorship
   expected.
+- **A vs B:** direct reports *plus* delivery accountability. A posting is A when someone holds
+  direct IC reports and is accountable for that team's shipped model outcomes; it is B when the
+  scope is technical direction and cross-org influence without owning a single team's delivery.
+  Both archetypes claim technical depth and the publication record — that is not the
+  discriminator.
 - **Foreground:** technical depth and system design; cross-org collaboration wins; the
   academic record fully expanded — a differentiator almost no competing candidate has; recent
   hands-on work from §1 to establish current fluency.
@@ -289,10 +326,15 @@ mapping to a list of bullets. Role is the grouping key, not a per-bullet field (
 |---|---|
 | `id` | Short unique key |
 | `bullet` | Full text, mechanism and outcome included |
-| `skills[]` | Every skill and tool this bullet evidences |
+| `skills[]` | Every skill and tool this bullet evidences, **including domain** — `e-commerce` / `healthcare`. Domain-general bullets simply carry neither. |
 | `archetypes[]` | A, B, C, or any subset |
-| `domain` | e-commerce / healthcare / domain-general — for reordering when a JD is domain-specific |
-| `evidence_strength` | strong (has numbers) / weak (needs an open question answered — see TODO.md) |
+
+**Open evidence questions are `# TODO` comments**, written as the last line of the bullet
+entry they belong to and keyed to `TODO.md §3` where applicable. A bullet carrying a TODO is
+not resume-ready: it is missing a number or an outcome, usually flagged inline in the text with
+a bracketed placeholder (`[X]%`). Selection prefers bullets with no TODO; a placeholder is a
+question for the candidate, never a number to invent. When the candidate answers, fold the
+fact into the bullet and delete the comment.
 
 The **skills-evidence matrix** is generated into `skills-evidence-matrix.yaml` — one row per
 skill, listing the bullet and publication IDs that evidence it. Regenerate it with

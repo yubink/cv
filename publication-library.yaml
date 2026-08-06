@@ -35,7 +35,7 @@ publications:
     url: ""
 
   - id: ecom25-inference
-    citation: "**Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. Lessons from the bleeding edge: large-scale production inference of LLMs. In Proceedings of eCom'25: ACM SIGIR Workshop on eCommerce."
+    citation: "**Yubin Kim**, Arthur Maciejewicz, Brandon Beveridge. 2025. Lessons from the bleeding edge: large-scale production inference of LLMs. In Proceedings of SIGIR eCom'25: ACM SIGIR Workshop on eCommerce."
     venue_tier: workshop
     work_origin: vody
     skills: [llm-inference, vllm, production-ml, serving, gpu-optimization]
@@ -43,7 +43,7 @@ publications:
     url: "https://ceur-ws.org/Vol-4123/paper_31.pdf"
 
   - id: ecom23-xwalk
-    citation: "Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. XWalk: Random Walk Based Candidate Retrieval for Product Search. In Proceedings of eCom'23: ACM SIGIR Workshop on eCommerce."
+    citation: "Jon Eskreis-Winkler, **Yubin Kim**, Andrew Stanton. 2023. XWalk: Random Walk Based Candidate Retrieval for Product Search. In Proceedings of SIGIR eCom'23: ACM SIGIR Workshop on eCommerce."
     venue_tier: workshop
     work_origin: etsy
     skills: [graph-ml, retrieval, product-search, recommendations]

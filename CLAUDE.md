@@ -12,7 +12,7 @@ Read in this order; when they conflict, the earlier one wins:
 
 1. **`CONTEXT.md`** — durable facts and rules: candidate identity, career spine, the three archetypes (§2), global resume rules (§3), skills↔evidence traceability (§4), and library schemas (§5). This is the authority. Skills contain *procedures*; `CONTEXT.md` contains *facts*.
 2. **The libraries** (complete inventories; resumes show selected subsets):
-   - `bullet-library.yaml` — every experience bullet, grouped under top-level role keys (`vody`, `etsy`, `upmc-director`, `upmc-sds`, `cross-role`); each bullet carries `skills[]`, `archetypes[]`, `domain`, `evidence_strength` (role is the grouping key, not a per-bullet field). Bullets marked `evidence_strength: weak` contain bracketed placeholders (e.g. `[X]%`) keyed to open questions in `TODO.md §3` — treat placeholders as gaps to fill from the candidate, never invent the number.
+   - `bullet-library.yaml` — every experience bullet, grouped under top-level role keys (`vody`, `etsy`, `upmc-director`, `upmc-sds`, `cross-role`); each bullet carries `skills[]` and `archetypes[]` and nothing else (role is the grouping key, not a per-bullet field). Domain lives in `skills[]` as `e-commerce` / `healthcare`. Bullets with an open evidence gap carry a `# TODO` comment as their last line, usually alongside a bracketed placeholder in the text (e.g. `[X]%`) keyed to `TODO.md §3` — treat placeholders as gaps to fill from the candidate, never invent the number, and prefer TODO-free bullets when selecting.
    - `publication-library.yaml` — full publication record. `venue_tier` is authoritative; never inflate a workshop paper into a conference paper.
    - `academic-record.yaml` — co-organized `workshops:` (these are **service, never publications**), `service:`, and `talks:`.
    - `skills-evidence-matrix.yaml` — **generated** (do not hand-edit): one row per skill listing the bullet and publication IDs that evidence it. Regenerate with `python3 gen_matrix.py`.
@@ -23,7 +23,7 @@ The three base variants exist (`variants/variant-{A,B,C}.md`); `tailored/{slug}.
 ## The three archetypes (A/B/C)
 
 Every skill routes through one of these; full specs in `CONTEXT.md §2`:
-- **A** — player-coach product-ML manager (Sr. EM / Manager of Applied Science with direct IC reports).
+- **A** — applied-science / product-ML manager (Manager of Applied Science / Sr. EM with direct IC reports, accountable for the team's shipped outcomes).
 - **B** — strategic senior IC (Principal Applied Scientist / ML-direction Principal Engineer). Apply the Principal Engineer discriminator in §2B to reject systems/infra PE roles.
 - **C** — startup AI exec (0→1 Head of AI / Chief Scientist).
 

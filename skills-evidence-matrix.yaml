@@ -16,7 +16,7 @@ skills_evidence_matrix:
     bullets: ['vody-serving-stack']
     publications: []
   applied-science-management:
-    bullets: ['etsy-team']
+    bullets: ['vody-team', 'etsy-team']
     publications: []
   aws:
     bullets: ['vody-inference']
@@ -76,7 +76,7 @@ skills_evidence_matrix:
     bullets: []
     publications: ['tist16-crowd']
   customer-facing:
-    bullets: ['vody-roadmap']
+    bullets: ['vody-arr']
     publications: []
   data-analysis:
     bullets: ['vody-error-analysis']
@@ -97,7 +97,7 @@ skills_evidence_matrix:
     bullets: ['vody-error-analysis']
     publications: []
   e-commerce:
-    bullets: ['vody-feeds']
+    bullets: ['vody-arr', 'vody-feeds', 'vody-attribute-tagging', 'vody-inference', 'vody-serving-stack', 'vody-evaluation', 'vody-demo', 'vody-error-analysis', 'vody-academic-collabs', 'etsy-retrieval-systems', 'etsy-team', 'etsy-gms', 'etsy-ads-revenue', 'etsy-strategy', 'etsy-experiment-velocity', 'etsy-experiment-success']
     publications: ['ecsm-cikm26']
   efficiency:
     bullets: []
@@ -151,7 +151,7 @@ skills_evidence_matrix:
     bullets: ['vody-attribute-tagging', 'vody-demo', 'vody-error-analysis']
     publications: []
   healthcare:
-    bullets: ['upmc-product-team', 'upmc-ml-applications', 'upmc-sds-sdoh']
+    bullets: ['upmc-product-team', 'upmc-ml-team', 'upmc-ml-applications', 'upmc-pitching', 'upmc-vendor-management', 'upmc-sds-sdoh']
     publications: ['ctr26-rumination', 'hsdm20-clustering']
   hiring:
     bullets: ['vody-team', 'etsy-team', 'upmc-ml-team']
@@ -223,7 +223,7 @@ skills_evidence_matrix:
     bullets: ['vody-feeds']
     publications: ['ecom23-xwalk']
   product-strategy:
-    bullets: ['vody-arr', 'vody-roadmap']
+    bullets: ['vody-arr']
     publications: []
   production-ml:
     bullets: ['vody-inference']
@@ -268,7 +268,7 @@ skills_evidence_matrix:
     bullets: ['upmc-ml-applications', 'upmc-sds-sdoh']
     publications: []
   roadmap:
-    bullets: ['vody-roadmap', 'etsy-strategy']
+    bullets: ['vody-arr', 'etsy-strategy']
     publications: []
   search:
     bullets: ['etsy-retrieval-systems', 'upmc-product-team', 'upmc-sds-sdoh']

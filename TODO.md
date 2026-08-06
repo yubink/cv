@@ -17,8 +17,11 @@ Point-in-time information. Nothing here is a durable rule — durable rules live
    Workshop-overview papers for co-organized workshops excluded by design (they live in
    `academic-record.yaml`). Two `work_origin` values flagged `# VERIFY` in the file
    (`ctr26-rumination`, `sigir22-dense-retrieval`) — user to confirm.
-2. ~~Create `bullet-library.yaml`~~ — **seeded 2026-07-30**: 26 bullets (12 marked
-   `evidence_strength: weak` with bracketed placeholders keyed to the §3 questions). Bullets
+2. ~~Create `bullet-library.yaml`~~ — **seeded 2026-07-30**: 25 bullets. Bullets with an open
+   evidence gap carry a `# TODO` comment as the entry's last line, keyed to the §3 questions,
+   usually alongside a bracketed placeholder in the text. Schema simplified 2026-08-05: fields
+   are `id`, `bullet`, `skills[]`, `archetypes[]` only — `evidence_strength` and `domain` were
+   removed (domain is now a `skills[]` tag: `e-commerce` / `healthcare`). Bullets
    are grouped under top-level role keys (no per-bullet `role:`). The skills-evidence matrix
    is generated into `skills-evidence-matrix.yaml`; regenerate it after editing any `skills[]`
    field with `python3 gen_matrix.py` from the repo root. Remaining work: fill placeholders as
@@ -55,15 +58,11 @@ Point-in-time information. Nothing here is a durable rule — durable rules live
 
 ## 3. Open evidence questions
 
-Answers feed `bullet-library.yaml`. **Do not fabricate values.** A bullet needing one of
-these is `evidence_strength: weak` until answered.
+Answers feed `bullet-library.yaml`. **Do not fabricate values.** A bullet needing one of these
+carries a `# TODO` comment until answered; delete the comment when the fact lands in the text.
 
 **Etsy (blocks A and B)**
-- QPS, p99 latency, index size, requests/day for the retrieval systems.
-- Highest IC level managed — were there Staff or Sr. Staff direct reports?
-- Attribution method for the $40M GMS; sole vs. shared with partner teams.
 - On-call / reliability / SLO ownership.
-- *Mechanism* for 2x experiment velocity and 2x offline-online success rate.
 
 **Vody (blocks B and C)**
 - Production LLM inference numbers from the eCom'25 work: GPU cost reduction, tokens/sec,
@@ -76,17 +75,13 @@ these is `evidence_strength: weak` until answered.
 - Budget, comp decision, and vendor negotiation ownership.
 
 **UPMC (blocks applications to healthcare employers)**
-- Realized vs. pipeline savings.
 - PHI/HIPAA, model governance, clinical validation experience.
-- Dollar scale of contracts negotiated.
 
 **Cross-cutting**
 - Where former reports are now; any who followed between companies.
-- Full list of keynotes/talks/panels (partially recoverable from the commented-out HTML).
 - Infrastructure beyond the listed stack: Spark, Ray, Kafka/Flink, feature stores,
   Triton/TensorRT.
 - Patents, open source, advisory/board roles, teaching.
-- Whether any eval harness or LLM-judge framework was built as a durable asset vs. ad hoc.
 
 ---
 

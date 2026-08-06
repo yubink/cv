@@ -58,8 +58,8 @@ State the classification and the signals that drove it before proceeding.
 - Required skills, preferred skills, and responsibilities — **in the JD's own vocabulary**.
 - Note exact term variants ("recommender systems" vs "recsys"; "LLM" vs "GenAI"; "experiment"
   vs "A/B test"). The tailored resume mirrors the JD's variants.
-- Note the JD's domain (e-commerce, healthcare, other) for bullet reordering via the
-  `domain` field.
+- Note the JD's domain (e-commerce, healthcare, other) for bullet reordering. Domain is a
+  `skills[]` tag in `bullet-library.yaml` — `e-commerce` / `healthcare` — not a separate field.
 - Flag JD demands the candidate has **no evidence for**. These go on an interview-prep list
   in the output — never onto the resume.
 
@@ -67,7 +67,7 @@ State the classification and the signals that drove it before proceeding.
 Working on a **copy** of `variants/variant-{X}.md` — never modify the base:
 
 1. **Reorder** bullets so those evidencing the JD's highest-priority skills lead each role.
-   If the JD is domain-specific, promote matching-`domain` bullets.
+   If the JD is domain-specific, promote bullets carrying the matching domain skill tag.
 2. **Reword** for keyword alignment: swap synonyms to the JD's exact terms in bullets, the
    summary, and Skills. Facts, numbers, and claims stay identical.
 3. **Swap** (only if `bullet-library.yaml` is available): replace a weakly matching bullet

@@ -1,6 +1,6 @@
 ---
 name: build-variant
-description: Create or edit one of the three base resume variants (A: player-coach product-ML manager; B: strategic senior IC; C: startup AI exec) from the master bullet library and publication library. Use when the user asks to build, rebuild, restructure, or substantively edit a base variant. Do NOT use for tailoring a resume to a specific job posting — that is `tailor-to-jd`.
+description: Create or edit one of the three base resume variants (A: applied-science / product-ML manager with direct reports; B: strategic senior IC; C: startup AI exec) from the master bullet library and publication library. Use when the user asks to build, rebuild, restructure, or substantively edit a base variant. Do NOT use for tailoring a resume to a specific job posting — that is `tailor-to-jd`.
 ---
 
 ## Required inputs
@@ -34,8 +34,10 @@ description: Create or edit one of the three base resume variants (A: player-coa
 
 ### 2. Select bullets
 - Filter `bullet-library.yaml` to entries whose `archetypes[]` includes the target.
-- Within each role, order by the archetype's foreground guidance, preferring
-  `evidence_strength: strong`.
+- Within each role, order by the archetype's foreground guidance, preferring bullets with no
+  `# TODO` comment. A bullet carrying a TODO has an open evidence gap (usually a bracketed
+  placeholder in its text) and is not resume-ready: select it only if the archetype needs the
+  claim, and then ask the candidate for the missing fact rather than shipping the placeholder.
 - Respect the foreground/compress split: the foregrounded role gets the most bullets and
   page-one position; compressed roles get 1–3 lines each.
 - Every selected bullet must satisfy the formula (action → mechanism → outcome) and the tool
