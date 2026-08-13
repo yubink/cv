@@ -105,6 +105,9 @@ the academic record rules (CONTEXT.md §3):
 - **Target two pages** (CONTEXT.md §3) — don't trim a strong bullet to chase one page, and don't
   pad to fill. Keep the summary, foregrounded role, and headline metrics on page one.
 - Include the remote-leadership evidence — required in every variant (CONTEXT.md §1).
+- **Close the summary with the credential sentence** — required in every variant, final
+  position, canonical wording from CONTEXT.md §1 ("PhD visibility"). In archetype A, check it
+  does not sit in the same sentence as the "PhD- and Staff-level ICs" report-composition claim.
 
 ### 7. Score before presenting
 - Run the `score-resume` skill on the draft **without a JD** (base variants are

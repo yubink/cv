@@ -104,7 +104,11 @@ when it is itself a `tailored/` copy:
    can empty a role but never removes one: when a role's last bullet goes, its heading stays —
    `title`, `org`, `dates` (CONTEXT.md §1).
 5. **Retune the summary** — one or two sentences of the archetype thesis rephrased toward
-   this JD's language. No new claims.
+   this JD's language. No new claims. The closing **credential sentence** (CONTEXT.md §1) is a
+   standing element: reword it toward the JD's vocabulary if useful, but never cut it, never
+   move it out of final position, and never promote it into the opening sentence. Extend it with
+   the dissertation detail **only** when the posting is search/retrieval/ranking/IR-flavored
+   (CONTEXT.md §1) — the extension is off by default.
 6. **Adjust publications within the archetype's budget** (CONTEXT.md §2): swap entries so the
    most JD-relevant papers occupy the slots, applying the publication rules in CONTEXT.md §3.
    Do not exceed the budget because the JD is academic-flavored; that is an archetype-B

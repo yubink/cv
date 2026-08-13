@@ -35,6 +35,37 @@ defensible in a live interview.
 ### Education
 - Ph.D. Computer Science, Language Technologies Institute, Carnegie Mellon University (Dec 2018)
 - B.S. Software Engineering, University of Waterloo (Apr 2011)
+- Dissertation: *Robust Selective Search* — large-scale distributed retrieval over topically
+  partitioned shards (`thesis19` in `publication-library.yaml`; the thesis itself is rarely
+  listed as a publication, since Education covers the degree).
+
+**PhD visibility — the credential sentence.** The CMU doctorate is a differentiator that
+otherwise dies at the bottom of page two, so every variant and every tailored copy carries it in
+the Summary as the **final sentence**, in this canonical form:
+
+> PhD from Carnegie Mellon University in computer science.
+
+- **Final position, always.** The summary argues the archetype thesis first and the credential
+  closes it. Leading with the degree at 15+ years of experience reads as credentialing, which is
+  the opposite of the intent; closing with it reads as a fact.
+- **The Education entry still carries the full degree line.** The credential sentence does not
+  repeat the institute (LTI), the date, or the dissertation title — that would be the same claim
+  twice. Spell out "Carnegie Mellon University" rather than "CMU"; the initialism costs an ATS
+  keyword match and saves nothing.
+- **Dissertation detail is JD-conditional, and off by default.** The base variants carry the
+  canonical sentence and nothing more. A tailored copy may extend it — "…, with a dissertation
+  on large-scale distributed search" — only when the posting makes the subject matter directly
+  relevant (a search, retrieval, ranking, or IR role). Everywhere else it is noise that pulls the
+  summary toward an academic register. The dissertation fact is recorded above, so adding it is
+  rewording from a known fact, not invention.
+- **Tailoring may reword it, never cut or move it.** It is a standing element, like the
+  remote-leadership evidence.
+- **Archetype A's summary also names "PhD- and Staff-level ICs"** as report composition (see the
+  report-composition rule above). That is a claim about *reports*, not about the candidate's
+  credential — keep both, but keep them in separate sentences so the word doesn't stack.
+- **Banned, all of them:** post-nominals in the masthead ("Yubin Kim, Ph.D."), "Dr." anywhere,
+  the credential in the contact line, and moving Education above Experience. Each one converts a
+  low-key signal into a credentialing one.
 
 ### Career spine — lives in `bullet-library.yaml`
 **The spine is not duplicated here.** Titles, orgs, dates, team size and composition, hires,
@@ -255,6 +286,9 @@ the Applied Scientist posting.
   a publication, or a named project in the same document (§4).
 - Don't use ownership verbs without results ("Owned the technical and product roadmap" is a
   job description, not an accomplishment).
+- **Don't stack the credential.** The PhD appears exactly twice: the summary's closing
+  credential sentence (§1) and the Education entry. No post-nominals, no credential in the
+  contact line, no third mention.
 - Don't let the resume, LinkedIn, and Google Scholar contradict each other.
 - Don't maintain more than three base variants.
 - Don't let the title sequence carry the seniority story on its own. Director → Sr. EM → CSO

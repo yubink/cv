@@ -28,6 +28,10 @@ averaged in.
 | 7 | Does the resume mirror the JD's exact vocabulary for its required skills? | Yes |
 
 Notes on specific items:
+- **Item 2:** check that the summary closes with the credential sentence (CONTEXT.md §1, "PhD
+  visibility") and that CONTEXT.md §3's anti-stacking rule holds — no post-nominals, no
+  credential in the contact line. A missing or misplaced credential sentence is a **non-blocking
+  improvement**; stacking or post-nominals is a real defect worth scoring down.
 - **Item 1:** extract the JD's required/preferred skills and check literal presence
   (accounting for the JD's own term variants). List every required skill that is missing.
 - **Item 4:** the unit of judgment is the **role block, not the individual bullet.** CONTEXT.md
