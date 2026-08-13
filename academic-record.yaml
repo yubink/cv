@@ -3,7 +3,7 @@
 # This is the COMPLETE record; resumes show selected subsets.
 # Hand-edit freely. Keep talk titles verbatim.
 
-workshops:  # peer-reviewed workshops CO-ORGANIZED (service, never rendered as publications)
+workshops:  # peer-reviewed workshops ORGANIZED (service, never rendered as publications)
   - name: "Workshop on eCommerce"
     host: "SIGIR"
     years: "2023–2026"

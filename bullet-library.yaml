@@ -42,12 +42,12 @@ roles:
     management: "Performance-managed out 1."
     bullets:
       - id: vody-arr
-        bullet: "Grew revenue 0 → $2.5M ARR by converting Grubhub and Academy Sports & Outdoors as customers, and serving as primary technical contact."
+        bullet: "Grew revenue 0 → $2.5M ARR by converting Grubhub and Academy Sports & Outdoors into customers, and serving as primary technical contact."
         skills: [gtm, enterprise-sales, product-strategy, roadmap, customer-facing, e-commerce]
         archetypes: [A, C]
 
       - id: vody-team
-        bullet: "Hired ~9 and led a fully remote team of ~11 across science, engineering, product, and ops."
+        bullet: "Hired ~9 and led a fully remote team of ~11 across science, engineering, UX, product, and ops."
         skills: [hiring, team-building, remote-leadership, cross-functional-leadership, applied-science-management]
         archetypes: [A, C]
 
@@ -77,7 +77,7 @@ roles:
         archetypes: [A, B, C]
 
       - id: vody-evaluation
-        bullet: "Productionized continuous model evaluation with human-in-the-loop review, LLM-based evaluation."
+        bullet: "Productionized continuous model evaluation with human-in-the-loop review and LLM-based evaluation."
         skills: [llm-evaluation, human-in-the-loop, evaluation, e-commerce]
         archetypes: [A, B, C]
 
@@ -92,7 +92,7 @@ roles:
         archetypes: [B, C]
 
       - id: vody-academic-collabs
-        bullet: "Initiated academic collaborations on generative engine optimization (using LLMs fine-tuned with GRPO) and e-commerce user simulation, yielding peer-reviewed publications (ICLR 2026; CIKM under review)."
+        bullet: "Initiated academic collaborations on generative engine optimization (using LLMs fine-tuned with GRPO) and e-commerce user simulation, yielding peer-reviewed publications (ICLR 2026; WSDM under review)."
         skills: [research-collaboration, generative-engine-optimization, user-simulation, cross-org-influence, e-commerce]
         archetypes: [A, B, C]
 
@@ -102,7 +102,7 @@ roles:
     dates: "08/2025–12/2025"
     bullets:
       - id: cmu-teach
-        bullet: "Taught Large Language Models: Methods and Applications, a graduate level course for 100+ students"
+        bullet: "Taught Large Language Models: Methods and Applications, a graduate-level course for 100+ students"
         skills: [teaching, llm, communication]
         archetypes: [A, C]
 
@@ -121,12 +121,12 @@ roles:
         archetypes: [A, C]
 
       - id: etsy-gms
-        bullet: "Generated $40M+ in GMS over 1.5 years validated by A/B experiments: graph ML and Solr improvements, pioneered GNN embeddings."
+        bullet: "Generated $40M+ in GMS over 1.5 years validated by A/B experiments: graph ML and Solr improvements, including the first GNN embeddings at Etsy."
         skills: [graph-ml, gnn, solr, ab-testing, business-impact, retrieval, recommendations, e-commerce]
         archetypes: [A, B]
 
       - id: etsy-ads-revenue
-        bullet: "Enabled $30M+ in ad revenue through cross-org collaborations with the Ads organization."
+        bullet: "Generated $30M+ in ad revenue through cross-org collaboration with the Ads team."
         skills: [cross-org-influence, ads, business-impact, collaboration, e-commerce]
         archetypes: [A, B]
 
@@ -136,7 +136,7 @@ roles:
         archetypes: [A, B]
 
       - id: etsy-experiment-velocity
-        bullet: "Doubled online experiment velocity through initiating collaborations with analytics, product, and enablement teams to build new tooling, e.g. interleaving tests, end-to-end model testing."
+        bullet: "Doubled online experiment velocity by partnering with analytics, product, and enablement teams to build new tooling, e.g. interleaving tests, end-to-end model testing."
         skills: [ab-testing, experimentation-velocity, cross-org-influence, tooling, e-commerce]
         archetypes: [A, B]
 
@@ -169,7 +169,7 @@ roles:
         archetypes: [A]
 
       - id: upmc-pitching
-        bullet: "Identified ML projects worth $Ms in savings, pitched to SVPs and the CTO, developed prototypes, and executed pilots with provider/payor groups."
+        bullet: "Identified ML projects worth $Ms in savings, pitched to SVPs and the CTO, developed prototypes, and executed pilots partnering with provider/payor stakeholders."
         skills: [executive-communication, opportunity-analysis, prototyping, business-impact, healthcare]
         archetypes: [A, C]
 

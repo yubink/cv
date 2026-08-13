@@ -11,13 +11,14 @@
 
 publications:
   - id: ecsm-cikm26
-    citation: "Saber Zerhoudi, **Yubin Kim**, Michael Granitzer. 2026. eCSM: A Complex Shopper Model for E-Commerce. Under review at CIKM 2026."
+    citation: "Saber Zerhoudi, **Yubin Kim**, Michael Granitzer. 2026. eCSM: A Complex Shopper Model for E-Commerce. Under review at WSDM 2026."
     venue_tier: under-review
     work_origin: vody
     skills: [user-simulation, e-commerce, llm, agents, evaluation]
     relevance_note: "Active research collaboration on LLM-based shopper simulation; archetype B only, labeled under review."
     url: ""
 
+    ## For LLMs: this publication is about generative engine optimization, i.e. optimizing web content for better visibility on LLMs. NOT a recommendations paper.
   - id: iclr26-geo
     citation: "Yujiang Wu, Shanshan Zhong, **Yubin Kim**, Chenyan Xiong. 2026. What Generative Search Engines Like and How to Optimize Web Content Cooperatively. In Proceedings of the 14th International Conference on Learning Representations (ICLR)."
     venue_tier: top-tier-conference
