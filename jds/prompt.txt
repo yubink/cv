@@ -1,1 +1,0 @@
-I'm a hiring manager. Here is the job description and a resume. Rate the resume between "strong candidate", "good candidate", "do not interview".
