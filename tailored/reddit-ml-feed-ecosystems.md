@@ -13,7 +13,7 @@ Technical machine learning leader with 15+ years in ML and 7+ building and leadi
 ### Chief Science Officer — Vody — 01/2024–present
 *Seed-stage e-commerce startup, built from 0 → $2.5M revenue; owned the technical and product roadmap; reported to the CEO.*
 
-- Productionized continuous model evaluation with human-in-the-loop review, LLM-based evaluation.
+- Productionized continuous model evaluation with human-in-the-loop review and LLM-based evaluation.
 - Trained and scaled efficient, distilled BERT-based classifiers for Grubhub's 50M item catalog; built datasets for training/evaluation from scratch.
 - Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+.
 - Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog; lessons published at the SIGIR eCom'25.
@@ -22,17 +22,17 @@ Technical machine learning leader with 15+ years in ML and 7+ building and leadi
 
 ### Adjunct Instructor — Carnegie Mellon University — 08/2025–12/2025
 
-- Taught Large Language Models: Methods and Applications, a graduate level course for 100+ students.
+- Taught Large Language Models: Methods and Applications, a graduate-level course for 100+ students.
 
 ### Senior Engineering Manager, Search Retrieval — Etsy — 04/2022–10/2023
 *Built real-time, large-scale retrieval systems powering search, recommendations, and ads at etsy.com, a two-sided marketplace of 90M+ active buyers and 100M items.*
 
-- Generated $40M+ in GMS over 1.5 years validated by A/B experiments: graph ML and Solr retrieval improvements, pioneered GNN embeddings with initialization for cold-start items
+- Generated $40M+ in GMS over 1.5 years validated by A/B experiments: graph ML and Solr retrieval improvements, including Etsy's first GNN embeddings with initialization for cold-start items.
 - Led a fully remote team of ~5 machine learning and engineering ICs up to Sr. Staff level, including PhD scientists; technical mentorship, hiring (2), performance management, and team processes.
 - Co-authored the 3-year technical vision and roadmap for the Search Retrieval initiative.
 - Doubled the success rate of online experiments within 2 quarters by developing robust offline evaluation metrics and processes.
-- Doubled online experiment velocity through initiating collaborations with analytics, product, and platform teams to build new tooling, e.g. interleaving tests, end-to-end model testing.
-- Generated $30M+ in ad revenue through cross-org collaborations with the Ads organization.
+- Doubled online experiment velocity by partnering with analytics, product, and platform teams to build new tooling, e.g. interleaving tests, end-to-end model testing.
+- Generated $30M+ in ad revenue through cross-org collaboration with the Ads team.
 
 ### Director of Technology — UPMC Enterprises — 07/2019–03/2022
 

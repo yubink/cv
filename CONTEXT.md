@@ -14,8 +14,8 @@ this file, this file wins.
   panels (schema in §5)
 - `variants/` — three base resumes: `variant-A.md`, `variant-B.md`, `variant-C.md`
 - `skills/build-variant/` — create or edit a base variant
-- `skills/tailor-to-jd/` — match a JD to a variant and tailor a copy to it
-- `skills/score-resume/` — score any resume draft (JD optional)
+- `skills/tailor-to-jd/` — match one JD, or a set of them, to a variant and tailor one copy to it
+- `skills/score-resume/` — score any resume draft (JD optional; a set of JDs scores per JD)
 
 **Never invent facts, metrics, titles, or technologies.** If a claim needs a number that is
 not in this file or the libraries, ask the candidate. Every claim on a resume must be

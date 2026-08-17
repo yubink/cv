@@ -12,6 +12,12 @@ skills_evidence_matrix:
   agents:
     bullets: []
     publications: ['ecsm-cikm26']
+  airflow:
+    bullets: ['vody-serving-stack']
+    publications: []
+  ann:
+    bullets: ['etsy-gms']
+    publications: []
   applied-science-management:
     bullets: ['vody-team', 'etsy-team']
     publications: []
@@ -39,6 +45,9 @@ skills_evidence_matrix:
   clustering:
     bullets: []
     publications: ['hsdm20-clustering']
+  cold-start:
+    bullets: ['etsy-gms']
+    publications: []
   collaboration:
     bullets: ['etsy-ads-revenue']
     publications: []
@@ -57,6 +66,9 @@ skills_evidence_matrix:
   conversational-agents:
     bullets: ['vody-feeds']
     publications: []
+  conversion:
+    bullets: ['etsy-gms']
+    publications: []
   cross-functional-leadership:
     bullets: ['vody-team']
     publications: []
@@ -66,15 +78,21 @@ skills_evidence_matrix:
   crowdsourcing:
     bullets: []
     publications: ['tist16-crowd']
+  ctr:
+    bullets: ['etsy-ads-revenue']
+    publications: []
   customer-facing:
     bullets: ['vody-arr']
     publications: []
   data-analysis:
     bullets: ['vody-error-analysis']
     publications: []
-  dense-retrieval:
-    bullets: []
-    publications: ['sigir22-dense-retrieval']
+  data-pipelines:
+    bullets: ['vody-serving-stack']
+    publications: []
+  dataset:
+    bullets: ['vody-serving-stack']
+    publications: []
   distillation:
     bullets: ['vody-serving-stack']
     publications: []
@@ -103,7 +121,7 @@ skills_evidence_matrix:
     bullets: ['vody-error-analysis']
     publications: []
   evaluation:
-    bullets: ['vody-evaluation', 'etsy-experiment-success']
+    bullets: ['vody-serving-stack', 'vody-evaluation', 'etsy-experiment-success']
     publications: ['ecsm-cikm26', 'tois19-shards', 'ictir18-shard-eval']
   executive-communication:
     bullets: ['vody-fundraising', 'upmc-pitching']
@@ -113,6 +131,9 @@ skills_evidence_matrix:
     publications: ['tois19-shards']
   experimentation-velocity:
     bullets: ['etsy-experiment-velocity', 'etsy-experiment-success']
+    publications: []
+  faiss:
+    bullets: ['etsy-gms']
     publications: []
   federated-search:
     bullets: []
@@ -126,6 +147,9 @@ skills_evidence_matrix:
   generative-engine-optimization:
     bullets: ['vody-academic-collabs']
     publications: ['iclr26-geo']
+  gnn:
+    bullets: ['etsy-gms']
+    publications: []
   gpu-optimization:
     bullets: []
     publications: ['ecom25-inference']
@@ -144,12 +168,12 @@ skills_evidence_matrix:
   hiring:
     bullets: ['vody-team', 'etsy-team', 'upmc-ml-team']
     publications: []
+  huggingface:
+    bullets: ['vody-inference', 'vody-serving-stack']
+    publications: []
   human-in-the-loop:
     bullets: ['vody-evaluation']
     publications: ['tist16-crowd']
-  industry-ml:
-    bullets: []
-    publications: ['sigir22-dense-retrieval']
   information-extraction:
     bullets: ['upmc-sds-sdoh']
     publications: []
@@ -207,6 +231,9 @@ skills_evidence_matrix:
   performance-management:
     bullets: ['etsy-team', 'upmc-ml-team', 'xrole-promos-calibration']
     publications: []
+  personalization:
+    bullets: ['etsy-gms']
+    publications: []
   product-search:
     bullets: []
     publications: ['ecom23-xwalk']
@@ -218,6 +245,9 @@ skills_evidence_matrix:
     publications: ['ecom25-inference']
   prototyping:
     bullets: ['vody-demo', 'upmc-pitching']
+    publications: []
+  pytorch:
+    bullets: ['vody-inference', 'vody-serving-stack']
     publications: []
   query-logs:
     bullets: ['vody-error-analysis']
@@ -254,13 +284,10 @@ skills_evidence_matrix:
     publications: []
   search:
     bullets: ['vody-feeds', 'upmc-product-team', 'upmc-sds-sdoh']
-    publications: ['iclr26-geo', 'sigir22-dense-retrieval', 'tist16-crowd']
+    publications: ['iclr26-geo', 'tist16-crowd']
   selective-search:
     bullets: []
     publications: ['thesis19', 'ictir18-shard-eval', 'irj17-selective-search', 'sigir16-load-balancing', 'ecir16-wand']
-  semantic-search:
-    bullets: []
-    publications: ['sigir22-dense-retrieval']
   serving:
     bullets: ['vody-inference']
     publications: ['ecom25-inference']

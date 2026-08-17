@@ -12,7 +12,9 @@ Usage
     python3 render/render.py --all --pdf
     python3 render/render.py tailored/acme-mgr.md --pdf -o build/acme.html
 
-Output defaults to `build/<stem>.html` (and `build/<stem>.pdf` with --pdf).
+Output defaults to `build/yubin_kim-<stem>.html` (and the matching .pdf with
+--pdf), so a file handed to a recruiter carries the candidate's name; -o
+overrides the name entirely.
 PDF generation shells out to headless Chrome and reports the page count, since
 two pages is the target length (CONTEXT.md §3).
 
@@ -62,6 +64,10 @@ FONT_DIR = os.path.join(HERE, "fonts")
 FONT_MANIFEST = os.path.join(FONT_DIR, "manifest.json")
 
 MD_EXTENSIONS = ["extra", "sane_lists", "smarty"]
+
+# Rendered files are what actually get attached to an application, so they lead
+# with the candidate's name rather than the internal variant slug.
+NAME_PREFIX = "yubin_kim"
 
 # Type-density presets, as (--base-size, --lead). Vertical rhythm in resume.css
 # is em-based, so shrinking the base size tightens the whole page proportionally.
@@ -599,6 +605,13 @@ def display_path(path: str) -> str:
     return os.path.abspath(path) if relative.startswith("..") else relative
 
 
+def output_stem(stem: str) -> str:
+    """Prefix an input stem with the candidate's name, without doubling it."""
+    if stem.lower().startswith(NAME_PREFIX):
+        return stem
+    return f"{NAME_PREFIX}-{stem}"
+
+
 def collect_inputs(paths: list[str], use_all: bool) -> list[str]:
     if use_all:
         found = sorted(glob.glob(os.path.join(ROOT, "variants", "*.md")))
@@ -687,7 +700,7 @@ def main() -> int:
             html_path = args.output
         else:
             stem = os.path.splitext(os.path.basename(path))[0]
-            html_path = os.path.join(args.outdir, f"{stem}.html")
+            html_path = os.path.join(args.outdir, f"{output_stem(stem)}.html")
         os.makedirs(os.path.dirname(os.path.abspath(html_path)), exist_ok=True)
         pdf_path = os.path.splitext(html_path)[0] + ".pdf"
 

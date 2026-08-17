@@ -101,10 +101,18 @@ library construction — cut, evidence with a real bullet, or foundational tier:
   The paper is sufficient evidence to keep the skill; an Etsy bullet would make it stronger.
 - Query understanding — no bullet names it. Vody's query enrichment work would evidence it,
   but that work isn't in any bullet yet. Evidence question, not a cut.
-- Semantic search / two-tower dense retrieval via ANN — ANN appears only in the Vody tool
-  dump; the two-tower claim has no bullet.
-- PyTorch, Scikit-learn — no bullet names either.
-- Airflow, Metaflow, LangChain — no bullet names any of the three.
+- Semantic search / two-tower dense retrieval via ANN — ~~ANN has no bullet~~ **resolved
+  2026-08-17 (user):** the ANN/Faiss work was at Etsy, and `etsy-gms` now names the Faiss ANN
+  index serving the GNN embeddings, so ANN and Faiss have bullet evidence. The *two-tower*
+  claim still has none — it is a separate skill and stays off variants until it does.
+- ~~PyTorch~~ — **resolved 2026-08-17 (user):** PyTorch and Hugging Face were used for both the
+  BERT distillation work and the LLM inference work, so both are tagged on
+  `vody-serving-stack` and `vody-inference`. Tagged in `skills[]` without being named in the
+  bullet text — the same convention as `aws`/`gcp` — which keeps both bullets inside the 1–3
+  named-technology budget while the matrix still carries the evidence. Scikit-learn unclaimed.
+- ~~Airflow~~ — **resolved 2026-08-17:** `vody-serving-stack` now names the efficient daily
+  inference data pipelines built with Airflow, so Airflow has bullet evidence. Metaflow and
+  LangChain still have none.
 - Lucene — Solr (Etsy) and Elasticsearch (UPMC) are evidenced; Lucene itself is not.
 - Cursor, Claude Code, vim, git — foundational tier at most. Cursor and Claude Code are a
   worthwhile currency signal in 2026; vim and git are noise and can go.

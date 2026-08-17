@@ -1,0 +1,28 @@
+Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.
+
+The Community You Will Join:
+
+Airbnb is powered by our Guests & Hosts. Our teams work on everything from driving improvements for the end-to-end Host and Guest experience to launching new product verticals from the ground up. Our job is to build world-class, comprehensive platforms and features to create high quality experiences for our outstanding guest and host communities.
+
+Within our Guest & Host organization is the Communication and Connectivity team. The communication branch owns the tools used daily by millions of guests and hosts, including Messaging (2nd most used surface within Airbnb), push notifications, and other deep integrations with key operating system features. The connectivity branch is responsible for connecting hosts together through various ways, it also built a platform to connect 3rd party partners from various domains with Airbnb. The communication and connectivity team has engineers covering multiple disciplines including web engineers, native engineers, backend engineers, data engineers, and machine learning engineers. The role posted here will focus on Machine learning, Data and AI applications. 
+
+The Difference You Will Make:
+
+Drive alignment across engineering, product, and leadership on AI investment priorities and set the multi-year technical roadmap.
+Partner with Product, Design, and Data Science to take high-impact ML initiatives from concept to production.
+Ensure high-quality, efficient data pipelines that support both business and AI needs.
+Define and own success metrics that tie ML work directly to business outcomes.
+Grow and mentor a team of ML/Data engineers, raising the technical bar across the org.
+A Typical Day:
+
+Lead and mentor a senior team of Managers and Engineers across Machine Learning, Data Engineering and Software Engineering.
+This role is highly cross functional so you will partner with senior leadership across Engineering, Data Science, Product, and across our Business to align stakeholders, define multi-year roadmaps, set and execute on iterative milestones.
+Coaching and developing team members, helping them grow their careers, technical expertise, and collaboration skills.
+Your Expertise:
+
+12+ years of overall engineering experience with 5+ years managing a team in a fast paced, high growth tech environment
+BS, MS or PhD in Computer Science or related field
+Experience building, leading, and architecting full-stack products and systems at enterprise scale with a great impact
+Experience in applying modern artificial intelligence technologies to products and development cycles
+Technical leadership: hands on experience leading project teams, setting technical direction and strategy, and working cross functionally with Product and Data Science teams
+Strong communication and collaboration skills. Examples of working across teams and organizations on technical initiatives.

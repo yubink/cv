@@ -37,8 +37,8 @@ roles:
     title: "Chief Science Officer"
     org: "Vody"
     dates: "01/2024–present"
-    context: "Built seed stage e-commerce startup from 0 → $2.5M revenue; owned technical/product roadmap; reported to the CEO."
-    team: "~11 across science, engineering, product, and ops; built from zero, hired ~9; includes 3 PhD scientists; fully remote."
+    context: "Built seed stage e-commerce startup from 0 → $2.5M revenue with $B enterprise customers; owned technical/product roadmap and technical sales; reported to the CEO."
+    team: "~11 across science, engineering, product, and ops; built from zero, hired 11; includes 3 PhD scientists; fully remote."
     management: "Performance-managed out 1."
     bullets:
       - id: vody-arr
@@ -47,7 +47,7 @@ roles:
         archetypes: [A, C]
 
       - id: vody-team
-        bullet: "Hired ~9 and led a fully remote team of ~11 across science, engineering, UX, product, and ops."
+        bullet: "Hired 11 and led a fully remote team of ~11 across science, engineering, UX, product, and ops."
         skills: [hiring, team-building, remote-leadership, cross-functional-leadership, applied-science-management]
         archetypes: [A, C]
 
@@ -68,12 +68,12 @@ roles:
 
       - id: vody-inference
         bullet: "Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog; lessons published at the SIGIR eCom'25."
-        skills: [llm-inference, rag, vllm, kubernetes, gcp, production-ml, serving, e-commerce]
+        skills: [llm-inference, rag, vllm, kubernetes, gcp, pytorch, huggingface, production-ml, serving, e-commerce]
         archetypes: [A, B, C]
 
       - id: vody-serving-stack
-        bullet: "Trained and scaled efficient, distilled BERT-based classifiers for Grubhub's 50M item catalog; built datasets for training/evaluation from scratch."
-        skills: [bert, distillation, dataset, evaluation, aws, e-commerce]
+        bullet: "Trained and scaled efficient, distilled BERT-based classifiers for Grubhub's 50M item catalog; built datasets for training/evaluation from scratch, and built efficient daily inference data pipelines with Airflow."
+        skills: [bert, distillation, dataset, evaluation, aws, airflow, data-pipelines, pytorch, huggingface, e-commerce]
         archetypes: [A, B, C]
 
       - id: vody-evaluation
@@ -102,7 +102,7 @@ roles:
     dates: "08/2025–12/2025"
     bullets:
       - id: cmu-teach
-        bullet: "Taught Large Language Models: Methods and Applications, a graduate-level course for 100+ students"
+        bullet: "Taught *[Large Language Models: Methods and Applications](https://2025.cmu-llms.org/)*, a graduate-level course for 100+ students."
         skills: [teaching, llm, communication]
         archetypes: [A, C]
 
@@ -111,23 +111,23 @@ roles:
     title: "Senior Engineering Manager, Search Retrieval"
     org: "Etsy"
     dates: "04/2022–10/2023"
-    context: "Built real-time, large-scale retrieval systems powering search, recommendations, and ads at etsy.com, a marketplace of 90M+ active buyers and 100M items."
-    team: "~5 science and engineering ICs, Intermediate–Sr. Staff, including 2 PhD scientists; inherited and grew, hired 2; fully remote."
+    context: "Built real-time, low-latency, large-scale retrieval systems powering search, recommendations, and ads at etsy.com, a two-sided marketplace of 90M+ active buyers and 100M items."
+    team: "~5 science and engineering ICs, Intermediate–Sr. Staff, including 2 PhD scientists; inherited and grew, hired 3; fully remote."
     management: "2 promotions delivered, including 1 Staff-level; participated in leveling calibration; performance-managed out 1."
     bullets:
       - id: etsy-team
-        bullet: "Led a fully remote product ML team of ~5 science and engineering ICs up to Sr. Staff level; technical mentorship, hiring (2), performance management, and team processes."
+        bullet: "Led a fully remote product ML team of ~5 science and engineering ICs up to Sr. Staff level; technical mentorship, hiring (3), performance management, and team processes."
         skills: [team-leadership, mentorship, hiring, performance-management, remote-leadership, applied-science-management, e-commerce]
         archetypes: [A, C]
 
       - id: etsy-gms
-        bullet: "Generated $40M+ in GMS over 1.5 years validated by A/B experiments: graph ML and Solr improvements, including the first GNN embeddings at Etsy."
-        skills: [graph-ml, gnn, solr, ab-testing, business-impact, retrieval, recommendations, e-commerce]
+        bullet: "Generated $40M+ in GMS over 1.5 years through increasing conversion, validated by A/B experiments: Solr improvements; personalization in retrieval; introducing Etsy's first GNN embeddings, initialized for cold-start items and served from a Faiss ANN index."
+        skills: [graph-ml, gnn, solr, ab-testing, business-impact, retrieval, recommendations, personalization, cold-start, conversion, ann, faiss, e-commerce]
         archetypes: [A, B]
 
       - id: etsy-ads-revenue
-        bullet: "Generated $30M+ in ad revenue through cross-org collaboration with the Ads team."
-        skills: [cross-org-influence, ads, business-impact, collaboration, e-commerce]
+        bullet: "Generated $30M+ in ad revenue by increasing CTR through cross-org collaboration with the Ads team."
+        skills: [cross-org-influence, ads, ctr, business-impact, collaboration, e-commerce]
         archetypes: [A, B]
 
       - id: etsy-strategy
@@ -136,7 +136,7 @@ roles:
         archetypes: [A, B]
 
       - id: etsy-experiment-velocity
-        bullet: "Doubled online experiment velocity by partnering with analytics, product, and enablement teams to build new tooling, e.g. interleaving tests, end-to-end model testing."
+        bullet: "Doubled online experiment velocity by partnering with analytics, product, and platform teams to build new tooling, e.g. interleaving tests, end-to-end model testing."
         skills: [ab-testing, experimentation-velocity, cross-org-influence, tooling, e-commerce]
         archetypes: [A, B]
 
@@ -150,8 +150,8 @@ roles:
     title: "Director of Technology"
     org: "UPMC Enterprises"
     dates: "07/2019–03/2022"
-    team: "~12 product/engineering ICs and managers, later, an applied-ML team of ~3 ML engineers; inherited and grew."
-    management: "1 Staff-level promotion delivered; participated in leveling calibration; performance-managed out 1."
+    team: "~12 product/engineering ICs and managers, later, an applied-ML team of ~3 ML engineers; inherited and grew, hired 1."
+    management: "1 Staff-level promotion delivered; participated in leveling calibration; performance-managed out 2 (1 from the applied-ML team, per upmc-ml-team)."
     bullets:
       - id: upmc-product-team
         bullet: "Led a product team of ~12 engineering/QA ICs and product/engineering managers, building an Elasticsearch-based search engine over 160M+ clinical documents."
@@ -159,7 +159,7 @@ roles:
         archetypes: [A, B]
 
       - id: upmc-ml-team
-        bullet: "Led an applied ML team of ~3 ML engineers; created career paths, hiring, performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer."
+        bullet: "Led an applied ML team of ~3 ML engineers; created career paths, hiring (1), performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer."
         skills: [team-leadership, mentorship, hiring, performance-management, career-development, healthcare]
         archetypes: [A]
 
@@ -194,7 +194,7 @@ roles:
 # Render inside the relevant role's block or a leadership summary, never as a standalone role.
 cross-role:
   - id: xrole-promos-calibration
-    bullet: "Delivered 3 IC promotions (2 at Etsy, 1 at UPMC) and participated in leveling calibration at both companies; performance-managed out 3 low performers across UPMC, Etsy, and Vody."
+    bullet: "Delivered 3 IC promotions (2 at Etsy, 1 at UPMC) and participated in leveling calibration at both companies; performance-managed out 4 low performers across UPMC, Etsy, and Vody."
     skills: [performance-management, career-development, calibration, mentorship]
     archetypes: [A]
 

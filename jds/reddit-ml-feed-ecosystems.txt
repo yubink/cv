@@ -1,0 +1,35 @@
+Machine Learning Manager, Feed Ecosystems
+Remote - United States
+Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit www.redditinc.com.
+Reddit is looking for an experienced Engineering Manager to lead our Feed Ecosystems team. In this role, you’ll lead a high-impact team of Machine Learning Engineers focused on building recommendation systems that support sustainable growth across users, posts, and communities. Your team will improve relevance for new, low-signal, and logged-out users; help new posts and communities find the right audiences; and develop ML systems that balance personalization, discovery, and ecosystem quality across Reddit’s 100,000+ active communities.
+
+If applying ML / AI in production to improve Reddit Relevance and strengthen Reddit’s community ecosystem excites you, then you’ve found the right place.
+
+Responsibilities:
+
+Define Technical Vision & Strategy: Define the technical vision and long-term roadmap for Feed Ecosystems, aligning recommender-system investments with Reddit’s goals around user growth, contribution, community health, and high-quality discovery.
+Team Leadership & Development: Coach and support the development of your team, constantly seeking opportunities to grow their skills and impact.
+Cross-Functional Partnership: Work closely with product, design, data science, safety, community, ads, and platform partners to identify opportunities, set expectations, and communicate your team’s work.
+Technical Execution & Delivery: Oversee the design, development, and optimization of ML systems that improve cold-start relevance, new post and community distribution, community discovery, and feed quality.
+Quality & Ecosystem Measurement: Help define and operationalize signals for subjective and objective quality, ensuring Feed systems optimize not only for engagement, but also for user value, community health, contribution, and long-term ecosystem outcomes.
+Platform & Infrastructure Collaboration: Collaborate with platform and infrastructure teams to build scalable AI-powered systems that support discovery, personalization, and healthy content distribution across Reddit.
+Operational Excellence: Maintain high standards for system performance, reliability, efficiency, and responsible AI practices in alignment with user needs and ecosystem health.
+Recruiting & Growth: Partner with our recruiting team to attract, interview, and hire diverse and talented machine learning engineers, growing a world-class team.
+Qualifications:
+
+Experience Leading ML Teams: 2+ years of experience building and managing high-performing ML or recommender-systems teams.
+Deep ML Expertise: Hands-on experience with large-scale production ML systems, ideally including recommender systems, personalization, cold-start modeling, content understanding, or LLM-powered recommendation applications.
+Technical Domain Knowledge: Strong understanding of recommender systems, including candidate retrieval, ranking, value modeling, ecosystem dynamics, and measurement strategies. 
+Strategic Thinking: Ability to develop and communicate a clear, compelling technical strategy across ambiguous problem spaces, balancing user relevance, community growth, content quality, safety, and business impact.
+Impact-Driven Mindset: Passion for developing scalable, well-designed, and responsible AI systems that improve user value while supporting a healthy and sustainable content ecosystem.
+Exceptional Communication & Collaboration: Strong interpersonal skills and a collaborative mindset, with the ability to effectively communicate complex technical topics to diverse audiences and build strong relationships with cross-functional partners.
+Benefits:
+
+Comprehensive Healthcare Benefits and Income Replacement Programs
+401k with Employer Match
+Global Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support
+Family Planning Support
+Gender-Affirming Care
+Mental Health & Coaching Benefits
+Flexible Vacation & Paid Volunteer Time Off
+Generous Paid Parental Leave 

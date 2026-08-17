@@ -1,6 +1,6 @@
 ---
 name: score-resume
-description: Score a resume draft against the system scorecard. Works on base variants (no JD) or tailored copies (with JD). Use when the user asks to evaluate, review, or grade a resume — and as the final step of `build-variant` and `tailor-to-jd`.
+description: Score a resume draft against the system scorecard. Works on base variants (no JD) or tailored copies (with one JD or several). Use when the user asks to evaluate, review, or grade a resume — and as the final step of `build-variant` and `tailor-to-jd`.
 ---
 
 ## Required inputs
@@ -9,13 +9,20 @@ description: Score a resume draft against the system scorecard. Works on base va
 |---|---|---|
 | `CONTEXT.md` | ${CLAUDE_PROJECT_DIR} | Stop. Ask the user for it. |
 | The resume to score | User, or a `variants/` / `tailored/` file | Ask. |
-| The JD | User | **Optional.** Without it, JD-dependent items are scored N/A and the result is a base-variant score. |
+| The JD, or several | User | **Optional.** Without any, JD-dependent items are scored N/A and the result is a base-variant score. With more than one, score the JD-dependent items **once per JD** (see below). |
 | Target archetype | Infer from the file, or ask | Needed for budget and section-order checks. If it can't be inferred, ask. |
 
 ## Scoring
 
 Grade each item 1–5. **Any item below 4 is a blocker.** N/A items are excluded, not
 averaged in.
+
+**With several JDs** (a resume tailored to a set by `tailor-to-jd`): items 1 and 7 are scored
+**once per JD** and the **worst** score governs the item — a resume that fails an ATS filter at
+one of three postings has failed. Report the per-JD scores alongside the governing one, and
+attribute every item-1/item-7 blocker to the JD it came from. The JD-independent items are scored
+once, as usual. Do not average across JDs, and do not excuse a low score on one JD because the
+others score well.
 
 | # | Item | Needs JD? |
 |---|---|---|
@@ -60,7 +67,8 @@ Notes on specific items:
 
 ## Output
 
-A scorecard table: item, score (or N/A), one-line justification. Then:
+A scorecard table: item, score (or N/A), one-line justification. With several JDs, give items 1
+and 7 one column per JD plus the governing score. Then:
 
 1. **Blockers** — every item below 4, with the specific failing content quoted and a concrete
    fix. Fixes must respect the no-invention rule: if the fix needs a fact or number that
@@ -68,7 +76,8 @@ A scorecard table: item, score (or N/A), one-line justification. Then:
    something to write in.
 2. **Non-blocking improvements** — briefly.
 3. **Verdict** — pass (no blockers) or fail (list of blockers), and if a JD was provided, a
-   one-line judgment: would you advise submitting this to this posting as-is?
+   one-line judgment: would you advise submitting this to this posting as-is? With several JDs,
+   give that judgment **per posting** — one resume can be submittable to two of three.
 
 ## Exit conditions
 
