@@ -1,0 +1,89 @@
+## Assessment: **Strong candidate**
+
+Based strictly on the JD and the evidence in the resume, I would put this candidate in the **strong candidate** bucket and recommend advancing them to an interview.
+
+### Why the resume matches unusually well
+
+| JD requirement                            | Evidence in resume                                                                                      | Assessment            |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------- |
+| **2+ years leading ML/recommender teams** | 7+ years leading teams; Senior Engineering Manager at Etsy; CSO at Vody; ML leadership at UPMC          | **Strong match**      |
+| **Large-scale production ML**             | Etsy retrieval systems serving a 90M+ buyer marketplace and 100M items; Vody production LLM/RAG systems | **Strong match**      |
+| **Candidate retrieval**                   | Explicitly led Search Retrieval at Etsy; publication on candidate retrieval; graph ML retrieval         | **Exceptional match** |
+| **Embedding/indexing systems**            | GNN embeddings, embedding-based retrieval, Solr, Elasticsearch                                          | **Strong match**      |
+| **Recommender systems / personalization** | Retrieval powering search, recommendations, and ads; recommender systems explicitly listed              | **Strong match**      |
+| **Measurement & experimentation**         | A/B validation, offline metrics, interleaving tests, doubled experiment velocity/success rate           | **Exceptional match** |
+| **Technical vision / roadmap**            | Co-authored 3-year Search Retrieval vision; owned Vody technical/product roadmap                        | **Strong match**      |
+| **Cross-functional leadership**           | Analytics, product, enablement, Ads collaboration; led science/engineering/product/ops at Vody          | **Strong match**      |
+| **Hiring/team development**               | ~9 hires, managed PhD scientists, promotions, performance management, leveling calibration              | **Strong match**      |
+| **Transformer/LLM experience**            | BERT, RAG, LLM fine-tuning, GRPO, vLLM, production inference                                            | **Strong match**      |
+| **Operational/scaling concerns**          | Real-time retrieval, large catalogs, production inference, Kubernetes/GPU efficiency                    | **Good match**        |
+
+The candidate's Etsy experience is particularly relevant: the role was explicitly **Search Retrieval**, with responsibility for systems powering search, recommendations, and ads, and included graph-based retrieval and embeddings. That's very close to the core technical domain of this Reddit role.
+
+The experimentation record is another standout. The resume doesn't merely say "experienced with A/B testing"; it gives concrete evidence of improving experimentation infrastructure and velocity. That's highly relevant to Reddit's emphasis on retrieval quality, coverage, incrementality, and downstream impact.
+
+Reddit's current engineering organization also has roles around Search & Recommendation and embeddings, reinforcing that this candidate's search/retrieval/embedding background is directly relevant to the broader technical area. ([Reddit Inc][1])
+
+### The main reservations
+
+I would **not** treat this as an automatic hire based on the resume alone. There are several areas I'd specifically probe in an interview:
+
+1. **Feed retrieval vs. search retrieval**
+
+   * Most of the strongest evidence is search/e-commerce retrieval rather than a personalized social-feed candidate-generation system.
+   * I'd want to establish how deeply they understand feed-specific issues: freshness, exploration, diversity, creator/ecosystem effects, user-interest evolution, and candidate-source incrementality.
+
+2. **Scale of direct management**
+
+   * The Etsy team was only ~5 ICs, and the Vody organization was ~11 people across science, engineering, product, and ops.
+   * That's credible management experience, but the resume doesn't demonstrate management of a large multi-team ML organization.
+   * For a manager role at Reddit, I'd test whether they can scale their leadership beyond a small expert team.
+
+3. **Ranking handoff**
+
+   * Retrieval is clearly a strength, but the resume provides less evidence of owning the interface between retrieval and downstream ranking, including candidate quotas, source mixing, recall/precision tradeoffs, and end-to-end feed metrics.
+
+4. **Responsible recommendation / ecosystem health**
+
+   * The JD explicitly mentions responsible recommendations, content quality, and ecosystem health.
+   * The resume is much stronger on relevance/business impact than on safety, integrity, creator incentives, diversity, or avoiding recommendation feedback loops.
+
+5. **Recent management continuity**
+
+   * The candidate moved from Etsy management into a CSO role at a seed-stage startup and has also been teaching.
+   * I'd clarify how much of the last ~2.5 years has been hands-on people management versus technical/product leadership.
+
+### What would make me advance them
+
+The combination of **retrieval + recommender systems + embeddings + experimentation + ML management** is sufficiently close that the candidate clears the resume screen comfortably.
+
+In fact, the strongest evidence is unusually specific:
+
+* "$40M+ in GMS" from retrieval improvements
+* graph ML and GNN embeddings
+* explicit candidate-retrieval publication
+* retrieval systems powering **search, recommendations, and ads**
+* 3-year retrieval technical vision
+* offline evaluation + A/B experimentation
+* hiring and management of ML engineers/scientists
+* production transformer/LLM systems
+
+That's much stronger than a generic "ML manager" resume.
+
+### Interview focus
+
+If I were designing the screen, I'd spend relatively little time establishing whether they know ML/retrieval—they clearly do. I'd instead test **managerial scope and feed-relevance depth**:
+
+* "Design Reddit's candidate-generation architecture for a personalized home feed."
+* "How would you measure retrieval quality independently of the ranker?"
+* "How would you determine whether a new candidate source is incrementally valuable?"
+* "How do you balance recall, freshness, diversity, latency, and compute cost?"
+* "How should retrieval interact with ranking?"
+* "Tell me about a major technical disagreement with a Staff/Principal engineer."
+* "How do you manage a team when your strongest ICs know the technical details better than you?"
+* "Describe a roadmap tradeoff where you deliberately didn't pursue the technically most interesting option."
+
+**Bottom line:** **Strong candidate.** The resume is an unusually direct match on the hardest technical requirement—large-scale retrieval/recommendation leadership. The biggest unknown isn't technical competence; it's whether the candidate has the **organizational leadership scale and feed-specific product judgment** expected of a Reddit ML manager. Those are interviewable gaps rather than resume-screen blockers.
+
+[1]: https://redditinc.com/careers?utm_source=chatgpt.com "Careers - Reddit"
+

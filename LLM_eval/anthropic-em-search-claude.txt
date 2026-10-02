@@ -1,0 +1,20 @@
+**Strong candidate.**
+
+**Why this is a strong match:**
+
+- **Search at scale, end-to-end** — This is the biggest differentiator. Most EM candidates have *adjacent* search experience; Yubin has run indexing, retrieval, ranking, and serving directly: Etsy's Search Retrieval team (marketplace of 90M+ buyers), Elasticsearch over 160M+ clinical documents at UPMC, and production RAG/LLM retrieval at Vody. The JD explicitly wants "direct experience building or operating search systems at scale" — this is a near-exact match rather than a stretch.
+
+- **People leadership + hiring bar** — Built a team from zero at Vody (~9 hires), grew and led Etsy's team to Sr. Staff level, delivered 3 IC promotions (2 to Staff), and has performance-managed out low performers across three companies. The JD wants someone who can "recruit, close and retain strong engineers in a competitive market" — the calibration and hiring track record support this.
+
+- **Technical depth for a hands-on EM** — PhD in distributed search from CMU, teaches an LLM graduate course, co-authors publications on retrieval/ranking (XWalk candidate retrieval, generative search optimization). This satisfies the "enough technical depth to review designs, read code, engage credibly with senior ICs" bar convincingly.
+
+- **Product judgment without a PM** — At Vody, owned the full technical *and* product roadmap reporting directly to the CEO, and drove GMV/revenue outcomes. Matches the JD's need for an EM who can "wear the product hat" given thin PM coverage.
+
+- **Cross-functional and business impact** — $70M+ combined impact at Etsy (GMS + ad revenue) through cross-org work with product, analytics, and ads teams — directly evidences the "align product, research and infrastructure partners" requirement.
+
+**Minor gaps worth probing in interview:**
+- No explicit mention of AI safety interest/motivation — worth asking about directly given Anthropic's mission emphasis.
+- Current title (Chief Science Officer) is broader/more executive than a pure line-EM role — confirm they want to return to a more scoped engineering management role day-to-day.
+- No named experience with the "vendor-to-in-house migration" preferred qualification, though the Etsy/Solr and Vody vLLM work suggests adjacent comfort with infra ownership.
+
+Overall, the search-domain specificity here is unusually strong for an EM search — this resume should be fast-tracked.

@@ -61,6 +61,12 @@ Notes on specific items:
 
   Beyond those three, thin per-bullet outcome density is a **non-blocking improvement**, not a
   blocker. Quote what fails and name which of the three it is.
+- **Item 2, archetype B:** the target level must read as Staff/Principal, and the resume must
+  not read as a step down from the candidate's prior management scope. Check CONTEXT.md §2B's
+  narrative rule: no objective statement or transition framing anywhere, no apologetic or
+  "back to coding" register, leadership scope still legible at each role, *and* at least one
+  named hands-on bullet in the recent roles. A B draft missing either half of that combination
+  is a **blocker**, not an improvement — one half alone answers a question nobody asked.
 - **Item 6:** satisfied by recent experience bullets and recent publications together. Older
   publications are legitimate depth evidence and do not *lower* this score; the check is
   whether recent evidence exists, not whether old evidence is present.

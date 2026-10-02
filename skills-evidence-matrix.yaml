@@ -34,10 +34,10 @@ skills_evidence_matrix:
     bullets: ['xrole-promos-calibration']
     publications: []
   career-development:
-    bullets: ['upmc-ml-team', 'xrole-promos-calibration']
+    bullets: ['upmc-ml-team', 'xrole-ic-growth', 'xrole-promos-calibration']
     publications: []
   claims-processing:
-    bullets: ['upmc-ml-applications']
+    bullets: ['upmc-ml-applications', 'upmc-ml-applied-lead']
     publications: []
   clinical-nlp:
     bullets: ['upmc-product-team', 'upmc-sds-sdoh']
@@ -160,10 +160,10 @@ skills_evidence_matrix:
     bullets: ['vody-arr']
     publications: []
   hands-on-ml:
-    bullets: ['vody-attribute-tagging', 'vody-demo', 'vody-error-analysis']
+    bullets: ['vody-attribute-tagging', 'vody-demo', 'vody-error-analysis', 'etsy-experiment-success']
     publications: []
   healthcare:
-    bullets: ['upmc-product-team', 'upmc-ml-team', 'upmc-ml-applications', 'upmc-pitching', 'upmc-vendor-management', 'upmc-sds-sdoh']
+    bullets: ['upmc-product-team', 'upmc-ml-team', 'upmc-ml-applications', 'upmc-ml-applied-lead', 'upmc-pitching', 'upmc-vendor-management', 'upmc-sds-sdoh']
     publications: ['ctr26-rumination', 'hsdm20-clustering']
   hiring:
     bullets: ['vody-team', 'etsy-team', 'upmc-ml-team']
@@ -186,6 +186,9 @@ skills_evidence_matrix:
   learning-to-rank:
     bullets: []
     publications: ['sigir17-ltr-resources']
+  listwise-ranking:
+    bullets: []
+    publications: ['sigir17-ltr-resources']
   llm:
     bullets: ['cmu-teach']
     publications: ['ecsm-cikm26', 'iclr26-geo']
@@ -204,11 +207,14 @@ skills_evidence_matrix:
   long-term-vision:
     bullets: ['etsy-strategy']
     publications: []
+  lora:
+    bullets: ['vody-attribute-tagging']
+    publications: []
   mental-health:
     bullets: []
     publications: ['ctr26-rumination']
   mentorship:
-    bullets: ['etsy-team', 'upmc-ml-team', 'xrole-promos-calibration']
+    bullets: ['etsy-team', 'upmc-ml-team', 'xrole-ic-growth', 'xrole-promos-calibration']
     publications: []
   multimodal:
     bullets: ['vody-attribute-tagging']
@@ -277,7 +283,7 @@ skills_evidence_matrix:
     bullets: ['etsy-gms']
     publications: ['ecom23-xwalk']
   risk-stratification:
-    bullets: ['upmc-ml-applications', 'upmc-sds-sdoh']
+    bullets: ['upmc-ml-applications', 'upmc-ml-applied-lead', 'upmc-sds-sdoh']
     publications: []
   roadmap:
     bullets: ['vody-arr', 'etsy-strategy']
@@ -310,13 +316,13 @@ skills_evidence_matrix:
     bullets: ['vody-team']
     publications: []
   team-leadership:
-    bullets: ['etsy-team', 'upmc-product-team', 'upmc-ml-team']
+    bullets: ['etsy-team', 'upmc-product-team', 'upmc-ml-team', 'upmc-ml-applied-lead', 'xrole-ic-growth']
     publications: []
   technical-strategy:
     bullets: ['etsy-strategy']
     publications: []
   time-series:
-    bullets: ['upmc-ml-applications']
+    bullets: ['upmc-ml-applications', 'upmc-ml-applied-lead']
     publications: []
   tooling:
     bullets: ['etsy-experiment-velocity']

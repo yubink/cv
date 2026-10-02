@@ -72,10 +72,13 @@ priority order:
 
 - JD says **"direct reports," "manage a team of N," "hiring," "performance"** and names a
   product surface → **A**.
-- JD says **"Principal," "Staff+," "Distinguished," "technical strategy," "influence without
-  authority," "applied research,"** or lists publications as a plus → **B**, regardless of
-  whether the title says Scientist or Engineer. Apply the Principal Engineer discriminator in
-  CONTEXT.md §2B to confirm it is the ML-direction flavor.
+- JD says **"Staff," "Staff+," "Principal," "Distinguished," "technical strategy," "technical
+  direction," "influence without authority," "applied research,"** or lists publications as a
+  plus → **B**, regardless of whether the title says Scientist or Engineer. Then run the
+  **job-design test** in CONTEXT.md §2B — the archetype is about what the role is given
+  (a problem space, autonomy, a voice in the roadmap), not about the level in the title — and,
+  on an engineering-ladder posting, the Principal Engineer discriminator to confirm it is the
+  ML-direction flavor.
 - JD is at a **Series B–D company** and says **"first," "build the team," "0→1," "define the
   AI strategy," "Head of AI"** → **C**.
 
@@ -97,6 +100,9 @@ with the rest — unless the exclusions take the set to zero, in which case stop
 - Platform/infra ML with no product KPI, regardless of level.
 - Principal/Distinguished Engineer whose scope is core systems or infra rather than ML
   direction (fails the CONTEXT.md §2B discriminator).
+- Staff/Principal posting that is a Staff-titled implementation job — executes a roadmap
+  defined elsewhere, no problem-space ownership, no autonomy over approach, no stated influence
+  on other people's technical work (fails the CONTEXT.md §2B job-design test).
 - Research scientist with a publication mandate (conflicts with the ~1 paper/year preference).
 - Sr. EM below the comp floor, unless the brand materially improves the next hop — flag for
   the user to decide.
@@ -165,7 +171,9 @@ when it is itself a `tailored/` copy:
    and claims stay identical.
 3. **Swap** (only if `bullet-library.yaml` is available): replace a weakly matching bullet
    with a stronger bullet from the same role's `bullets:` list under `roles:`, tagged for this
-   archetype, respecting the tool budget (1–3 named technologies per bullet). With several JDs,
+   archetype — keeping the archetype's phrasing mechanism intact (CONTEXT.md §5: the `hands-on-ml`
+   marker survives in a B copy, and a swapped-in bullet must not be the alternate-framing sibling
+   of one already on the page) — respecting the tool budget (1–3 named technologies per bullet). With several JDs,
    prefer the bullet that covers the most demands at once — one bullet evidencing two core
    demands beats two bullets evidencing one each, and that consolidation is what buys the space
    the distinct demands need. Role headings, dates, and scope lines are never edited during
@@ -176,6 +184,10 @@ when it is itself a `tailored/` copy:
    A bullet that is the **only** evidence for a distinct demand is not irrelevant — it stays, low
    in its block. Subtraction can empty a role but never removes one: when a role's last bullet
    goes, its heading stays — `title`, `org`, `dates` (CONTEXT.md §1).
+   **Archetype-B guard:** never subtract the last leadership-scope evidence from a B copy to make
+   it read more like an IC resume, and never add transition framing while rewording. CONTEXT.md
+   §2B's narrative rule requires both halves on the page — accumulated leadership scope *and* a
+   live hands-on practice — and forbids any sentence that explains the move.
 5. **Retune the summary** — one or two sentences of the archetype thesis rephrased toward the
    JDs' language. With several JDs the summary speaks to the **core** demands only; a demand
    unique to one posting never reaches the summary, because a summary trying to be all of them

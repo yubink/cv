@@ -1,0 +1,28 @@
+Machine Learning Engineering Manager
+Indeed - Remote
+$163,000 - $341,000 a year
+Our Mission
+As the world’s number 1 job site*, our mission is to help people get jobs. We strive to cultivate an inclusive and accessible workplace where all people feel comfortable being themselves. We're looking to grow our teams with more people who share our enthusiasm for innovation and creating the best experience for job seekers.
+
+(*Comscore, Total Visits, March 2025)
+Day to Day
+At Indeed, we are committed to delivering exceptional experiences that connect job seekers with opportunities through innovative technology. We integrate machine learning at every step to create consistent, engaging, and secure experiences that meet the needs of our users. Our teams consist of Software Engineers, UX Designers, Product Managers, and Machine Learning professionals collaborating across regions to drive impactful business outcomes.
+
+As a Machine Learning Engineering Manager, you will onboard and oversee junior scientists and technical leads, partnering closely with Product, Software Engineering, and UX teams. Your focus will include developing and innovating machine learning ecosystems that upgrade job seeker journey experience end to end
+
+Responsibilities
+Coach Machine Learning Engineers and Data Scientists on the Journey team to improve their performance, advise them on their career direction, and develop their qualifications.
+Work to understand, prioritize, and plan the team’s work items without external guidance.
+Ensure delivery of machine learning solutions, set expectations for what can be done and by when, and prioritize incoming projects.
+Improve existing Agile, ML, and A/B testing processes and develop new ones.
+Scope projects, gather and improve on requirements, and delegate work effectively.
+Partner with and provide project direction and feedback to cross-functional peers, including Product Managers, Software Engineers.
+Remove roadblocks and give individual contributors autonomy and ownership.
+Brainstorm with teammates about practical experimental design, navigating production codebases, and model development.
+Be prepared to closely engage and contribute directly to implementation when necessary.
+Skills/Competencies
+Requires a Bachelor’s degree in Computer Science, Mathematics, Statistics, or related field and a minimum of 8 years of related experience; or a Master’s degree with a minimum of 6 years of experience; or a PhD with a minimum of 3 years experience
+Demonstrated achievement as a Manager in Machine Learning Engineering, overseeing teams of 3 or more, and addressing intricate, large-scale problems
+Well-versed in coding (Python, Java, Go, or C++) and experience with SQL Databases like Presto, and data processing frameworks like Spark
+Have full-stack experience in data collection, aggregation, analysis, visualization, productionisation, and monitoring
+Highly effective in coaching Machine Learning Engineers, facilitating qualification enhancement, and fostering career development

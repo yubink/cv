@@ -13,12 +13,13 @@ Technical machine learning leader with 15+ years in ML and 7+ building and leadi
 ### Chief Science Officer — Vody — 01/2024–present
 *Seed-stage e-commerce startup, built from 0 → $2.5M revenue; owned the technical and product roadmap; reported to the CEO.*
 
+- Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+.
+- Hired ~9 and led a fully remote team of ~11 across science, engineering, product, and ops, including PhD scientists.
 - Productionized continuous model evaluation with human-in-the-loop review and LLM-based evaluation.
 - Trained and scaled efficient, distilled BERT-based classifiers for Grubhub's 50M item catalog; built datasets for training/evaluation from scratch.
-- Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+.
-- Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog; lessons published at the SIGIR eCom'25.
-- Hired ~9 and led a fully remote team of ~11 across science, engineering, product, and ops, including PhD scientists.
-- Initiated academic collaborations on generative engine optimization (using LLMs fine-tuned with GRPO) and user simulation — yielding peer-reviewed publications (ICLR 2026; WSDM under review).
+- Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog.
+- Initiated academic collaborations on generative engine optimization (using LLMs fine-tuned with GRPO) and user simulation, yielding peer-reviewed publications (ICLR 2026; WSDM under review).
+- Personally built v1 of the production attribute-tagging models by fine-tuning Qwen VLM with SFT + LoRA.
 
 ### Adjunct Instructor — Carnegie Mellon University — 08/2025–12/2025
 

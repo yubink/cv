@@ -14,6 +14,11 @@
 # CONTEXT.md §1 holds the RULES for rendering them, not the facts themselves.
 # Bullet fields: id, bullet, skills[], archetypes[]. Nothing else.
 #
+# Bullet TEXT IS NEUTRAL about who did the work: no "Personally", no "hands-on". That fact lives in
+# skills[] as the `hands-on-ml` tag, and archetypes B/C add the marker when rendering (CONTEXT.md
+# §5, "Archetype-specific phrasing"). When an archetype needs the facts *composed* differently
+# instead, that is a separate bullet with a comment naming the sibling it must never render beside.
+#
 # Domain lives in skills[] as `e-commerce` / `healthcare` — there is no separate domain field.
 # Use it to promote matching bullets when a JD is domain-specific.
 #
@@ -37,14 +42,14 @@ roles:
     title: "Chief Science Officer"
     org: "Vody"
     dates: "01/2024–present"
-    context: "Built seed stage e-commerce startup from 0 → $2.5M revenue with $B enterprise customers; owned technical/product roadmap and technical sales; reported to the CEO."
+    context: "Built seed-stage e-commerce startup from 0 → $2.5M revenue with $B enterprise customers; owned technical/product roadmap and technical sales; reported to the CEO."
     team: "~11 across science, engineering, product, and ops; built from zero, hired 11; includes 3 PhD scientists; fully remote."
     management: "Performance-managed out 1."
     bullets:
       - id: vody-arr
-        bullet: "Grew revenue 0 → $2.5M ARR by converting Grubhub and Academy Sports & Outdoors into customers, and serving as primary technical contact."
+        bullet: "Grew revenue 0 → $2.5M ARR by converting Grubhub and Academy Sports & Outdoors into customers, and serving as their primary technical contact."
         skills: [gtm, enterprise-sales, product-strategy, roadmap, customer-facing, e-commerce]
-        archetypes: [A, C]
+        archetypes: [A, B, C]
 
       - id: vody-team
         bullet: "Hired 11 and led a fully remote team of ~11 across science, engineering, UX, product, and ops."
@@ -54,7 +59,7 @@ roles:
       - id: vody-fundraising
         bullet: "Raised $1.6M in funding by writing/presenting pitches to VCs."
         skills: [fundraising, storytelling, executive-communication]
-        archetypes: [C]
+        archetypes: [B, C]
 
       - id: vody-feeds
         bullet: "Optimized e-commerce product data feeds for conversational agents and product search, improving customer GMV by 10%+."
@@ -62,12 +67,12 @@ roles:
         archetypes: [A, B, C]
 
       - id: vody-attribute-tagging
-        bullet: "Personally built v1 of the production attribute-tagging models by fine-tuning Qwen VLMs with SFT + LoRA."
-        skills: [llm-fine-tuning, vlm, qwen, multimodal, hands-on-ml, e-commerce]
-        archetypes: [B, C]
+        bullet: "Built v1 of the production attribute-tagging models by fine-tuning Qwen VLMs with SFT + LoRA."
+        skills: [llm-fine-tuning, vlm, qwen, lora, multimodal, hands-on-ml, e-commerce]
+        archetypes: [A, B, C]
 
       - id: vody-inference
-        bullet: "Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog; lessons published at the SIGIR eCom'25."
+        bullet: "Fine-tuned and productionized RAG + LLM pipeline on vLLM and Kubernetes for a 150k+ product catalog."
         skills: [llm-inference, rag, vllm, kubernetes, gcp, pytorch, huggingface, production-ml, serving, e-commerce]
         archetypes: [A, B, C]
 
@@ -87,7 +92,7 @@ roles:
         archetypes: [B, C]
 
       - id: vody-error-analysis
-        bullet: "Drove opportunity and error analysis hands-on over production logs and customer query logs using DuckDB and Jupyter, feeding the model and product roadmap."
+        bullet: "Drove opportunity and error analysis over production logs and customer query logs using DuckDB and Jupyter, feeding the product roadmap."
         skills: [error-analysis, duckdb, data-analysis, hands-on-ml, query-logs, e-commerce]
         archetypes: [B, C]
 
@@ -104,7 +109,7 @@ roles:
       - id: cmu-teach
         bullet: "Taught *[Large Language Models: Methods and Applications](https://2025.cmu-llms.org/)*, a graduate-level course for 100+ students."
         skills: [teaching, llm, communication]
-        archetypes: [A, C]
+        archetypes: [A, B, C]
 
   # ---------------- Etsy (Senior EM, 04/2022–10/2023) ----------------
   etsy:
@@ -112,7 +117,7 @@ roles:
     org: "Etsy"
     dates: "04/2022–10/2023"
     context: "Built real-time, low-latency, large-scale retrieval systems powering search, recommendations, and ads at etsy.com, a two-sided marketplace of 90M+ active buyers and 100M items."
-    team: "~5 science and engineering ICs, Intermediate–Sr. Staff, including 2 PhD scientists; inherited and grew, hired 3; fully remote."
+    team: "~5 science and engineering ICs, Intermediate–Sr. Staff, including 3 PhD scientists; inherited and grew, hired 3; fully remote."
     management: "2 promotions delivered, including 1 Staff-level; participated in leveling calibration; performance-managed out 1."
     bullets:
       - id: etsy-team
@@ -121,14 +126,14 @@ roles:
         archetypes: [A, C]
 
       - id: etsy-gms
-        bullet: "Generated $40M+ in GMS over 1.5 years through increasing conversion, validated by A/B experiments: Solr improvements; personalization in retrieval; introducing Etsy's first GNN embeddings, initialized for cold-start items and served from a Faiss ANN index."
+        bullet: "Generated $40M+ in GMS over 1.5 years by increasing conversion, validated by A/B experiments: Solr improvements, personalization in retrieval, and Etsy's first GNN embeddings, initialized for cold-start items and served from a Faiss ANN index."
         skills: [graph-ml, gnn, solr, ab-testing, business-impact, retrieval, recommendations, personalization, cold-start, conversion, ann, faiss, e-commerce]
-        archetypes: [A, B]
+        archetypes: [A, B, C]
 
       - id: etsy-ads-revenue
-        bullet: "Generated $30M+ in ad revenue by increasing CTR through cross-org collaboration with the Ads team."
+        bullet: "Generated $30M+ in A/B-validated ad revenue by increasing CTR through cross-org collaboration with the Ads team."
         skills: [cross-org-influence, ads, ctr, business-impact, collaboration, e-commerce]
-        archetypes: [A, B]
+        archetypes: [A, B, C]
 
       - id: etsy-strategy
         bullet: "Co-authored the 3-year technical strategy for the Search Retrieval initiative."
@@ -142,7 +147,7 @@ roles:
 
       - id: etsy-experiment-success
         bullet: "Doubled the success rate of online experiments within 2 quarters by developing robust offline evaluation metrics and processes."
-        skills: [evaluation, offline-evaluation, ab-testing, experimentation-velocity, e-commerce]
+        skills: [evaluation, offline-evaluation, ab-testing, experimentation-velocity, hands-on-ml, e-commerce]
         archetypes: [A, B]
 
   # ---------------- UPMC Enterprises (Director, 07/2019–03/2022) ----------------
@@ -159,19 +164,29 @@ roles:
         archetypes: [A, B]
 
       - id: upmc-ml-team
-        bullet: "Led an applied ML team of ~3 ML engineers; created career paths, hiring (1), performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer."
+        bullet: "Led an applied ML team of ~3 ML engineers; created career paths and owned hiring (1), performance management, and technical mentorship; delivered 1 promotion and managed out 1 low performer."
         skills: [team-leadership, mentorship, hiring, performance-management, career-development, healthcare]
         archetypes: [A]
 
+      # upmc-ml-applications / upmc-ml-team / upmc-ml-applied-lead are three framings of one body of
+      # work — see the alternate-framing rule in CONTEXT.md §5. A renders the first two (stakeholder
+      # partnership + people mechanics); B renders the third, which merges them and drops the
+      # mechanics per §2B. Never render upmc-ml-applied-lead beside either sibling.
       - id: upmc-ml-applications
         bullet: "Partnered with product and provider/payor stakeholders to apply ML to claims processing, automated coding, risk stratification, and retrospective analysis using time-series models, LSTMs, CNNs, and decision trees."
         skills: [healthcare, claims-processing, risk-stratification, time-series, stakeholder-management]
         archetypes: [A]
+        # TODO: names 4 techniques, over the 1-3 budget in CONTEXT.md §3. Same in upmc-ml-applied-lead.
+
+      - id: upmc-ml-applied-lead
+        bullet: "Led an applied ML team of ~3 ML engineers, applying ML to claims processing, automated coding, risk stratification, and retrospective analysis using time-series models, LSTMs, CNNs, and decision trees."
+        skills: [team-leadership, healthcare, claims-processing, risk-stratification, time-series]
+        archetypes: [B]
 
       - id: upmc-pitching
         bullet: "Identified ML projects worth $Ms in savings, pitched to SVPs and the CTO, developed prototypes, and executed pilots partnering with provider/payor stakeholders."
         skills: [executive-communication, opportunity-analysis, prototyping, business-impact, healthcare]
-        archetypes: [A, C]
+        archetypes: [A, B, C]
 
       - id: upmc-vendor-management
         bullet: "Managed collaborations with ML/NLP healthcare startups and academic labs; reviewed proposals, negotiated contracts, and oversaw project delivery of $Ms contracts."
@@ -193,6 +208,17 @@ roles:
 # ---------------- Cross-role (facts spanning several roles) ----------------
 # Render inside the relevant role's block or a leadership summary, never as a standalone role.
 cross-role:
+  # xrole-ic-growth and xrole-promos-calibration are two framings of the same underlying facts —
+  # growth caused vs. management mechanics performed (CONTEXT.md §2B). Never render both in one
+  # variant: prefer xrole-ic-growth for B, xrole-promos-calibration for A.
+  - id: xrole-ic-growth
+    bullet: "Grew senior ICs into higher technical leadership — delivered 3 IC promotions across Etsy and UPMC, 2 of them to Staff level, and technically mentored 6 PhD scientists and ICs up to Sr. Staff."
+    skills: [mentorship, career-development, team-leadership]
+    archetypes: [A, B]
+    # The "6 PhD scientists" is DERIVED: 3 (vody.team) + 3 (etsy.team), per the aggregate rule in
+    # CONTEXT.md §1. Re-add the per-role counts and correct this text whenever a team field changes.
+    # Archetype B renders this bullet as a Summary line rather than inside a role block (§2B).
+
   - id: xrole-promos-calibration
     bullet: "Delivered 3 IC promotions (2 at Etsy, 1 at UPMC) and participated in leveling calibration at both companies; performance-managed out 4 low performers across UPMC, Etsy, and Vody."
     skills: [performance-management, career-development, calibration, mentorship]

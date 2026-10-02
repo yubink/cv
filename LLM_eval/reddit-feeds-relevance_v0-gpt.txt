@@ -1,0 +1,56 @@
+Based on the resume and the JD, I would classify this candidate as **strong candidate**.
+
+### Assessment
+
+| Area                                | Assessment      | Evidence                                                                                                                                                                                   |
+| ----------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ML team leadership**              | **Strong**      | 7+ years leading teams; managed ML/research teams at Etsy, Vody, and UPMC; hiring, performance management, promotions, Staff-level mentorship.                                             |
+| **Recommender systems / retrieval** | **Strong**      | Etsy work directly involved retrieval feeding **search, recommendations, and ads**; GNN embeddings, personalization, candidate retrieval, cold-start, ranking, graph ML.                   |
+| **Production ML at scale**          | **Strong**      | Real-time retrieval for 90M+ buyers / 100M items; production LLM/RAG systems; large-scale catalog processing and inference.                                                                |
+| **Cold start / discovery**          | **Strong**      | Explicit experience with cold-start item embeddings and personalization. This maps unusually well to Reddit's new-post/new-community and low-signal-user problems.                         |
+| **Measurement / experimentation**   | **Strong**      | A/B experiments, offline metrics, interleaving, model testing, and doubled experiment velocity/success rate at Etsy.                                                                       |
+| **Technical strategy**              | **Strong**      | Co-authored a 3-year technical vision at Etsy; owned roadmap at Vody; demonstrated ability to identify and prioritize ambiguous ML opportunities.                                          |
+| **Business impact**                 | **Strong**      | $40M+ GMS and $30M+ ad revenue attributed to Etsy initiatives; Vody revenue from $0 to $2.5M ARR.                                                                                          |
+| **Cross-functional leadership**     | **Strong**      | Worked across Ads, analytics, product, platform, executives, customers, and provider/payor stakeholders.                                                                                   |
+| **Community/ecosystem health**      | **Mixed / gap** | The resume has little direct evidence of optimizing recommendation systems for community health, contribution, safety, creator/community dynamics, or long-term ecosystem effects.         |
+| **Feed-specific experience**        | **Moderate**    | Strong adjacent search/retrieval/recommendation experience, but no explicit ownership of a social feed or large-scale consumer feed ecosystem.                                             |
+| **Scale of management**             | **Moderate**    | Strong people-management evidence, but the largest directly described ML team is ~11 at Vody and ~5 at Etsy. The resume doesn't demonstrate management of a large multi-team organization. |
+
+### Why this is a particularly strong match
+
+The Etsy experience is the centerpiece. The candidate wasn't merely doing generic ML—they led **real-time retrieval systems that powered search, recommendations, and ads**, with personalization, graph ML, embeddings, and cold-start modeling. That's close to the technical core of the Reddit role.
+
+The candidate also has unusually strong evidence around **measurement and experimentation**. The JD explicitly emphasizes balancing relevance with longer-term ecosystem outcomes rather than simply maximizing engagement. Etsy's work on offline metrics, A/B testing, interleaving, and experiment velocity is a good foundation for that kind of environment.
+
+The Reddit role also appears particularly relevant given Reddit's current emphasis on discovery, recommendations, and AI-powered relevance. Reddit describes its Discover experience as helping users find new content and communities, with personalization based on communities and engagement signals. ([Reddit Inc][1]) Reddit's current engineering careers page also lists adjacent ML leadership roles in Feed Relevance, Search & Recommendation, and other ML areas, reinforcing that retrieval/recommendation expertise is directly relevant to its current engineering organization. ([Reddit Inc][2])
+
+### Main concerns to probe in interviews
+
+1. **Has the candidate actually operated a feed/recommender ecosystem?**
+   Their resume says recommendations, but most of the concrete examples are marketplace search/retrieval. I'd want to distinguish genuine recommendation-system depth from retrieval expertise that happens to feed recommendations.
+
+2. **Can they reason about ecosystem-level objectives?**
+   Reddit's problem is more complicated than "maximize CTR." The role explicitly calls for balancing personalization, discovery, contribution, community health, and content quality. Reddit's own product material emphasizes discovery of both content **and communities**, making this distinction important. ([Reddit Inc][1])
+
+3. **Management scale.**
+   The candidate clearly meets the stated 2+ years of ML management experience, but there's less evidence of managing a substantially larger organization or multiple ML teams.
+
+4. **Safety/responsible AI.**
+   This is the thinnest area relative to the JD. The resume mentions human-in-the-loop and model-based evaluation, but doesn't show ownership of abuse, safety, integrity, or recommendation-quality tradeoffs. That's particularly relevant at Reddit, where the company says it is investing heavily in automated defenses against spam, fake votes, and harmful content. ([Reddit Inc][3])
+
+5. **Consumer/social-product experience.**
+   Etsy gives strong marketplace experience, but Reddit's communities have very different dynamics from buyers/products. I'd test whether the candidate can transfer their technical framework rather than assuming the domains are interchangeable.
+
+### Bottom line
+
+**Rating: Strong candidate**
+
+This isn't just a case of checking the "ML manager" box. The resume has unusually direct alignment with **retrieval + recommendations + cold start + personalization + production ML + experimentation + technical strategy**, which are central to the position.
+
+The biggest uncertainty isn't technical competence; it's whether the candidate can make the conceptual jump from **marketplace/search optimization** to **social-feed ecosystem optimization**—particularly community health, contribution, discovery, and safety. That's an interview question rather than a resume-level disqualifier.
+
+I would therefore **advance the candidate to a technical/managerial interview**, with the interview specifically probing those ecosystem and organizational-scale gaps.
+
+[1]: https://redditinc.com/news/introducing-our-discover-tab-a-new-way-to-use-reddit-and-find-more-communities?utm_source=chatgpt.com "Introducing Our Discover Tab – A New Way to Find Content, Conversations, and Communities on Reddit - Upvoted"
+[2]: https://redditinc.com/careers?trk=public_post_main-feed-card-text&utm_source=chatgpt.com "Careers - Reddit"
+[3]: https://redditinc.com/news/how-were-keeping-reddit-real-and-safe-in-the-ai-era?utm_source=chatgpt.com "How We’re Keeping Reddit Real and Safe in the AI Era"

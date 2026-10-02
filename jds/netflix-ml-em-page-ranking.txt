@@ -1,0 +1,72 @@
+Engineering Manager, AI for Member Systems — Page Construction | Ranking Models
+USA - Remote
+
+Job Posting Date
+07-31-2026
+Job Requisition ID
+JR41873
+Teams
+Data & Insights
+Work Type
+Remote
+At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.
+
+The Opportunity
+Netflix's mission is to entertain the world by connecting members with the stories they'll love. With over 300 million members in 190+ countries, getting personalization right is central to member satisfaction. We're hiring two engineering managers to lead the teams behind two of the most important algorithms in the recommendations space. 
+
+The first team owns homepage construction: deciding which sections appear on a member's page, in what order, and how they're arranged The second team owns title ranking: the underlying prediction of how relevant a given title is to a given member.
+
+These are two distinct teams with two distinct engineering manager openings. 
+
+The Two Teams
+Page Construction - owns which sections appear on a member's homepage, in what order, and how the full page is composed. These comprise some of the most impactful machine learning models in the product, and one of the most mature: a highly optimized pipeline combining section retrieval (identifying which candidate sections are relevant to a member), adaptive row ordering, and re-ranking passes that account for how sections interact with one another across the page. It runs live, in the request path, for every member session so beyond the ML challenge, it demands rigorous engineering to meet strict latency requirements at Netflix's scale. The team is now developing a generative model that learns to build the ideal page end-to-end, and is expanding into new content formats such as short-form video and games.
+
+Ranking - owns the prediction of how relevant a title is to a given member in a given context, and how that ranking is applied across our entire ecosystem of discovery and personalization touchpoints.This team’s work directly shapes how hundreds of millions of members discover content every day. As Netflix expands into new content types — vertical video, games, podcasts, and beyond — supporting these formats well is an urgent priority: each one brings interaction patterns our existing models weren't built for, and the team is building new approaches to keep pace. The team is also driving one of its core innovation bets: moving the ranking stack toward an LLM-native backbone.
+
+Both teams report into the same organization and partner closely - Page Construction decides what sections exist and how they're arranged, and Ranking decides which titles populate them. Whichever team you join, you'll work closely with your counterpart EM on the other side of that interface.
+
+In This Role, You Will
+Lead and grow a team of AI research scientists and AI research engineers focused on either page construction or title ranking (team assignment determined through the interview process).
+
+Set the technical vision and roadmap for your team, balancing investment across mature, production-grade models and newer generative approaches.
+
+Guide your team through the shift from traditional machine learning toward generative, LLM-based methods.
+
+Drive infrastructure decisions in partnership with adjacent ML and platform teams - including serving infrastructure, foundation model integration, and experimentation tooling.
+
+Own the quality of your team's algorithms across the entire product surface: the main homepage, kids' profiles, partner devices, short-form video, games, and new formats as they emerge.
+
+Partner closely with the engineering manager leading the adjacent team (Page Construction or Ranking) to ensure the two models work together as one coherent personalization experience.
+
+Work closely with Product Management to translate member experience goals into strategy and experimentation plans.
+
+Hire, develop, and retain a diverse, high-caliber team, supporting existing technical leads in an environment where senior talent can do its best work.
+
+What We're Looking For
+Experience leading applied ML, ML engineering, or applied science teams on large-scale ranking, recommendation, or personalization models.
+
+Strong technical depth in recommender systems, ranking, or slate/page-level optimization; comfortable in architecture discussions, model trade-offs, and experimentation strategy with senior engineers.
+
+A track record guiding teams through major technical transitions - for example, from traditional ML to deep learning, or from deterministic models to generative, LLM-based approaches.
+
+Strong product instincts: the ability to connect technical decisions to member experience outcomes and partner effectively with product management.
+
+Excellent stakeholder management and communication skills, able to align senior partners across engineering, science, product, and platform teams.
+
+A track record building and leading diverse, high-performing technical teams in a fast-moving, high-autonomy environment.
+
+Preferred Qualifications
+8+ years in applied ML/science or ML engineering, including 3+ years in a technical leadership or people management role.
+
+Experience with applying large language models and genAI innovations recommendation and ranking problems.
+
+Experience with multi-objective optimization or slate/page-level value modeling - problems where the quality of a whole set matters, not just individual items.
+
+Experience managing teams operating across both mature, production-grade models and early-stage experimental work at the same time.
+
+Background at a consumer-scale company with AI-driven products (streaming, social media, marketplaces, search, advertising).
+
+Familiarity with the full ML production lifecycle: data pipelines, training, evaluation, serving, and experimentation.
+
+Comfortable operating with a high degree of autonomy, building lightweight structure without over-engineering process.
+

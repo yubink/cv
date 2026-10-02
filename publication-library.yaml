@@ -87,7 +87,7 @@ publications:
     citation: "Zhuyun Dai, **Yubin Kim**, Jamie Callan. 2017. Learning to Rank Resources. In Proceedings of the 40th International ACM SIGIR Conference, 837–840."
     venue_tier: top-tier-conference
     work_origin: cmu
-    skills: [learning-to-rank, information-retrieval, federated-search]
+    skills: [learning-to-rank, information-retrieval, federated-search, listwise-ranking]
     relevance_note: "Evidence for the learning-to-rank skill; SIGIR short paper."
     url: "https://www.cs.cmu.edu/~callan/Papers/sigir17-Zhuyun-Dai.pdf"
 

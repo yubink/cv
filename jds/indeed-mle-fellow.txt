@@ -1,0 +1,25 @@
+Our Mission
+As the world’s number 1 job site*, our mission is to help people get jobs. We strive to cultivate an inclusive and accessible workplace where all people feel comfortable being themselves. We're looking to grow our teams with more people who share our enthusiasm for innovation and creating the best experience for job seekers.
+
+(*Comscore, Total Visits, March 2026)
+Day to Day
+As a Machine Learning Engineering Fellow at Indeed, your technical leadership will play an integral role in accelerating improvements to our core search and recommendations platforms. You will have the opportunity to collaborate with smart, caring, and inclusive co-workers, including Product Managers, Software Engineers, User Experience, and, of course, your fellow MLEs. You’ll be working across our retrieval, ranking, metadata, resume, and machine learning platform teams. If you love learning about a variety of different machine learning systems, identifying areas for improvement, and managing across teams to deliver on your vision, then this is a great role for you.
+
+With tens of millions of daily users, you’ll observe the impact of your work every day. So if you’re a machine learning engineer who is passionate about driving innovation that helps people get jobs, we want you to apply!
+
+You will be able to work from anywhere within the United States for this role.
+Responsibilities
+Identify, architect, and drive innovative machine learning solutions across the Indeed platform spanning multiple teams and organizations
+Collaborate with cross-functional partners to clarify requirements and plan large-scale initiatives
+Partner with senior leadership to develop and influence long-term technical strategy
+Guide and influence people at all levels of the company in delivering significant initiatives
+Mentor and support the growth of machine learning engineers and emerging engineering leaders
+Propose and oversee initiatives that improve the efficiency and productivity of the machine learning organization
+Contribute hands-on when needed by diving into code and sharing machine learning engineering best practices across the organization
+Skills/Competencies
+Requires a Bachelor’s degree in Computer Science, Mathematics, Statistics, or related field and a minimum of 15 years of related experience; or a Master’s degree with a minimum of 12 years of experience; or a PhD with 8 years experience
+Experience guiding through influence and delivering predictable results in complex organizations
+Proven ability to translate product direction into machine learning architecture and strategy
+Effective and inclusive verbal and written communication to a variety of different audiences
+Experience coding in Java, C, C++, or Go in backend development; Tensorflow, PyTorch, Sagemaker, or equivalent ML Platforms for model development; and Python or R for data analytics
+Experience with SQL Databases such as Presto, AWS Athena, Postgres, BiqQuery, or equivalent

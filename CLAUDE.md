@@ -18,13 +18,16 @@ Read in this order; when they conflict, the earlier one wins:
    - `skills-evidence-matrix.yaml` — **generated** (do not hand-edit): one row per skill listing the bullet and publication IDs that evidence it. Regenerate with `python3 gen_matrix.py`.
 3. **`TODO.md`** — point-in-time state: build order, open evidence questions, migration notes. Not a source of durable rules. Delete items as they resolve.
 
-The three base variants exist (`variants/variant-{A,B,C}.md`); `tailored/{slug}.md` copies are produced per job posting by `tailor-to-jd`. See `TODO.md §1` for current state and next steps.
+`variants/variant-A.md` and `variants/variant-B.md` exist; **`variants/variant-C.md` is currently missing** (deleted in commit 994926b) and must be rebuilt with `build-variant` before any C tailoring — `/tailor-to-jd C` fails without it. `tailored/{slug}.md` copies are produced per job posting by `tailor-to-jd`. See `TODO.md §1` for current state and next steps.
 
 ## The three archetypes (A/B/C)
 
 Every skill routes through one of these; full specs in `CONTEXT.md §2`:
 - **A** — applied-science / product-ML manager (Manager of Applied Science / Sr. EM with direct IC reports, accountable for the team's shipped outcomes).
-- **B** — strategic senior IC (Principal Applied Scientist / ML-direction Principal Engineer). Apply the Principal Engineer discriminator in §2B to reject systems/infra PE roles.
+- **B** — strategic senior IC (Staff or Principal Applied Scientist / ML Engineer, ML-direction Principal Engineer). §2B was rewritten 2026-08-19 from the candidate's own account of the role they want (`archetype-B.txt`), and three of its rules bind every B build and every B tailoring:
+  - **The narrative rule** — Director → Sr. EM → CSO → Staff/Principal IC is a move toward leverage, never a retreat from leadership. Both halves stay on the page at once: accumulated leadership scope *and* a live personal technical practice. No objective statement, no transition framing, no "returning to hands-on work," nothing apologetic. Cutting leadership evidence to look more like an IC is the failure mode this archetype is most prone to.
+  - **Hands-on work is a named bullet here, not a clause** — the opposite of archetype A. At least one per recent role where the evidence exists.
+  - **Two screening tables in §2B, both applied** — the **job-design test** (does the posting hand over a problem space, autonomy over approach, a voice in the roadmap, and mentorship expectations, or is it a Staff-titled implementation job?) on every posting, and the **Principal Engineer discriminator** on engineering-ladder postings, to reject systems/infra PE roles.
 - **C** — startup AI exec (0→1 Head of AI / Chief Scientist).
 
 Each archetype dictates section order, foreground/compress guidance, and publication/academic-service budgets.
@@ -34,9 +37,9 @@ Each archetype dictates section order, foreground/compress guidance, and publica
 - **`build-variant`** — creates or edits a base variant from the libraries for a given archetype. Ask for the archetype; never guess. Ends by running `score-resume` without a JD.
 - **`tailor-to-jd`** — produces a tailored *copy* of a base variant for one job description **or a set of them**. The variant can be named explicitly (`/tailor-to-jd B`, or a path like `/tailor-to-jd variants/variant-C.md`); without one, the skill classifies the JD(s) to an archetype itself. An explicit choice wins — triage still runs, but only reports a mismatch or skip signal as a caution. Tailoring is **subtraction, reordering, and rewording only** — never invention, never a fact change. Requires the base variant to already exist; do not improvise one from the libraries.
   - **Multi-JD** (`/tailor-to-jd B jds/a.txt jds/b.txt`) produces **one** resume covering the whole set, not a file per posting. Demands are merged into **core** (asked by 2+ JDs — these drive the summary and lead each role block) and **distinct** (one JD only — each gets at least one bullet, never lead position); clashing vocabulary picks one primary form for the prose and carries both variants in Skills. Multiple JDs never relax the two-page default, the archetype budgets, or the no-orphan-skills rule. With no variant named, all the JDs must triage to the same archetype — a clash stops the skill and asks.
-- **`score-resume`** — grades a draft against a 12-item scorecard (`CONTEXT.md`-derived). Any item below 4 is a blocker. Accepts a JD set: the JD-dependent items (1 and 7) are scored per JD and the **worst** score governs. This skill **only reports**; it never edits.
+- **`score-resume`** — grades a draft against a 7-item scorecard (`CONTEXT.md`-derived). Any item below 4 is a blocker. Accepts a JD set: the JD-dependent items (1 and 7) are scored per JD and the **worst** score governs. This skill **only reports**; it never edits.
 
-The `.zip` files alongside each skill directory are packaged copies for distribution — the live, editable versions are the unpacked `SKILL.md` files.
+The `.zip` files alongside each skill directory are packaged copies for distribution — the live, editable versions are the unpacked `SKILL.md` files. **The zips are stale** (packaged 2026-07-30, before several `SKILL.md` edits); repackage before distributing, and never read them as the current procedure.
 
 ## Editing conventions
 
@@ -48,6 +51,12 @@ The `.zip` files alongside each skill directory are packaged copies for distribu
   Run from the repo root. It reads `bullet-library.yaml` + `publication-library.yaml`, writes the generated `skills-evidence-matrix.yaml`, and prints the skill/bullet/pub counts and the publication-only skills.
 - **Traceability rule (`CONTEXT.md §4`), enforced in both directions on every variant:** no orphan skills (every Skills entry traces to a surviving bullet, publication, or named project) and no unlisted tools (every tool named in a bullet appears in Skills). The "pruning corollary": when tailoring cuts the last bullet evidencing a skill, that skill must also leave the Skills section. Foundational tier (Python, Java, C++, SQL, git, Jupyter) is exempt.
 - **Bullet formula:** action → mechanism → measured outcome, with a budget of 1–3 named technologies per bullet.
+- **Bullets render verbatim from the libraries.** A build copies the `bullet:` text as-is; rewording is `tailor-to-jd`'s job, and even there facts and numbers never change. Drifting a word during a build silently forks the source of truth. Worth a mechanical check after any build: every bullet on the page should string-match its library entry. **Citations are the one exception** — they render in the condensed form defined in `CONTEXT.md §3` (venue short form, no "In Proceedings of the Nth …", no volume/pages), which drops presentation only: the venue-tier words and every fact stay.
+- **Archetype-specific phrasing uses one of exactly two mechanisms** (`CONTEXT.md §5`), and picking the wrong one is how this library forks:
+  - *Emphasis marker* — same composition, a word of difference. Bullet text in the library is **always neutral about who did the work** (no "Personally", no "hands-on"); that fact lives in `skills[]` as the `hands-on-ml` tag, and archetypes B/C add the marker at render time while A renders neutral. No second entry.
+  - *Alternate framing* — different composition (different lead clause, two bullets merged, mechanics dropped). That gets its own `id` and `archetypes[]`, plus a comment naming the sibling(s) it must **never render beside**. Current sets: `xrole-ic-growth` (B) vs `xrole-promos-calibration` (A); `upmc-ml-applied-lead` (B) vs `upmc-ml-applications` + `upmc-ml-team` (A).
+  
+  If a variant's bullet text matches no library entry under either mechanism, the variant is wrong or the library is missing an entry — never leave the fork in place.
 - **ATS constraint:** variant files are the plain, single-column, ATS-safe versions (no multi-column layouts, floated sidebars, or tables-for-layout). A designed PDF for humans is a separate downstream rendering step — see "Rendering" below.
 - **Length:** two pages is the default for every variant and tailored copy (`CONTEXT.md §3`). Don't compress to one page or pad to fill; keep page one carrying the decision.
 

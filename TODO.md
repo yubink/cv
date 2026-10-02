@@ -3,7 +3,7 @@
 Point-in-time information. Nothing here is a durable rule — durable rules live in
 `CONTEXT.md` and the skills. Delete items as they resolve.
 
-**Last updated:** 2026-07-31
+**Last updated:** 2026-08-24
 
 ---
 
@@ -44,9 +44,73 @@ Point-in-time information. Nothing here is a durable rule — durable rules live
    - Still missing: an outcome-bearing **agentic tool-use** bullet (highest-value gap; see §3).
      The rewritten Vody bullets also state mechanism without a measured outcome — add lift,
      cost, or throughput numbers when available.
-   - Run `score-resume` per variant **with a real JD** (items 1 and 11 were N/A at build time).
+   - Run `score-resume` per variant **with a real JD** (items 1 and 7 were N/A at build time).
    - Tailor to specific postings via `tailor-to-jd` as they arrive.
+   - ~~**`variant-C.md` is missing**~~ — **rebuilt 2026-08-24** with `build-variant C`, fresh from
+     the libraries (the deleted one carried stale Vody numbers, a forked Etsy bullet, and was
+     missing the CMU and UPMC-SDS roles). Passes `score-resume` (no JD) with no blockers. One
+     library edit applied during the build: `etsy-gms` and `etsy-ads-revenue` retagged
+     `[A, B] → [A, B, C]` (user, 2026-08-24), so Etsy carries business impact in C rather than a
+     team-size bullet alone (CONTEXT.md §3, scope legible at each role). Matrix regenerated.
+   - **§2C re-emphasized 2026-08-24 (user), after reviewing the rebuilt C.** Three changes, all
+     landed in `CONTEXT.md §2C` and `build-variant/SKILL.md` rather than only in the variant, so
+     the next `/build-variant C` or `/tailor-to-jd C` reproduces the new shape: (a) publications
+     moved **above** Skills, same rationale as §2A — evidence before keyword surface, which makes
+     C's section order identical to A's, intentionally; (b) academic service promoted from a
+     compressed one-liner to a **merged "Selected Publications & Academic Leadership" section**
+     with bolded sub-labels, reframed as *leadership* because the chair roles and editorial board
+     are hiring leverage and conference presence for the Chief Scientist end of C's title range;
+     (c) the **"Selected Talks & Speaking" section dropped** — three of its four entries were
+     stale healthcare at unrecognizable venues and dated the page. The 2024 CIKM keynote survives
+     as one line inside the merged block: it is current, states the C thesis out loud, and is the
+     only anchor for the summary's "conference audiences" claim and the public-speaking Skills
+     entry (§4 orphan rule). Publications deliberately held at 3 — the chair roles differentiate
+     more than a fourth paper.
+5. ~~Rewrite CONTEXT.md §2B and rebuild `variant-B.md`~~ — **done 2026-08-19** from the
+   candidate's own account of what a Staff/Principal role has to look like (`archetype-B.txt`).
+   §2B now widens the band to Staff, adds the **narrative rule** (the move is toward leverage,
+   never a retreat from leadership — no objective statement, no transition framing, leadership
+   scope stays on the page), replaces the four-item foreground with the eight-pillar
+   combination, and adds a **job-design test** table that screens on what the role is *given*
+   rather than on its title. §1 gained the anti-wants and the ideal weekly shape that drive that
+   test. `tailor-to-jd` triage and skip signals and `score-resume` item 2 were updated to match.
+   Library edits: `upmc-pitching`, `cmu-teach` → `+B`; `upmc-ml-applications` → `[A, B]`;
+   `vody-arr` → `+B` (user, 2026-08-19); new `xrole-ic-growth` cross-role bullet (user,
+   2026-08-19) carrying mentorship as *growth caused* rather than management mechanics — the
+   B-side counterpart to `xrole-promos-calibration`, never rendered together with it. The
+   2026-07-31 decision not to tag `etsy-team` for B still stands.
+   - **Length, measured 2026-08-19:** the first build ran 3 pages. Publications cut to 5 and
+     condensed (§3 condensed citation form, new), talks dropped from the default (§2B speaking
+     trigger, new), summary and scope lines tightened, Skills deduped and merged to 5 groups.
+     Result: `--fit` lands it at **2 pages at `tight` (9.7pt)**; at `compact` only the Education
+     block spills, roughly **4 lines** over. Closing that at `compact` needs a content cut, which
+     is the candidate's call — cheapest candidates are `vody-evaluation` (mechanism-only, and
+     cutting it prunes "LLM-based evaluation" and "human-in-the-loop evaluation" from Skills) and
+     one Etsy bullet. All presentation slack is already spent. Note `variant-A.md` renders 3 pages
+     at `normal` too, so this is a system-wide density question, not a B-specific one.
+   - **Rule changes made 2026-08-19 while reviewing the candidate's hand-edited variant B**, all
+     in response to their corrections: §1's PhD-scientist rendering rule **reversed** — name the
+     count as a career aggregate (6: 3 Vody + 3 Etsy) rather than suppressing it; `etsy.team`
+     corrected from 2 PhD scientists to **3**; §3's mandatory "Co-organizer" prefix on workshop
+     lines **dropped** (in IR nothing is solo-organized, so the prefix informs no one); §4 now
+     counts **a specific claim in the Summary** as valid skill evidence, because archetype B
+     moves the mentorship claim there.
+   - **`variant-A.md` is now behind the library** (2026-08-19). Two bullets it renders changed
+     during the B integration: `etsy-ads-revenue` gained the A/B validation, and `vody-inference`
+     lost its "lessons published at the SIGIR eCom'25" clause (§3: don't state a publication
+     twice — variant A lists that paper). Re-render or hand-sync those two lines. Nothing else in
+     A drifted: it renders `upmc-ml-applications` and `xrole-promos-calibration`, both of which
+     are the A-side siblings and unchanged.
+   - Note for whoever rebuilds `variant-C.md`: the deleted `variant-B.md` rendered the SIGIR
+     2022 **panel** from `academic-record.yaml` `workshops:` as a *publication* ("Applications
+     and Future of Dense Retrieval in Industry … SIGIR (SIRIP)") and again as a panelist talk
+     that is not in the library at all. Both violate the workshops-are-never-publications rule
+     (CONTEXT.md §3). The new `variant-B.md` renders it once, as a co-organized panel.
 4. Retire the legacy CV as a source document once the libraries capture everything in it.
+6. ~~**`CONTEXT.md §2C` carries stale Vody facts**~~ — **already fixed** (confirmed 2026-08-24):
+   §2C's foreground line no longer restates ARR, raise, or headcount, and instead carries the
+   "take every Vody number from the library" rule. The `variant-C.md` rebuild took all three
+   numbers from `bullet-library.yaml` ($2.5M ARR, $1.6M raised, hired 11).
 
 ---
 
@@ -68,6 +132,16 @@ carries a `# TODO` comment until answered; delete the comment when the fact land
 
 **Etsy (blocks A and B)**
 - On-call / reliability / SLO ownership.
+- ~~Ad revenue A/B validation~~ — **done 2026-08-19:** `etsy-ads-revenue` now reads "$30M+ in
+  A/B-validated ad revenue" (user confirmed the ad experiments were A/B-validated too), so the
+  variant's aggregate "$70M+ in A/B-validated GMS and ad revenue" is fully sourced. Phrased
+  compactly rather than as "validated by A/B experiments" so it doesn't echo `etsy-gms` two lines
+  above it.
+- **An outcome for `etsy-strategy` (blocks B).** "Co-authored the 3-year technical strategy for
+  the Search Retrieval initiative" is the resume's only technical-direction bullet and it states
+  ownership without a result — the exact shape CONTEXT.md §3 bans. What did the strategy cause:
+  headcount or funding it unlocked, systems that shipped against it, how much of it was adopted,
+  how long it survived?
 
 **Vody (blocks B and C)**
 - Production LLM inference numbers from the eCom'25 work: GPU cost reduction, tokens/sec,
@@ -83,6 +157,13 @@ carries a `# TODO` comment until answered; delete the comment when the fact land
 - PHI/HIPAA, model governance, clinical validation experience.
 
 **Cross-cutting**
+- **Incubation with a measured result (blocks B, highest-value gap for the archetype).** §2B
+  foreground #3 wants one bullet carrying the whole loop — spotted it, investigated it deeply
+  enough to hold conviction, prototyped it personally, made the case, got it funded, shipped it,
+  and it moved a number. `upmc-pitching` covers the loop but ends at "executed pilots," and
+  `vody-error-analysis` ends at "feeding the roadmap." Which bet was incubated end-to-end, and
+  what did it return? Etsy's GNN embeddings look like the strongest candidate if the origin
+  story is personal.
 - Where former reports are now; any who followed between companies.
 - Infrastructure beyond the listed stack: Spark, Ray, Kafka/Flink, feature stores,
   Triton/TensorRT.

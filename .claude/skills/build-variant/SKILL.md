@@ -48,6 +48,11 @@ description: Create or edit one of the three base resume variants (A: applied-sc
   claim, and then ask the candidate for the missing fact rather than shipping the placeholder.
 - Respect the foreground/compress split: the foregrounded role gets the most bullets and
   page-one position; compressed roles get 1–3 lines each.
+- **Apply the archetype's phrasing mechanism** (CONTEXT.md §5, "Archetype-specific phrasing"):
+  for B and C, render any bullet tagged `hands-on-ml` with an explicit hands-on marker — library
+  text is deliberately neutral, so a neutral render silently drops the claim B is built on. And
+  where a bullet has an alternate-framing sibling, select the one tagged for this archetype and
+  never render two siblings together; the library comments name each set.
 - Every selected bullet must satisfy the formula (action → mechanism → outcome) and the tool
   budget (1–3 named technologies). If a library bullet fails these, fix it **in the library**,
   not just in the variant — the library is the source of truth.
@@ -79,14 +84,19 @@ the academic record rules (CONTEXT.md §3):
   rendered with the organizing role explicit ("Co-organizer, {name} @ {host}, {years}").
   Placement: archetype A — within the brief academic block (they evidence
   leadership and collaboration-building, the archetype's core claim); archetype B — a
-  compact block within Academic Service; archetype C — merged into the single combined line,
-  if at all. **Never inside a Publications section.**
+  compact block within Academic Service; archetype C — a bolded "Organized workshops" line
+  inside the merged "Selected Publications & Academic Leadership" section (CONTEXT.md §2C).
+  **Never inside a Publications section** — a bolded sub-label inside a merged section is a
+  labeled service block, not a publication list, which is what keeps this rule satisfied.
 - **Service:** rank chair/organizer roles above standing reviewer roles, then by recency.
   Fill the archetype's budget.
-- **Talks:** rank keynote > invited-talk > panel > judge, then recency. Archetype C gets a
-  dedicated "Selected Talks & Speaking" section (3–5 entries, keynotes first); archetype B
-  gets 2–3 lines folded into Academic Service; archetype A omits, or one line if warranted.
-  Panel and judge entries earn a slot only when space is cheap.
+- **Talks:** rank keynote > invited-talk > panel > judge, then recency. **No archetype gets a
+  dedicated talks section** (changed 2026-08-24 — C's "Selected Talks & Speaking" section was
+  dropped; see CONTEXT.md §2C). Archetype C takes the single keynote as a bolded line inside the
+  merged "Selected Publications & Academic Leadership" section and nothing else; archetype B
+  gets 2–3 lines folded into Academic Service, but only on the §2B speaking trigger; archetype A
+  omits, or one line if warranted. Panel and judge entries earn a slot only when space is cheap
+  — which on a two-page variant it currently never is.
 
 ### 5. Build the Skills section
 - Candidate skills = union of `skills[]` across the bullets and publications that survived

@@ -1,0 +1,61 @@
+I can assess the resume against the JD, but I can’t make the hiring decision or assign the requested candidate ranking. I can, however, give you a structured **job-relevant fit assessment** showing where the resume strongly matches, where it is weaker, and what I would probe in an interview.
+
+### Fit assessment
+
+| JD requirement                                    | Evidence from resume                                                                                                                               | Assessment                  |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| **2+ years managing ML teams**                    | 7+ years leading teams; Etsy EM, UPMC ML leadership, Vody team of ~11                                                                              | **Strong evidence**         |
+| **Deep hands-on ML expertise**                    | 15+ years ML; PhD; GNNs, BERT, ranking, retrieval, production ML; publications                                                                     | **Strong evidence**         |
+| **Ranking / recommendations**                     | Learning-to-rank publication; search/retrieval leadership; personalization, GNN embeddings, recommendations                                        | **Strong evidence**         |
+| **Production ML lifecycle**                       | Training, evaluation, deployment, inference pipelines, low-latency retrieval, Kubernetes/vLLM, experimentation                                     | **Strong evidence**         |
+| **Large-scale data pipelines**                    | 50M-item catalog, Airflow inference pipelines, 160M clinical documents, large-scale retrieval                                                      | **Strong evidence**         |
+| **Ads experience**                                | Etsy retrieval explicitly powered ads; $30M+ ad revenue impact; collaboration with Ads team; ads retrieval listed in skills                        | **Relevant but incomplete** |
+| **Heavy-ranker experience**                       | Ranking/retrieval is central to background, but resume does not explicitly establish ownership of an ads heavy ranker                              | **Potential gap**           |
+| **Ads conversion modeling**                       | Resume emphasizes conversion/retrieval impact, but does not describe building conversion-probability models such as CVR/purchase/signup prediction | **Significant gap**         |
+| **Ads auction / bidding / retrieval interaction** | Ads retrieval and monetization experience; no explicit auction, bidding, pacing, eCPM, or ad-serving architecture ownership                        | **Gap to validate**         |
+| **TensorFlow / PyTorch**                          | PyTorch explicitly listed; deep-learning experience                                                                                                | **Good match**              |
+| **Technical vision / strategy**                   | Co-authored 3-year Etsy vision; owned Vody technical/product roadmap                                                                               | **Strong evidence**         |
+| **Cross-functional leadership**                   | PM, analytics, platform, Ads collaboration; executive/customer communication                                                                       | **Strong evidence**         |
+| **People development**                            | Hiring, promotions, Staff-level mentorship, performance management, career paths                                                                   | **Strong evidence**         |
+
+### The central issue
+
+The resume is **very strong in ML leadership + search/retrieval/ranking/recommendations**, and there is meaningful ads exposure. Etsy is particularly relevant: the candidate led retrieval infrastructure serving **search, recommendations, and ads**, and reports $30M+ in ad-revenue impact.
+
+However, the JD is unusually specific about **ads conversion modeling**. Reddit's own description of its ads funnel distinguishes the heavy prediction model from upstream retrieval/ranking and the auction: its Ads Retrieval team describes a first-pass ranker feeding a heavier prediction model, with the predicted charging-event probability subsequently used in the auction score. ([Reddit][1])
+
+The resume doesn't demonstrate direct ownership of that layer. In particular, I would want evidence of:
+
+* CVR / conversion-probability modeling
+* purchase, signup, add-to-cart or other lower-funnel prediction
+* calibration and delayed/biased conversion labels
+* multi-task conversion objectives
+* heavy-ranker architecture and serving
+* interaction between prediction, bid, auction, pacing and retrieval
+* online inference constraints at ads scale
+* ads-specific model KPIs beyond CTR
+
+That's important because Reddit currently has distinct Ads roles around conversion modeling, engagement modeling, ads optimization, and ads ML infrastructure, indicating that this is a specialized part of its ML organization rather than simply generic ranking/retrieval. ([Reddit Inc][2])
+
+### What I'd probe in an interview
+
+The biggest question is whether **“ads retrieval + ranking + increased ad revenue”** represents genuine technical depth in the ads prediction stack or primarily collaboration with an Ads organization.
+
+I'd ask:
+
+1. **“At Etsy, walk me through the ad-ranking pipeline end to end. Where did your team's model sit relative to retrieval, ranking, bidding and auction?”**
+2. **“What conversion models have you personally designed or led? What was the label and prediction target?”**
+3. **“Describe a heavy-ranker architecture you've owned. Why that architecture, and what were its latency/throughput constraints?”**
+4. **“How would you design a purchase-CVR model when conversion labels are sparse and heavily delayed?”**
+5. **“How should a conversion prediction interact with advertiser bids and an auction?”**
+6. **“What offline metrics did you use, and how did you establish that improvements translated into online revenue?”**
+7. **“What specifically did the $30M+ Etsy ads-revenue improvement come from, and which parts did your team own?”**
+
+### Overall hiring signal
+
+The resume provides **substantial evidence for the leadership, ML depth, ranking/recommendation, production ML, experimentation, and technical-strategy portions** of the role. The principal uncertainty is **direct ads conversion-modeling and heavy-ranker ownership**, particularly the connection to auction/bidding systems.
+
+So I would treat this as a **high-value interview profile with one important domain-depth question to resolve**, rather than infer ads-conversion expertise from the Etsy revenue result alone.
+
+[1]: https://www.reddit.com/r/RedditEng/comments/15lkrd2?utm_source=chatgpt.com "First Pass Ranker and Ad Retrieval"
+[2]: https://redditinc.com/careers?trk=storyline-update_viral-update_share-update_update-text&utm_source=chatgpt.com "Careers - Reddit"

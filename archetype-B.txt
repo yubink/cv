@@ -1,0 +1,76 @@
+I am an experienced ML/applied science leader with approximately seven years in management and technical leadership roles. I am currently considering a move to a Staff or Principal-level IC role—not because I want less scope, responsibility, or influence, but because I want to move closer to hands-on technical work and the rapidly evolving ML frontier.
+
+### What I am optimizing for
+
+I want to operate as a **hands-on technical leader at the intersection of applied ML, product strategy, and organizational influence**.
+
+My ideal role would allow me to:
+
+* Personally own one or more technically ambitious problem areas end-to-end.
+* Work toward a clear business or product north star—e.g. improving conversion, personalization, search, or another meaningful outcome—while having substantial autonomy over how to achieve it.
+* Set technical direction and guide other scientists and engineers, rather than simply executing a predetermined roadmap.
+* Spend enough time coding, experimenting, analyzing data, and building prototypes to continuously refresh my technical intuition and stay close to the work.
+* Periodically take deep dives into new ideas or prototypes myself, even if hands-on implementation is not the majority of my day-to-day work.
+* Participate directly in product strategy and roadmap definition.
+* Incubate and champion new technical bets.
+* Lead through ideas, technical judgment, mentorship, and influence rather than primarily through the org chart.
+* Act as a technical and career mentor to other scientists and engineers, particularly helping strong ICs grow into more senior technical leaders.
+* Influence senior leadership and help build alignment around promising technical ideas.
+* Communicate technical ideas clearly and enthusiastically to a wide range of audiences, including executives, customers, and technical communities.
+* Remain an active participant in the broader research and applied ML community through conferences, workshops, panels, and potentially publications.
+
+### What I do not want
+
+I do not want my career progression to require moving progressively farther away from the technical frontier and into primarily organizational management.
+
+I have experience managing managers and operating at significant organizational scope, but as management becomes more abstract, the work increasingly shifts toward resource allocation, organizational politics, alignment, and resolving problems through multiple layers of people. I am capable of—and sometimes enjoy—this work, but I do not want that to become the primary substance of my career.
+
+I want to retain a shorter causal distance between my thinking and something concrete that exists in the world as a result.
+
+I am not looking to become a purely execution-focused IC whose job is simply to receive a problem and implement a solution. Nor am I looking to become a purely managerial executive whose relationship to ML is primarily through the people they manage.
+
+### My ideal balance
+
+Roughly speaking, I would like a role that allows me to spend my time approximately as follows:
+
+* **~1 day/week on hands-on technical work:** coding, experimentation, modeling, analysis, and prototypes, with occasional longer deep dives into a new technical idea.
+* **~2 days/week on technical direction:** deciding what to investigate, shaping approaches, reviewing experiments, and guiding other technical people.
+* **~1 day/week on product and strategy:** identifying opportunities and shaping the technical/product roadmap.
+* **~1 day/week on mentorship:** both technical mentorship and helping other scientists/engineers grow in their careers.
+* **Communication and influence as needed:** especially high-value presentations, technical storytelling, customer conversations, and building enthusiasm around important ideas.
+* **Ongoing engagement with the external technical community:** ideally enough flexibility to attend one or two academic conferences per year and devote some time to workshops, panels, publications, or other forms of intellectual contribution.
+
+### The career narrative I want my resume to support
+
+My move toward an IC role should **not** read as a retreat from leadership or a step down from management.
+
+The story is:
+
+> I am an experienced technical leader who has built teams, set technical and product strategy, delivered significant business impact, and operated with executive-level scope. I now want to bring those leadership capabilities to a Staff/Principal-level role while re-establishing a deeper personal technical practice and staying close to the rapidly evolving ML frontier.
+
+My value proposition is not just that I can build models or just that I can manage people. It is the combination of:
+
+* deep applied ML and scientific expertise,
+* hands-on technical judgment,
+* the ability to identify and incubate promising ideas,
+* product and business thinking,
+* experience translating technical work into measurable impact,
+* the ability to influence and align senior stakeholders,
+* strong technical storytelling and executive communication,
+* and the ability to multiply impact by mentoring and guiding other technical people.
+
+I thrive when I have **autonomy, ownership of an important problem space, and a seat at the strategic table**.
+
+The kinds of roles I am most interested in are likely titled **Staff Applied Scientist, Principal Applied Scientist, Staff/Principal ML Engineer, or another senior technical leadership role**, but the job design matters more than the title.
+
+The ideal environment gives me a meaningful north star and high-level business or product objective, then trusts me to help determine the technical path forward.
+
+A useful framing is:
+
+> I want to be a high-agency technical leader whose leadership is grounded in ongoing technical practice.
+
+Or, even more concretely:
+
+> I want to identify important technical opportunities, investigate them deeply enough to develop conviction, build prototypes and experiments when useful, create the narrative for why they matter, bring other people along, guide the technical direction, and help turn successful ideas into meaningful products or capabilities.
+
+Please use this context to customize my resume for Staff/Principal-level roles. Emphasize evidence that I have operated with this combination of **technical depth, technical leadership, product thinking, strategic ownership, mentorship, and measurable business impact**. Do not position me as someone abandoning leadership to "return to coding." Instead, position this move as an intentional focus on **high-leverage technical leadership and hands-on ML practice**.

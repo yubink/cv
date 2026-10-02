@@ -1,0 +1,19 @@
+**Strong candidate.**
+
+Here's how the resume maps to the role's core requirements:
+
+**Direct hits:**
+- **Search systems at scale, end-to-end**: Etsy Search Retrieval (real-time, low-latency, 90M buyers/100M items) and UPMC's Elasticsearch platform (160M+ clinical documents) both map directly to "indexing, retrieval, ranking, serving" — the exact scope of this role.
+- **Search quality ownership**: Doubled online experiment success rate via offline eval at Etsy, built A/B and interleaving test infrastructure — matches "evaluation methodology, relevance measurement, regression detection."
+- **Hands-on technical depth**: GNN embeddings, graph ML, RAG/LLM inference on vLLM/Kubernetes, BERT distillation — well beyond typical EM-level abstraction, fits "review designs, dig into relevance regressions."
+- **Recruiting/hiring track record**: Explicit numbers (9 hires at Vody, promotions, leveling calibration, managing out low performers) directly answer "recruit, close and retain strong engineers."
+- **Product mindset without a PM**: CSO role at Vody (owned technical *and* product roadmap) and cross-org Ads collaboration at Etsy both speak to the "wear the product hat" requirement.
+- **Preferred quals**: Vendor-to-in-house migration (Vody, external data vendor → in-house), LLM/retrieval exposure for training and inference — both explicitly called out as nice-to-haves, both present.
+
+**Gaps worth probing in interview:**
+- No search experience at LLM-scale infra specifically (web search index for a frontier model is a different beast than marketplace/clinical search) — worth testing depth here.
+- Team sizes led (5–12 ICs) are smaller than what a platform team feeding claude.ai + API + agentic surfaces might eventually require — check scaling trajectory.
+- Most recent role (Vody CSO) is a step up in scope/title but a step down in company scale — worth understanding what "built from 0" really involved operationally.
+- No explicit mention of AI safety interest/motivation in the resume — easy to surface in a screen, but not evidenced on paper.
+
+Net: this is a well-aligned profile on paper — the search-specific technical depth, hands-on IC-level credibility, and hiring/people-management evidence are all unusually well-documented for a resume. I'd move this forward to a recruiter screen or hiring manager conversation.
